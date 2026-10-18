@@ -216,8 +216,8 @@ The node label follows the `role` of the entity (`Other` is stored as `ClinicalC
 |---|---|---|
 | `CHECKS_FOR` | DecisionNode → ClinicalCondition | the condition tests for a disease or finding |
 | `EVALUATES` | DecisionNode → ClinicalParameter and other concepts | the condition tests a measurable or other concept |
-| `LEADS_TO` | DecisionNode → DecisionNode | AND conditions are chained in order; the members of an OR group are parallel branches |
-| `RESULTS_IN` | DecisionNode → RecommendationNode | the last decision(s) of a rule lead to its recommendation |
+| `LEADS_TO` | DecisionNode → DecisionNode | AND conditions are chained in order; the members of an OR group are parallel branches, each linked to the next group |
+| `RESULTS_IN` | DecisionNode → RecommendationNode | the end of the chain leads to the recommendation; if the rule ends with an OR group, every member of that group does |
 | `RECOMMENDS_USAGE` | RecommendationNode → Medication | positive recommendation of a drug |
 | `RECOMMENDS_PROCEDURE` | RecommendationNode → Procedure | positive recommendation of a procedure |
 | `CONTRAINDICATES` | RecommendationNode → concept | negative recommendation (`direction` NEGATIVE) |
@@ -225,7 +225,23 @@ The node label follows the `role` of the entity (`Other` is stored as `ClinicalC
 
 The paths (`LEADS_TO`, `RESULTS_IN`) make each rule readable in the Neo4j browser. The evaluator does not walk them: it collects all DecisionNodes of a rule and combines them by logic group (see [step vi](#vi-evaluate-the-rules-deterministic)), so evaluation does not depend on path order.
 
-### The example rule in the graph
+### Two rules in the graph
+
+**AND rule: one chain, one start, one end.** 160 of the 196 rules look like this. Example: Recommendation Table 10 row 0, *"In individuals with suspected CCS and moderate or high (> 15%–85%) pre-test likelihood of obstructive CAD, stress SPECT or, preferably, PET myocardial perfusion imaging is recommended"* (Class I, Level B). Both concepts are uncoded, so they are `UnresolvedConcept` nodes; the two threshold checks share one concept node.
+
+```mermaid
+flowchart LR
+    d1["DecisionNode g1·s1<br/>PRESENT · AND"] -- "LEADS_TO" --> d2["DecisionNode g1·s2<br/>greater than 15 % · AND"]
+    d2 -- "LEADS_TO" --> d3["DecisionNode g1·s3<br/>at most 85 % · AND"]
+    d3 -- "RESULTS_IN" --> r["RecommendationNode<br/>stress SPECT or, preferably, PET<br/>myocardial perfusion imaging<br/>Class I · Level B"]
+    d1 -- "CHECKS_FOR" --> c1["UnresolvedConcept<br/>suspected chronic coronary syndrome"]
+    d2 -- "EVALUATES" --> c2["UnresolvedConcept<br/>pre-test likelihood of obstructive CAD"]
+    d3 -- "EVALUATES" --> c2
+    r -- "RECOMMENDS_PROCEDURE" --> a1["UnresolvedConcept (Procedure)<br/>stress SPECT single-photon emission<br/>computed tomography"]
+    r -- "RECOMMENDS_PROCEDURE" --> a2["UnresolvedConcept (Procedure)<br/>PET positron emission tomography<br/>myocardial perfusion imaging"]
+```
+
+**OR group: parallel branches.** The other 36 rules contain an OR group with several members. The members are not chained to each other: each is a branch of its own, linked from the previous group (if any) and, when the OR group ends the rule, each with its own `RESULTS_IN` edge. Four rules consist of a single OR group, like Table 8 row 2 (four of its eight OR conditions shown):
 
 ```mermaid
 flowchart LR
@@ -241,7 +257,7 @@ flowchart LR
     r -- "MENTIONED_IN" --> s["GuidelineSource<br/>2024 ESC CCS Guidelines"]
 ```
 
-Four of the eight OR conditions are shown. To inspect a rule in Neo4j:
+To inspect a rule in Neo4j:
 
 ```cypher
 MATCH (r:RecommendationNode {source_row_id: 'table_rec_8_manual_1.4.json::table_0::row_2'})
@@ -249,6 +265,14 @@ MATCH (d:DecisionNode {rule_unique_id: r.rule_unique_id})-[:CHECKS_FOR|EVALUATES
 RETURN r.full_text, r.strength, r.level, d.decision_id, d.operator, d.threshold, d.unit,
        d.logic_type, labels(c), c.snomed_id
 ORDER BY d.decision_id
+```
+
+and to see its paths:
+
+```cypher
+MATCH (r:RecommendationNode {source_row_id: 'table_rec_8_manual_1.4.json::table_0::row_2'})
+MATCH p = (d:DecisionNode {rule_unique_id: r.rule_unique_id})-[:LEADS_TO|RESULTS_IN*1..]->(r)
+RETURN p
 ```
 
 ---
