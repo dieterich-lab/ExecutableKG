@@ -1,0 +1,237 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_74.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_74.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 27 — Recommendations for screening for coronary artery disease in asymptomatic individuals (see also Evidence Table 27)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Opportunistic screening of healthy individuals for cardiovascular risk factors and to estimate the risk of future cardiovascular events using scoring systems, e.g. SCORE2 and SCORE-OP, is recommended to detect individuals at high risk and guide treatment decisions.16,1101,1112 I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "asymptomatic individuals",
+          "recommendation": "screen for cardiovascular risk factors and to estimate the risk of future cardiovascular events using scoring systems, e.g. SCORE2 and SCORE-OP, is recommended to detect individuals at high risk and guide treatment decisions",
+          "rules": [
+            {
+              "entity_original": "asymptomatic individuals",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Asymptomatic",
+                  "snomed_id": "84387000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "screen for cardiovascular risk factors",
+              "entity_standardized_list": [],
+              "context": "screening for cardiovascular risk factors is recommended to detect individuals at high risk and guide treatment decisions",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "use scoring systems, e.g. SCORE2 and SCORE-OP",
+              "entity_standardized_list": [],
+              "context": "to estimate the risk of future cardiovascular events using scoring systems, e.g. SCORE2 and SCORE-OP, is recommended to detect individuals at high risk and guide treatment decisions",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 27 — Recommendations for screening for coronary artery disease in asymptomatic individuals (see also Evidence Table 27)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "When coronary artery calcification findings are available from previous chest CT scans, using these findings to enhance risk stratification and guide treatment of modifiable risk factors should be considered.17,1108–1110 IIa C",
+          "Class a": "IIa",
+          "Level b": "C",
+          "input": "asymptomatic individuals When coronary artery calcification findings are available from previous chest CT scans",
+          "recommendation": "using these findings to enhance risk stratification and guide treatment of modifiable risk factors should be considered",
+          "rules": [
+            {
+              "entity_original": "asymptomatic individuals",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Asymptomatic",
+                  "snomed_id": "84387000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "coronary artery calcification findings",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Calcification of coronary artery",
+                  "snomed_id": "445512009"
+                }
+              ],
+              "context": "coronary artery calcification findings are available from previous chest CT scans",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "risk stratification",
+              "entity_standardized_list": [],
+              "context": "use coronary artery calcification findings from previous chest CT scans to enhance risk stratification and guide treatment of modifiable risk factors should be considered",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 27 — Recommendations for screening for coronary artery disease in asymptomatic individuals (see also Evidence Table 27)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "CACS may be considered to improve risk classification around treatment decision thresholds.1104–1106",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "asymptomatic individuals",
+          "recommendation": "CACS coronary artery calcium scoring may be considered to improve risk classification around treatment decision thresholds",
+          "rules": [
+            {
+              "entity_original": "asymptomatic individuals",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Asymptomatic",
+                  "snomed_id": "84387000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CACS",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "coronary artery calcium scoring",
+                  "snomed_id": ""
+                }
+              ],
+              "context": "CACS coronary artery calcium scoring may be considered to improve risk classification around treatment decision thresholds",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 27 — Recommendations for screening for coronary artery disease in asymptomatic individuals (see also Evidence Table 27)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "An ultrasound of the carotid arteries may be considered as an alternative when CACS is unavailable or not feasible to detect atherosclerotic disease and to improve risk classification around treatment decision thresholds.1111 IIb B",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "asymptomatic individuals when CACS is unavailable or not feasible to detect atherosclerotic disease",
+          "recommendation": "An ultrasound of the carotid arteries may be considered as an alternative to CACS to improve risk classification around treatment decision thresholds",
+          "rules": [
+            {
+              "entity_original": "asymptomatic individuals",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Asymptomatic",
+                  "snomed_id": "84387000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "CACS is unavailable",
+              "entity_standardized_list": [],
+              "context": "CACS is unavailable or not feasible to detect atherosclerotic disease",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CACS is not feasible to detect atherosclerotic disease",
+              "entity_standardized_list": [],
+              "context": "CACS is unavailable or not feasible to detect atherosclerotic disease",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ultrasound of the carotid arteries",
+              "entity_standardized_list": [],
+              "context": "An ultrasound of the carotid arteries may be considered as an alternative to CACS to improve risk classification around treatment decision thresholds",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

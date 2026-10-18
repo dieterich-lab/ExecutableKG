@@ -1,0 +1,294 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_28.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_28.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 8 — Recommendations for non-invasive anatomical imaging tests in the initial diagnostic management of individuals with suspected chronic coronary syndrome—coronary computed tomography angiography, if available, and supported by local expertise (see also Evidence Table 8)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with suspected CCS and low or moderate (>5%–50%) pre-test likelihood of obstructive CAD, CCTA is recommended to diagnose obstructive CAD and to estimate the risk of MACE.33,34,145,212,214–221 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In individuals with suspected CCS and low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+          "recommendation": "CCTA is recommended to diagnose obstructive CAD and to estimate the risk of MACE if available, and supported by local expertise",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "5",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "50",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "coronary computed tomography angiography",
+                  "entity_standardized_list": [],
+                  "context": "CCTA is recommended to diagnose obstructive CAD and to estimate the risk of MACE if available, and supported by local expertise",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 8 — Recommendations for non-invasive anatomical imaging tests in the initial diagnostic management of individuals with suspected chronic coronary syndrome—coronary computed tomography angiography, if available, and supported by local expertise (see also Evidence Table 8)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "CCTA is recommended in individuals with low or moderate (>5%–50%) pre-test likelihood of obstructive CAD to refine diagnosis if another non-invasive test is non-diagnostic.222 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In individuals with suspected CCS with low or moderate (>5%–50%) pre-test likelihood of obstructive CAD ",
+          "recommendation": "CCTA is recommended to refine diagnosis if another non-invasive test is non-diagnostic",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "5",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "50",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "coronary computed tomography angiography",
+                  "entity_standardized_list": [],
+                  "context": "CCTA is recommended to refine diagnosis if another non-invasive test is non-diagnostic",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 8 — Recommendations for non-invasive anatomical imaging tests in the initial diagnostic management of individuals with suspected chronic coronary syndrome—coronary computed tomography angiography, if available, and supported by local expertise (see also Evidence Table 8)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "CCTA is not recommended in patients with severe renal failure (eGFR <30 mL/min/1.73 m2), decompensated heart failure, extensive coronary calcification, fast irregular heart rate, severe obesity, inability to cooperate with breath-hold commands, or any other conditions that can make obtaining good imaging quality unlikely. III C",
+          "Class a": "III",
+          "Level b": "C",
+          "input": "patients with severe renal failure (eGFR <30 mL/min/1.73 m2), decompensated heart failure, extensive coronary calcification, fast irregular heart rate, severe obesity, inability to cooperate with breath-hold commands, or any other conditions that can make obtaining good imaging quality unlikely",
+          "recommendation": "CCTA is not recommended",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "severe renal failure",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Renal failure syndrome",
+                      "snomed_id": "42399005"
+                    }
+                  ],
+                  "context": "patients with severe renal failure (eGFR <30 mL/min/1.73 m2)",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "eGFR",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Glomerular filtration rate",
+                      "snomed_id": "405004009"
+                    }
+                  ],
+                  "context": "patients with severe renal failure (eGFR <30 mL/min/1.73 m2)",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "<",
+                    "threshold": "30",
+                    "unit": "mL/min/1.73 m^2",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "decompensated heart failure",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Decompensated chronic heart failure",
+                      "snomed_id": "424404003"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "extensive coronary calcification",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Calcification of coronary artery",
+                      "snomed_id": "445512009"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "fast irregular heart rate",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Tachyarrhythmia",
+                      "snomed_id": "6285003"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "severe obesity",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Severe obesity",
+                      "snomed_id": "83911000119104"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "inability to cooperate with breath-hold commands",
+                  "entity_standardized_list": [],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "any other conditions that can make obtaining good imaging quality unlikely",
+                  "entity_standardized_list": [],
+                  "context": "any other conditions that can make obtaining good imaging quality unlikely",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "coronary computed tomography angiography",
+                  "entity_standardized_list": [],
+                  "context": "CCTA is not recommended",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "III",
+                    "level": "C",
+                    "direction": "NEGATIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

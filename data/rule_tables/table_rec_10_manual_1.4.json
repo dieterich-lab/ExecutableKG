@@ -1,0 +1,223 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_30.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_30.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 10 — Recommendations for non-invasive functional myocardial imaging tests in the initial diagnostic management of individuals with suspected chronic coronary syndrome—resting and stress single-photon emission computed tomography/positron emission tomography—cardiac magnetic resonance imaging, if available, and supported by local expertise (see also Evidence Table 10)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with suspected CCS and moderate or high (>15%–85%) pre-test likelihood of obstructive CAD, stress SPECT or, preferably, PET myocardial perfusion imaging is recommended to: • diagnose and quantify myocardial ischaemia and/or scar; • estimate the risk of MACE; • quantify myocardial blood flow (PET).33,44,223,257,263,268,270,271,281–288",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In individuals with suspected CCS and moderate or high (>15%–85%) pre-test likelihood of obstructive CAD ",
+          "recommendation": "stress SPECT or, preferably, PET myocardial perfusion imaging is recommended to: • diagnose and quantify myocardial ischaemia and/or scar; • estimate the risk of MACE; • quantify myocardial blood flow (PET)",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "moderate or high (>15%–85%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "15",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "moderate or high (>15%–85%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "85",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "stress SPECT single-photon emission computed tomography",
+                  "entity_standardized_list": [],
+                  "context": "stress SPECT is recommended to: • diagnose and quantify myocardial ischaemia and/or scar; • estimate the risk of MACE; • quantify myocardial blood flow (PET)",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "PET positron emission tomography myocardial perfusion imaging",
+                  "entity_standardized_list": [],
+                  "context": "preferably PET myocardial perfusion imaging is recommended to: • diagnose and quantify myocardial ischaemia and/or scar; • estimate the risk of MACE; • quantify myocardial blood flow (PET)",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 10 — Recommendations for non-invasive functional myocardial imaging tests in the initial diagnostic management of individuals with suspected chronic coronary syndrome—resting and stress single-photon emission computed tomography/positron emission tomography—cardiac magnetic resonance imaging, if available, and supported by local expertise (see also Evidence Table 10)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In patients selected for PET or SPECT myocardial perfusion imaging, it is recommended to measure CACS from unenhanced chest CT imaging (used for attenuation correction) to improve detection of both non-obstructive and obstructive CAD.289–293",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In patients selected for PET or SPECT myocardial perfusion imaging",
+          "recommendation": "it is recommended to measure CACS from unenhanced chest CT imaging (used for attenuation correction) to improve detection of both non-obstructive and obstructive CAD",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "SPECT single-photon emission computed tomography",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Single photon emission computed tomography",
+                      "snomed_id": "105371005"
+                    }
+                  ],
+                  "context": "In patients selected for PET or SPECT myocardial perfusion imaging",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "PET positron emission tomography myocardial perfusion imaging",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Positron emission tomography myocardial metabolism study",
+                      "snomed_id": "16545811000119100"
+                    }
+                  ],
+                  "context": "In patients selected for PET or SPECT myocardial perfusion imaging",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "CACS coronary artery calcium score",
+                  "entity_standardized_list": [],
+                  "context": "it is recommended to measure CACS from unenhanced chest CT imaging (used for attenuation correction) to improve detection of both non-obstructive and obstructive CAD",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 10 — Recommendations for non-invasive functional myocardial imaging tests in the initial diagnostic management of individuals with suspected chronic coronary syndrome—resting and stress single-photon emission computed tomography/positron emission tomography—cardiac magnetic resonance imaging, if available, and supported by local expertise (see also Evidence Table 10)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with suspected CCS and moderate or high (>15%–85%) pre-test likelihood of obstructive CAD, stress CMR perfusion imaging is recommended to diagnose and quantify myocardial ischaemia and/or scar and estimate the risk of MACE.148,273,276,278,294–297",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In individuals with suspected CCS and moderate or high (>15%–85%) pre-test likelihood of obstructive CAD ",
+          "recommendation": "stress CMR perfusion imaging is recommended to diagnose and quantify myocardial ischaemia and/or scar and estimate the risk of MACE",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "moderate or high (>15%–85%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "15",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "moderate or high (>15%–85%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "85",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "stress cardiac magnetic resonance perfusion imaging",
+                  "entity_standardized_list": [],
+                  "context": "stress CMR perfusion imaging is recommended to diagnose and quantify myocardial ischaemia and/or scar and estimate the risk of MACE",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

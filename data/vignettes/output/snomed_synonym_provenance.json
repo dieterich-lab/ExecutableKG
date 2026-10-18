@@ -1,0 +1,3738 @@
+[
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_001",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with AF, heart failure with reduced ejection fraction, normal epicardial coronary arteries and persistent anginal-equivalent symptoms.",
+    "intended_node_ids": [
+      "input_6c180966d76985e738fa",
+      "input_55739003e983a5362060",
+      "input_6c30e666810b81bf4e89",
+      "input_46db42052a49a3e0f1c4"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_6c180966d76985e738fa",
+        "mention": "AF",
+        "entity_original": "AF",
+        "context": "indication for ventricular pacing for high-degree AV block this includes patients with AF",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Atrial fibrillation",
+            "snomed_id": "49436004"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_14"
+        ]
+      },
+      {
+        "node_id": "input_55739003e983a5362060",
+        "mention": "heart failure with reduced ejection fraction",
+        "entity_original": "HFrEF",
+        "context": "selected patients with HFrEF",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+            "snomed_id": "703272007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_4"
+        ]
+      },
+      {
+        "node_id": "input_6c30e666810b81bf4e89",
+        "mention": "normal epicardial coronary arteries",
+        "entity_original": "normal epicardial coronary arteries",
+        "context": "normal or non-obstructive epicardial coronary arteries",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_46db42052a49a3e0f1c4",
+        "mention": "persistent anginal-equivalent symptoms",
+        "entity_original": "angina equivalent symptoms",
+        "context": "persistent angina or equivalent symptoms",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Anginal equivalent",
+            "snomed_id": "565394081000119105"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_3"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_24_manual_1.4.json::table_0::row_14",
+      "table_rec_24_manual_1.4.json::table_0::row_3",
+      "table_rec_24_manual_1.4.json::table_0::row_4"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_14",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 14,
+        "matched_node_ids": [
+          "input_6c180966d76985e738fa"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_46db42052a49a3e0f1c4",
+          "input_6c30e666810b81bf4e89"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_55739003e983a5362060"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "49436004",
+      "preferred_term": "Atrial fibrillation",
+      "synonym_used": "AF",
+      "canonical_concept_uri": "http://snomed.info/id/49436004",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=49436004",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/49436004",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_6c180966d76985e738fa",
+      "base_mention": "atrial fibrillation",
+      "replacement_mention": "AF"
+    },
+    "derived_from_case_id": "near_063"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_002",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with cardiac failure, no current symptoms and overweight with a BMI of 29 kg/m².",
+    "intended_node_ids": [
+      "input_5812d323f9927cd41746",
+      "input_e35a22a091e1ca1ca67d",
+      "input_004d40b9acf8c220a4ad"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_5812d323f9927cd41746",
+        "mention": "cardiac failure",
+        "entity_original": "HF",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure",
+            "snomed_id": "84114007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_10"
+        ]
+      },
+      {
+        "node_id": "input_e35a22a091e1ca1ca67d",
+        "mention": "no current symptoms",
+        "entity_original": "asymptomatic individuals",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Asymptomatic",
+            "snomed_id": "84387000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_27_manual_1.4.json::table_0::row_0",
+          "table_rec_27_manual_1.4.json::table_0::row_1",
+          "table_rec_27_manual_1.4.json::table_0::row_2",
+          "table_rec_27_manual_1.4.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_004d40b9acf8c220a4ad",
+        "mention": "overweight with a BMI of 29 kg/m²",
+        "entity_original": "overweight",
+        "context": "(BMI ≥27 kg/m2)",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Overweight",
+            "snomed_id": "238131007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_19_manual_1.4.json::table_0::row_2"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_19_manual_1.4.json::table_0::row_2",
+      "table_rec_24_manual_1.4.json::table_0::row_10",
+      "table_rec_27_manual_1.4.json::table_0::row_0",
+      "table_rec_27_manual_1.4.json::table_0::row_1",
+      "table_rec_27_manual_1.4.json::table_0::row_2",
+      "table_rec_27_manual_1.4.json::table_0::row_3"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_19_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_19_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_004d40b9acf8c220a4ad"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_5812d323f9927cd41746"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "84114007",
+      "preferred_term": "Heart failure",
+      "synonym_used": "Cardiac failure",
+      "canonical_concept_uri": "http://snomed.info/id/84114007",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84114007",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/84114007",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_5812d323f9927cd41746",
+      "base_mention": "heart failure",
+      "replacement_mention": "cardiac failure"
+    },
+    "derived_from_case_id": "near_033"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_003",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with a BMI of 29 kg/m², cardiac insufficiency, symptomatic chronic coronary syndrome and very high risk of cardiovascular events.",
+    "intended_node_ids": [
+      "input_249210d3c9d81644ff1f",
+      "input_38457cb950b5869427f7",
+      "input_70ea764d1f5aa7836877",
+      "input_343178fdee7a127a7167"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_249210d3c9d81644ff1f",
+        "mention": "a BMI of 29 kg/m²",
+        "entity_original": "BMI",
+        "context": "overweight (BMI ≥27 kg/m2) or obese",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Body mass index",
+            "snomed_id": "60621009"
+          }
+        ],
+        "logic_operators": [
+          "≥"
+        ],
+        "source_row_ids": [
+          "table_rec_19_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_38457cb950b5869427f7",
+        "mention": "cardiac insufficiency",
+        "entity_original": "heart failure",
+        "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure",
+            "snomed_id": "84114007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_21_manual_1.4.json::table_0::row_0"
+        ]
+      },
+      {
+        "node_id": "input_70ea764d1f5aa7836877",
+        "mention": "symptomatic chronic coronary syndrome",
+        "entity_original": "chronic coronary syndrome",
+        "context": "symptomatic patients with CCS",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Chronic myocardial ischemia",
+            "snomed_id": "413844008"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_8"
+        ]
+      },
+      {
+        "node_id": "input_343178fdee7a127a7167",
+        "mention": "very high risk of cardiovascular events",
+        "entity_original": "very high risk of cardiovascular events",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "At increased risk for cardiovascular event",
+            "snomed_id": "395112001"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_21_manual_1.4.json::table_0::row_1"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_19_manual_1.4.json::table_0::row_2",
+      "table_rec_21_manual_1.4.json::table_0::row_0",
+      "table_rec_21_manual_1.4.json::table_0::row_1",
+      "table_rec_24_manual_1.4.json::table_0::row_8"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_19_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_19_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_249210d3c9d81644ff1f"
+        ]
+      },
+      {
+        "row_id": "table_rec_21_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_21_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_38457cb950b5869427f7"
+        ]
+      },
+      {
+        "row_id": "table_rec_21_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_21_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_343178fdee7a127a7167"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_8",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 8,
+        "matched_node_ids": [
+          "input_70ea764d1f5aa7836877"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "84114007",
+      "preferred_term": "Heart failure",
+      "synonym_used": "Cardiac insufficiency",
+      "canonical_concept_uri": "http://snomed.info/id/84114007",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84114007",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/84114007",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_38457cb950b5869427f7",
+      "base_mention": "heart failure",
+      "replacement_mention": "cardiac insufficiency"
+    },
+    "derived_from_case_id": "near_034"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_004",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with myocardial failure, no current symptoms and overweight with a BMI of 29 kg/m².",
+    "intended_node_ids": [
+      "input_5812d323f9927cd41746",
+      "input_e35a22a091e1ca1ca67d",
+      "input_004d40b9acf8c220a4ad"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_5812d323f9927cd41746",
+        "mention": "myocardial failure",
+        "entity_original": "HF",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure",
+            "snomed_id": "84114007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_10"
+        ]
+      },
+      {
+        "node_id": "input_e35a22a091e1ca1ca67d",
+        "mention": "no current symptoms",
+        "entity_original": "asymptomatic individuals",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Asymptomatic",
+            "snomed_id": "84387000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_27_manual_1.4.json::table_0::row_0",
+          "table_rec_27_manual_1.4.json::table_0::row_1",
+          "table_rec_27_manual_1.4.json::table_0::row_2",
+          "table_rec_27_manual_1.4.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_004d40b9acf8c220a4ad",
+        "mention": "overweight with a BMI of 29 kg/m²",
+        "entity_original": "overweight",
+        "context": "(BMI ≥27 kg/m2)",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Overweight",
+            "snomed_id": "238131007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_19_manual_1.4.json::table_0::row_2"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_19_manual_1.4.json::table_0::row_2",
+      "table_rec_24_manual_1.4.json::table_0::row_10",
+      "table_rec_27_manual_1.4.json::table_0::row_0",
+      "table_rec_27_manual_1.4.json::table_0::row_1",
+      "table_rec_27_manual_1.4.json::table_0::row_2",
+      "table_rec_27_manual_1.4.json::table_0::row_3"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_19_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_19_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_004d40b9acf8c220a4ad"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_5812d323f9927cd41746"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      },
+      {
+        "row_id": "table_rec_27_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_27_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_e35a22a091e1ca1ca67d"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "84114007",
+      "preferred_term": "Heart failure",
+      "synonym_used": "Myocardial failure",
+      "canonical_concept_uri": "http://snomed.info/id/84114007",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=84114007",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/84114007",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_5812d323f9927cd41746",
+      "base_mention": "heart failure",
+      "replacement_mention": "myocardial failure"
+    },
+    "derived_from_case_id": "near_033"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_005",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with diabetes, high blood pressure and symptomatic heart failure with reduced ejection fraction.",
+    "intended_node_ids": [
+      "input_a6ef8278f3866f169aa6",
+      "input_d7012b06e035bf6de0a6",
+      "input_9eb9a70a3b76db41ddee"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_a6ef8278f3866f169aa6",
+        "mention": "diabetes",
+        "entity_original": "diabetes",
+        "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Diabetes mellitus",
+            "snomed_id": "73211009"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_21_manual_1.4.json::table_0::row_0"
+        ]
+      },
+      {
+        "node_id": "input_d7012b06e035bf6de0a6",
+        "mention": "high blood pressure",
+        "entity_original": "hypertension",
+        "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Hypertensive disorder, systemic arterial",
+            "snomed_id": "38341003"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_21_manual_1.4.json::table_0::row_0"
+        ]
+      },
+      {
+        "node_id": "input_9eb9a70a3b76db41ddee",
+        "mention": "symptomatic heart failure with reduced ejection fraction",
+        "entity_original": "HFrEF",
+        "context": "symptomatic HF",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+            "snomed_id": "703272007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_14"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_21_manual_1.4.json::table_0::row_0",
+      "table_rec_24_manual_1.4.json::table_0::row_14"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_21_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_21_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a6ef8278f3866f169aa6",
+          "input_d7012b06e035bf6de0a6"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_14",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 14,
+        "matched_node_ids": [
+          "input_9eb9a70a3b76db41ddee"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "38341003",
+      "preferred_term": "Hypertensive disorder",
+      "synonym_used": "High blood pressure",
+      "canonical_concept_uri": "http://snomed.info/id/38341003",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=38341003",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/38341003",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_d7012b06e035bf6de0a6",
+      "base_mention": "hypertension",
+      "replacement_mention": "high blood pressure"
+    },
+    "derived_from_case_id": "near_040"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_006",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with diabetes, systemic arterial hypertension and symptomatic heart failure with reduced ejection fraction.",
+    "intended_node_ids": [
+      "input_a6ef8278f3866f169aa6",
+      "input_d7012b06e035bf6de0a6",
+      "input_9eb9a70a3b76db41ddee"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_a6ef8278f3866f169aa6",
+        "mention": "diabetes",
+        "entity_original": "diabetes",
+        "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Diabetes mellitus",
+            "snomed_id": "73211009"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_21_manual_1.4.json::table_0::row_0"
+        ]
+      },
+      {
+        "node_id": "input_d7012b06e035bf6de0a6",
+        "mention": "systemic arterial hypertension",
+        "entity_original": "hypertension",
+        "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Hypertensive disorder, systemic arterial",
+            "snomed_id": "38341003"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_21_manual_1.4.json::table_0::row_0"
+        ]
+      },
+      {
+        "node_id": "input_9eb9a70a3b76db41ddee",
+        "mention": "symptomatic heart failure with reduced ejection fraction",
+        "entity_original": "HFrEF",
+        "context": "symptomatic HF",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+            "snomed_id": "703272007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_14"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_21_manual_1.4.json::table_0::row_0",
+      "table_rec_24_manual_1.4.json::table_0::row_14"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_21_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_21_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a6ef8278f3866f169aa6",
+          "input_d7012b06e035bf6de0a6"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_14",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 14,
+        "matched_node_ids": [
+          "input_9eb9a70a3b76db41ddee"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "38341003",
+      "preferred_term": "Hypertensive disorder",
+      "synonym_used": "Systemic arterial hypertension",
+      "canonical_concept_uri": "http://snomed.info/id/38341003",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=38341003",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/38341003",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_d7012b06e035bf6de0a6",
+      "base_mention": "hypertension",
+      "replacement_mention": "systemic arterial hypertension"
+    },
+    "derived_from_case_id": "near_040"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_007",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with coronary heart disease, coronary disease of uncertain functional significance on CCTA and no previous coronary revascularization.",
+    "intended_node_ids": [
+      "input_20ef046fa732f2290278",
+      "input_c5730e4ee9320c04515d",
+      "input_339a073dac8ee026c13d"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_20ef046fa732f2290278",
+        "mention": "coronary heart disease",
+        "entity_original": "CAD",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Coronary artery disease",
+            "snomed_id": "53741008"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_17_manual_1.3.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_c5730e4ee9320c04515d",
+        "mention": "coronary disease of uncertain functional significance on CCTA",
+        "entity_original": "coronary computed tomography angiography (CCTA)",
+        "context": "if CCTA has shown CAD of uncertain functional significance or is not diagnostic",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Computed tomography angiography of coronary artery with contrast",
+            "snomed_id": "419545005"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_13_manual_1.4.json::table_0::row_4"
+        ]
+      },
+      {
+        "node_id": "input_339a073dac8ee026c13d",
+        "mention": "no previous coronary revascularization",
+        "entity_original": "coronary revascularization",
+        "context": "",
+        "role": "Procedure",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Repair of coronary artery",
+            "snomed_id": "713689002"
+          }
+        ],
+        "logic_operators": [
+          "ABSENT"
+        ],
+        "source_row_ids": [
+          "table_rec_17_manual_1.3.json::table_0::row_3"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_13_manual_1.4.json::table_0::row_4",
+      "table_rec_17_manual_1.3.json::table_0::row_3"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_c5730e4ee9320c04515d"
+        ]
+      },
+      {
+        "row_id": "table_rec_17_manual_1.3.json::table_0::row_3",
+        "file": "table_rec_17_manual_1.3.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_20ef046fa732f2290278",
+          "input_339a073dac8ee026c13d"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "53741008",
+      "preferred_term": "Coronary arteriosclerosis",
+      "synonym_used": "Coronary heart disease",
+      "canonical_concept_uri": "http://snomed.info/id/53741008",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=53741008",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/53741008",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_20ef046fa732f2290278",
+      "base_mention": "coronary artery disease",
+      "replacement_mention": "coronary heart disease"
+    },
+    "derived_from_case_id": "near_010"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_008",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with arteriosclerotic heart disease, chronic coronary syndrome and a history of CABG, prior myocardial infarction and remote history of PCI.",
+    "intended_node_ids": [
+      "input_22a3a2ecad0b96fcf4e4",
+      "input_95412f99a8f53fbf5f24",
+      "input_e52167297dd90aa645a2",
+      "input_115cd414f5533a9282be"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_22a3a2ecad0b96fcf4e4",
+        "mention": "arteriosclerotic heart disease",
+        "entity_original": "atherosclerotic CAD",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Coronary arteriosclerosis",
+            "snomed_id": "53741008"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_20_manual_1.4.json::table_0::row_0"
+        ]
+      },
+      {
+        "node_id": "input_95412f99a8f53fbf5f24",
+        "mention": "chronic coronary syndrome and a history of CABG",
+        "entity_original": "CABG",
+        "context": "after CABG",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Coronary artery bypass grafting",
+            "snomed_id": "232717009"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_17_manual_1.3.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_e52167297dd90aa645a2",
+        "mention": "prior myocardial infarction",
+        "entity_original": "prior MI",
+        "context": "prior",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Old myocardial infarction",
+            "snomed_id": "1755008"
+          }
+        ],
+        "logic_operators": [
+          "ABSENT",
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_17_manual_1.3.json::table_0::row_0",
+          "table_rec_17_manual_1.3.json::table_0::row_1",
+          "table_rec_17_manual_1.3.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_115cd414f5533a9282be",
+        "mention": "remote history of PCI",
+        "entity_original": "PCI",
+        "context": "remote",
+        "role": "Procedure",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Percutaneous coronary revascularization",
+            "snomed_id": "415070008"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_17_manual_1.3.json::table_0::row_0",
+          "table_rec_17_manual_1.3.json::table_0::row_1"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_17_manual_1.3.json::table_0::row_0",
+      "table_rec_17_manual_1.3.json::table_0::row_1",
+      "table_rec_17_manual_1.3.json::table_0::row_2",
+      "table_rec_17_manual_1.3.json::table_0::row_3",
+      "table_rec_20_manual_1.4.json::table_0::row_0"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_17_manual_1.3.json::table_0::row_0",
+        "file": "table_rec_17_manual_1.3.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_115cd414f5533a9282be",
+          "input_e52167297dd90aa645a2"
+        ]
+      },
+      {
+        "row_id": "table_rec_17_manual_1.3.json::table_0::row_1",
+        "file": "table_rec_17_manual_1.3.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_115cd414f5533a9282be",
+          "input_e52167297dd90aa645a2"
+        ]
+      },
+      {
+        "row_id": "table_rec_17_manual_1.3.json::table_0::row_2",
+        "file": "table_rec_17_manual_1.3.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_95412f99a8f53fbf5f24"
+        ]
+      },
+      {
+        "row_id": "table_rec_17_manual_1.3.json::table_0::row_3",
+        "file": "table_rec_17_manual_1.3.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_e52167297dd90aa645a2"
+        ]
+      },
+      {
+        "row_id": "table_rec_20_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_20_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_22a3a2ecad0b96fcf4e4"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "53741008",
+      "preferred_term": "Coronary arteriosclerosis",
+      "synonym_used": "Arteriosclerotic heart disease",
+      "canonical_concept_uri": "http://snomed.info/id/53741008",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=53741008",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/53741008",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_22a3a2ecad0b96fcf4e4",
+      "base_mention": "atherosclerotic CAD",
+      "replacement_mention": "arteriosclerotic heart disease"
+    },
+    "derived_from_case_id": "near_022"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_009",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with coronary sclerosis, coronary disease of uncertain functional significance on CCTA and no previous coronary revascularization.",
+    "intended_node_ids": [
+      "input_20ef046fa732f2290278",
+      "input_c5730e4ee9320c04515d",
+      "input_339a073dac8ee026c13d"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_20ef046fa732f2290278",
+        "mention": "coronary sclerosis",
+        "entity_original": "CAD",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Coronary artery disease",
+            "snomed_id": "53741008"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_17_manual_1.3.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_c5730e4ee9320c04515d",
+        "mention": "coronary disease of uncertain functional significance on CCTA",
+        "entity_original": "coronary computed tomography angiography (CCTA)",
+        "context": "if CCTA has shown CAD of uncertain functional significance or is not diagnostic",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Computed tomography angiography of coronary artery with contrast",
+            "snomed_id": "419545005"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_13_manual_1.4.json::table_0::row_4"
+        ]
+      },
+      {
+        "node_id": "input_339a073dac8ee026c13d",
+        "mention": "no previous coronary revascularization",
+        "entity_original": "coronary revascularization",
+        "context": "",
+        "role": "Procedure",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Repair of coronary artery",
+            "snomed_id": "713689002"
+          }
+        ],
+        "logic_operators": [
+          "ABSENT"
+        ],
+        "source_row_ids": [
+          "table_rec_17_manual_1.3.json::table_0::row_3"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_13_manual_1.4.json::table_0::row_4",
+      "table_rec_17_manual_1.3.json::table_0::row_3"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_c5730e4ee9320c04515d"
+        ]
+      },
+      {
+        "row_id": "table_rec_17_manual_1.3.json::table_0::row_3",
+        "file": "table_rec_17_manual_1.3.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_20ef046fa732f2290278",
+          "input_339a073dac8ee026c13d"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "53741008",
+      "preferred_term": "Coronary arteriosclerosis",
+      "synonym_used": "Coronary sclerosis",
+      "canonical_concept_uri": "http://snomed.info/id/53741008",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=53741008",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/53741008",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_20ef046fa732f2290278",
+      "base_mention": "coronary artery disease",
+      "replacement_mention": "coronary sclerosis"
+    },
+    "derived_from_case_id": "near_010"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_010",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with chronic coronary syndrome, failure of a previous CABG graft, obesity and type II diabetes mellitus.",
+    "intended_node_ids": [
+      "input_a86fb1f73aa85b3e4188",
+      "input_205697291d49fbc8f694",
+      "input_dfe24d865d9990b9df17",
+      "input_ebc0d3a25177a5391c8b"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_a86fb1f73aa85b3e4188",
+        "mention": "chronic coronary syndrome",
+        "entity_original": "chronic coronary syndrome",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Chronic myocardial ischemia",
+            "snomed_id": "413844008"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_16_manual_1.4.json::table_0::row_0",
+          "table_rec_16_manual_1.4.json::table_0::row_1",
+          "table_rec_16_manual_1.4.json::table_0::row_10",
+          "table_rec_16_manual_1.4.json::table_0::row_11",
+          "table_rec_16_manual_1.4.json::table_0::row_12",
+          "table_rec_16_manual_1.4.json::table_0::row_13",
+          "table_rec_16_manual_1.4.json::table_0::row_2",
+          "table_rec_16_manual_1.4.json::table_0::row_3",
+          "table_rec_16_manual_1.4.json::table_0::row_4",
+          "table_rec_16_manual_1.4.json::table_0::row_5",
+          "table_rec_16_manual_1.4.json::table_0::row_6",
+          "table_rec_16_manual_1.4.json::table_0::row_7",
+          "table_rec_16_manual_1.4.json::table_0::row_8",
+          "table_rec_16_manual_1.4.json::table_0::row_9",
+          "table_rec_18_manual_1.4.json::table_0::row_0",
+          "table_rec_18_manual_1.4.json::table_0::row_1",
+          "table_rec_18_manual_1.4.json::table_0::row_6",
+          "table_rec_19_manual_1.4.json::table_0::row_0",
+          "table_rec_19_manual_1.4.json::table_0::row_1",
+          "table_rec_19_manual_1.4.json::table_0::row_2",
+          "table_rec_20_manual_1.4.json::table_0::row_0",
+          "table_rec_21_manual_1.4.json::table_0::row_0",
+          "table_rec_21_manual_1.4.json::table_0::row_1",
+          "table_rec_23_manual_1.4.json::table_0::row_1",
+          "table_rec_23_manual_1.4.json::table_0::row_10",
+          "table_rec_23_manual_1.4.json::table_0::row_11",
+          "table_rec_23_manual_1.4.json::table_0::row_2",
+          "table_rec_23_manual_1.4.json::table_0::row_3",
+          "table_rec_23_manual_1.4.json::table_0::row_4",
+          "table_rec_23_manual_1.4.json::table_0::row_5",
+          "table_rec_23_manual_1.4.json::table_0::row_6",
+          "table_rec_23_manual_1.4.json::table_0::row_7",
+          "table_rec_23_manual_1.4.json::table_0::row_8",
+          "table_rec_23_manual_1.4.json::table_0::row_9",
+          "table_rec_24_manual_1.4.json::table_0::row_10",
+          "table_rec_24_manual_1.4.json::table_0::row_11",
+          "table_rec_24_manual_1.4.json::table_0::row_12",
+          "table_rec_24_manual_1.4.json::table_0::row_13",
+          "table_rec_24_manual_1.4.json::table_0::row_14",
+          "table_rec_24_manual_1.4.json::table_0::row_5",
+          "table_rec_24_manual_1.4.json::table_0::row_6",
+          "table_rec_24_manual_1.4.json::table_0::row_7",
+          "table_rec_24_manual_1.4.json::table_0::row_9",
+          "table_rec_26_manual_1.4.json::table_0::row_3",
+          "table_rec_26_manual_1.4.json::table_0::row_4",
+          "table_rec_26_manual_1.4.json::table_0::row_5",
+          "table_rec_28_manual_1.4.json::table_0::row_0",
+          "table_rec_28_manual_1.4.json::table_0::row_1",
+          "table_rec_28_manual_1.4.json::table_0::row_2",
+          "table_rec_28_manual_1.4.json::table_0::row_3",
+          "table_rec_29_manual_1.4.json::table_0::row_0",
+          "table_rec_29_manual_1.4.json::table_0::row_1",
+          "table_rec_30_manual_1.4.json::table_0::row_0",
+          "table_rec_30_manual_1.4.json::table_0::row_1",
+          "table_rec_30_manual_1.4.json::table_0::row_2",
+          "table_rec_30_manual_1.4.json::table_0::row_3",
+          "table_rec_31_manual_1.4.json::table_0::row_0",
+          "table_rec_31_manual_1.4.json::table_0::row_1"
+        ]
+      },
+      {
+        "node_id": "input_205697291d49fbc8f694",
+        "mention": "failure of a previous CABG graft",
+        "entity_original": "CABG failure",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_30_manual_1.4.json::table_0::row_1",
+          "table_rec_30_manual_1.4.json::table_0::row_2",
+          "table_rec_30_manual_1.4.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_dfe24d865d9990b9df17",
+        "mention": "obesity",
+        "entity_original": "obese",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Obese",
+            "snomed_id": "414915002"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_19_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_ebc0d3a25177a5391c8b",
+        "mention": "type II diabetes mellitus",
+        "entity_original": "type 2 diabetes mellitus",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Diabetes mellitus type 2",
+            "snomed_id": "44054006"
+          }
+        ],
+        "logic_operators": [
+          "ABSENT",
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_19_manual_1.4.json::table_0::row_0",
+          "table_rec_19_manual_1.4.json::table_0::row_1",
+          "table_rec_19_manual_1.4.json::table_0::row_2"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_16_manual_1.4.json::table_0::row_0",
+      "table_rec_16_manual_1.4.json::table_0::row_1",
+      "table_rec_16_manual_1.4.json::table_0::row_10",
+      "table_rec_16_manual_1.4.json::table_0::row_11",
+      "table_rec_16_manual_1.4.json::table_0::row_12",
+      "table_rec_16_manual_1.4.json::table_0::row_13",
+      "table_rec_16_manual_1.4.json::table_0::row_2",
+      "table_rec_16_manual_1.4.json::table_0::row_3",
+      "table_rec_16_manual_1.4.json::table_0::row_4",
+      "table_rec_16_manual_1.4.json::table_0::row_5",
+      "table_rec_16_manual_1.4.json::table_0::row_6",
+      "table_rec_16_manual_1.4.json::table_0::row_7",
+      "table_rec_16_manual_1.4.json::table_0::row_8",
+      "table_rec_16_manual_1.4.json::table_0::row_9",
+      "table_rec_18_manual_1.4.json::table_0::row_0",
+      "table_rec_18_manual_1.4.json::table_0::row_1",
+      "table_rec_18_manual_1.4.json::table_0::row_6",
+      "table_rec_19_manual_1.4.json::table_0::row_0",
+      "table_rec_19_manual_1.4.json::table_0::row_1",
+      "table_rec_19_manual_1.4.json::table_0::row_2",
+      "table_rec_20_manual_1.4.json::table_0::row_0",
+      "table_rec_21_manual_1.4.json::table_0::row_0",
+      "table_rec_21_manual_1.4.json::table_0::row_1",
+      "table_rec_23_manual_1.4.json::table_0::row_1",
+      "table_rec_23_manual_1.4.json::table_0::row_10",
+      "table_rec_23_manual_1.4.json::table_0::row_11",
+      "table_rec_23_manual_1.4.json::table_0::row_2",
+      "table_rec_23_manual_1.4.json::table_0::row_3",
+      "table_rec_23_manual_1.4.json::table_0::row_4",
+      "table_rec_23_manual_1.4.json::table_0::row_5",
+      "table_rec_23_manual_1.4.json::table_0::row_6",
+      "table_rec_23_manual_1.4.json::table_0::row_7",
+      "table_rec_23_manual_1.4.json::table_0::row_8",
+      "table_rec_23_manual_1.4.json::table_0::row_9",
+      "table_rec_24_manual_1.4.json::table_0::row_10",
+      "table_rec_24_manual_1.4.json::table_0::row_11",
+      "table_rec_24_manual_1.4.json::table_0::row_12",
+      "table_rec_24_manual_1.4.json::table_0::row_13",
+      "table_rec_24_manual_1.4.json::table_0::row_14",
+      "table_rec_24_manual_1.4.json::table_0::row_5",
+      "table_rec_24_manual_1.4.json::table_0::row_6",
+      "table_rec_24_manual_1.4.json::table_0::row_7",
+      "table_rec_24_manual_1.4.json::table_0::row_9",
+      "table_rec_26_manual_1.4.json::table_0::row_3",
+      "table_rec_26_manual_1.4.json::table_0::row_4",
+      "table_rec_26_manual_1.4.json::table_0::row_5",
+      "table_rec_28_manual_1.4.json::table_0::row_0",
+      "table_rec_28_manual_1.4.json::table_0::row_1",
+      "table_rec_28_manual_1.4.json::table_0::row_2",
+      "table_rec_28_manual_1.4.json::table_0::row_3",
+      "table_rec_29_manual_1.4.json::table_0::row_0",
+      "table_rec_29_manual_1.4.json::table_0::row_1",
+      "table_rec_30_manual_1.4.json::table_0::row_0",
+      "table_rec_30_manual_1.4.json::table_0::row_1",
+      "table_rec_30_manual_1.4.json::table_0::row_2",
+      "table_rec_30_manual_1.4.json::table_0::row_3",
+      "table_rec_31_manual_1.4.json::table_0::row_0",
+      "table_rec_31_manual_1.4.json::table_0::row_1"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_11",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 11,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_12",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 12,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_13",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 13,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_5",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 5,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_7",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 7,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_8",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 8,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_9",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 9,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_18_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_18_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_18_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_18_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_18_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_18_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_19_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_19_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188",
+          "input_ebc0d3a25177a5391c8b"
+        ]
+      },
+      {
+        "row_id": "table_rec_19_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_19_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188",
+          "input_ebc0d3a25177a5391c8b"
+        ]
+      },
+      {
+        "row_id": "table_rec_19_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_19_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188",
+          "input_dfe24d865d9990b9df17",
+          "input_ebc0d3a25177a5391c8b"
+        ]
+      },
+      {
+        "row_id": "table_rec_20_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_20_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_21_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_21_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_21_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_21_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_11",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 11,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_5",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 5,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_7",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 7,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_8",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 8,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_9",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 9,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_11",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 11,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_12",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 12,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_13",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 13,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_14",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 14,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_5",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 5,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_7",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 7,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_9",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 9,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_26_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_26_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_26_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_26_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_26_manual_1.4.json::table_0::row_5",
+        "file": "table_rec_26_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 5,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_28_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_28_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_28_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_28_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_28_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_28_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_28_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_28_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_29_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_29_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_29_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_29_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_30_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_30_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_30_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_30_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_205697291d49fbc8f694",
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_30_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_30_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_205697291d49fbc8f694",
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_30_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_30_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_205697291d49fbc8f694",
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_31_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_31_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      },
+      {
+        "row_id": "table_rec_31_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_31_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_a86fb1f73aa85b3e4188"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "44054006",
+      "preferred_term": "Type 2 diabetes mellitus",
+      "synonym_used": "Type II diabetes mellitus",
+      "canonical_concept_uri": "http://snomed.info/id/44054006",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=44054006",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/44054006",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_ebc0d3a25177a5391c8b",
+      "base_mention": "type 2 diabetes mellitus",
+      "replacement_mention": "type II diabetes mellitus"
+    },
+    "derived_from_case_id": "near_014"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_011",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with a preserved LVEF of 55%, DM, insufficient response to guideline-directed medical therapy and significant three-vessel disease of low-to-intermediate complexity.",
+    "intended_node_ids": [
+      "input_3fdaac319ac4883df3e5",
+      "input_95d02c5292c000019484",
+      "input_540364348160dd890778",
+      "input_3ad181fe4c2d2597ab1d"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_3fdaac319ac4883df3e5",
+        "mention": "a preserved LVEF of 55%",
+        "entity_original": "preserved LVEF",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Left ventricular ejection fraction ",
+            "snomed_id": "250908004"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_23_manual_1.4.json::table_0::row_8",
+          "table_rec_23_manual_1.4.json::table_0::row_9"
+        ]
+      },
+      {
+        "node_id": "input_95d02c5292c000019484",
+        "mention": "DM",
+        "entity_original": "diabetes",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Diabetes mellitus",
+            "snomed_id": "73211009"
+          }
+        ],
+        "logic_operators": [
+          "ABSENT",
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_23_manual_1.4.json::table_0::row_6",
+          "table_rec_23_manual_1.4.json::table_0::row_7",
+          "table_rec_23_manual_1.4.json::table_0::row_8",
+          "table_rec_23_manual_1.4.json::table_0::row_9"
+        ]
+      },
+      {
+        "node_id": "input_540364348160dd890778",
+        "mention": "insufficient response to guideline-directed medical therapy",
+        "entity_original": "insufficient response to guideline-directed medical therapy",
+        "context": "insufficient response to guideline-directed medical therapy",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_23_manual_1.4.json::table_0::row_10",
+          "table_rec_23_manual_1.4.json::table_0::row_11",
+          "table_rec_23_manual_1.4.json::table_0::row_12",
+          "table_rec_23_manual_1.4.json::table_0::row_13",
+          "table_rec_23_manual_1.4.json::table_0::row_6",
+          "table_rec_23_manual_1.4.json::table_0::row_8",
+          "table_rec_23_manual_1.4.json::table_0::row_9"
+        ]
+      },
+      {
+        "node_id": "input_3ad181fe4c2d2597ab1d",
+        "mention": "significant three-vessel disease of low-to-intermediate complexity",
+        "entity_original": "significant three-vessel disease",
+        "context": "significant three-vessel disease of low-to-intermediate anatomic complexity in whom PCI can provide similar completeness of revascularization to that of CABG",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_23_manual_1.4.json::table_0::row_9"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_23_manual_1.4.json::table_0::row_10",
+      "table_rec_23_manual_1.4.json::table_0::row_11",
+      "table_rec_23_manual_1.4.json::table_0::row_12",
+      "table_rec_23_manual_1.4.json::table_0::row_13",
+      "table_rec_23_manual_1.4.json::table_0::row_6",
+      "table_rec_23_manual_1.4.json::table_0::row_7",
+      "table_rec_23_manual_1.4.json::table_0::row_8",
+      "table_rec_23_manual_1.4.json::table_0::row_9"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_540364348160dd890778"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_11",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 11,
+        "matched_node_ids": [
+          "input_540364348160dd890778"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_12",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 12,
+        "matched_node_ids": [
+          "input_540364348160dd890778"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_13",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 13,
+        "matched_node_ids": [
+          "input_540364348160dd890778"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_540364348160dd890778",
+          "input_95d02c5292c000019484"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_7",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 7,
+        "matched_node_ids": [
+          "input_95d02c5292c000019484"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_8",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 8,
+        "matched_node_ids": [
+          "input_3fdaac319ac4883df3e5",
+          "input_540364348160dd890778",
+          "input_95d02c5292c000019484"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_9",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 9,
+        "matched_node_ids": [
+          "input_3ad181fe4c2d2597ab1d",
+          "input_3fdaac319ac4883df3e5",
+          "input_540364348160dd890778",
+          "input_95d02c5292c000019484"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "73211009",
+      "preferred_term": "Diabetes mellitus",
+      "synonym_used": "DM",
+      "canonical_concept_uri": "http://snomed.info/id/73211009",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=73211009",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/73211009",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_95d02c5292c000019484",
+      "base_mention": "diabetes",
+      "replacement_mention": "DM"
+    },
+    "derived_from_case_id": "near_054"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_012",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with cardiac angina, angina not controlled by initial beta-blocker or CCB monotherapy, no contraindication to combined beta-blocker and DHP-CCB therapy and suspected vasospastic angina.",
+    "intended_node_ids": [
+      "input_133b7c7384d1ea058225",
+      "input_f5d1e0a16db123031076",
+      "input_26e77f9b7685423eaf0a",
+      "input_50a263a404368c9322a5"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_133b7c7384d1ea058225",
+        "mention": "cardiac angina",
+        "entity_original": "angina",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Angina",
+            "snomed_id": "194828000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_16_manual_1.4.json::table_0::row_0",
+          "table_rec_16_manual_1.4.json::table_0::row_1",
+          "table_rec_16_manual_1.4.json::table_0::row_10",
+          "table_rec_16_manual_1.4.json::table_0::row_11",
+          "table_rec_16_manual_1.4.json::table_0::row_13",
+          "table_rec_16_manual_1.4.json::table_0::row_2",
+          "table_rec_16_manual_1.4.json::table_0::row_3",
+          "table_rec_16_manual_1.4.json::table_0::row_4",
+          "table_rec_16_manual_1.4.json::table_0::row_5",
+          "table_rec_16_manual_1.4.json::table_0::row_6",
+          "table_rec_16_manual_1.4.json::table_0::row_7",
+          "table_rec_16_manual_1.4.json::table_0::row_8",
+          "table_rec_16_manual_1.4.json::table_0::row_9"
+        ]
+      },
+      {
+        "node_id": "input_f5d1e0a16db123031076",
+        "mention": "angina not controlled by initial beta-blocker or CCB monotherapy",
+        "entity_original": "If anginal symptoms are not successfully controlled",
+        "context": "If anginal symptoms are not successfully controlled by initial treatment with a beta-blocker or a CCB alone",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_16_manual_1.4.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_26e77f9b7685423eaf0a",
+        "mention": "no contraindication to combined beta-blocker and DHP-CCB therapy",
+        "entity_original": "contraindication of beta-blocker + DHP-CCB",
+        "context": "no contraindication of beta-blocker + DHP-CCB",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "ABSENT"
+        ],
+        "source_row_ids": [
+          "table_rec_16_manual_1.4.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_50a263a404368c9322a5",
+        "mention": "suspected vasospastic angina",
+        "entity_original": "suspected vasospastic angina",
+        "context": "individuals with suspected vasospastic angina",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_4",
+          "table_rec_7_manual_1.4.json::table_0::row_1"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_16_manual_1.4.json::table_0::row_0",
+      "table_rec_16_manual_1.4.json::table_0::row_1",
+      "table_rec_16_manual_1.4.json::table_0::row_10",
+      "table_rec_16_manual_1.4.json::table_0::row_11",
+      "table_rec_16_manual_1.4.json::table_0::row_13",
+      "table_rec_16_manual_1.4.json::table_0::row_2",
+      "table_rec_16_manual_1.4.json::table_0::row_3",
+      "table_rec_16_manual_1.4.json::table_0::row_4",
+      "table_rec_16_manual_1.4.json::table_0::row_5",
+      "table_rec_16_manual_1.4.json::table_0::row_6",
+      "table_rec_16_manual_1.4.json::table_0::row_7",
+      "table_rec_16_manual_1.4.json::table_0::row_8",
+      "table_rec_16_manual_1.4.json::table_0::row_9",
+      "table_rec_25_manual_1.4.json::table_0::row_4",
+      "table_rec_7_manual_1.4.json::table_0::row_1"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_11",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 11,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_13",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 13,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225",
+          "input_26e77f9b7685423eaf0a",
+          "input_f5d1e0a16db123031076"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_5",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 5,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_7",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 7,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_8",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 8,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_16_manual_1.4.json::table_0::row_9",
+        "file": "table_rec_16_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 9,
+        "matched_node_ids": [
+          "input_133b7c7384d1ea058225"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_50a263a404368c9322a5"
+        ]
+      },
+      {
+        "row_id": "table_rec_7_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_7_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_50a263a404368c9322a5"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "194828000",
+      "preferred_term": "Angina pectoris",
+      "synonym_used": "Cardiac angina",
+      "canonical_concept_uri": "http://snomed.info/id/194828000",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=194828000",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/194828000",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_133b7c7384d1ea058225",
+      "base_mention": "angina",
+      "replacement_mention": "cardiac angina"
+    },
+    "derived_from_case_id": "near_013"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_013",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with frequent anginal syndrome symptoms, persistent angina or ischaemia symptoms and suspected chronic coronary syndrome.",
+    "intended_node_ids": [
+      "input_833f9371ce973fce7b19",
+      "input_3ee8db337f48d94162bb",
+      "input_cc20ae0da24c8e9b7191"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_833f9371ce973fce7b19",
+        "mention": "frequent anginal syndrome symptoms",
+        "entity_original": "angina",
+        "context": "frequent angina symptoms",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Angina",
+            "snomed_id": "194828000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_4"
+        ]
+      },
+      {
+        "node_id": "input_3ee8db337f48d94162bb",
+        "mention": "persistent angina or ischaemia symptoms",
+        "entity_original": "persistently symptomatic",
+        "context": "persistently symptomatic(angina/ischaemia",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_1"
+        ]
+      },
+      {
+        "node_id": "input_cc20ae0da24c8e9b7191",
+        "mention": "suspected chronic coronary syndrome",
+        "entity_original": "individuals with suspected chronic coronary syndrome",
+        "context": "individuals with suspected chronic coronary syndrome",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_13_manual_1.4.json::table_0::row_0"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_13_manual_1.4.json::table_0::row_0",
+      "table_rec_25_manual_1.4.json::table_0::row_1",
+      "table_rec_25_manual_1.4.json::table_0::row_4"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_cc20ae0da24c8e9b7191"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_3ee8db337f48d94162bb"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_833f9371ce973fce7b19"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "194828000",
+      "preferred_term": "Angina pectoris",
+      "synonym_used": "Anginal syndrome",
+      "canonical_concept_uri": "http://snomed.info/id/194828000",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=194828000",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/194828000",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_833f9371ce973fce7b19",
+      "base_mention": "frequent angina",
+      "replacement_mention": "frequent anginal syndrome symptoms"
+    },
+    "derived_from_case_id": "near_005"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_014",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with stenocardia, endothelial dysfunction, overlapping coronary vasomotor endotypes and worsening symptoms.",
+    "intended_node_ids": [
+      "input_90e908eb2d1f46b346a5",
+      "input_3e9e196a22d7607d3022",
+      "input_3cdb97cd3eca133813ba",
+      "input_dd2d1ffb40ae4a30115b"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_90e908eb2d1f46b346a5",
+        "mention": "stenocardia",
+        "entity_original": "angina",
+        "context": "patients with angina/ischaemia",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Angina",
+            "snomed_id": "194828000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_10",
+          "table_rec_25_manual_1.4.json::table_0::row_2",
+          "table_rec_25_manual_1.4.json::table_0::row_6"
+        ]
+      },
+      {
+        "node_id": "input_3e9e196a22d7607d3022",
+        "mention": "endothelial dysfunction",
+        "entity_original": "endothelial dysfunction",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Cardiac syndrome X ",
+            "snomed_id": "233845001"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_6"
+        ]
+      },
+      {
+        "node_id": "input_3cdb97cd3eca133813ba",
+        "mention": "overlapping coronary vasomotor endotypes",
+        "entity_original": "overlapping endotypes",
+        "context": "patients with evidence of overlapping endotypes",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_10"
+        ]
+      },
+      {
+        "node_id": "input_dd2d1ffb40ae4a30115b",
+        "mention": "worsening symptoms",
+        "entity_original": "worsening symptoms",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_29_manual_1.4.json::table_0::row_2"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_25_manual_1.4.json::table_0::row_10",
+      "table_rec_25_manual_1.4.json::table_0::row_2",
+      "table_rec_25_manual_1.4.json::table_0::row_6",
+      "table_rec_29_manual_1.4.json::table_0::row_2"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_10",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 10,
+        "matched_node_ids": [
+          "input_3cdb97cd3eca133813ba",
+          "input_90e908eb2d1f46b346a5"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_90e908eb2d1f46b346a5"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_3e9e196a22d7607d3022",
+          "input_90e908eb2d1f46b346a5"
+        ]
+      },
+      {
+        "row_id": "table_rec_29_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_29_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_dd2d1ffb40ae4a30115b"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "194828000",
+      "preferred_term": "Angina pectoris",
+      "synonym_used": "Stenocardia",
+      "canonical_concept_uri": "http://snomed.info/id/194828000",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=194828000",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/194828000",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_90e908eb2d1f46b346a5",
+      "base_mention": "angina with myocardial ischaemia",
+      "replacement_mention": "stenocardia"
+    },
+    "derived_from_case_id": "near_069"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_015",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with angina of effort during light activity, high cardiovascular event risk, severe symptoms despite guideline-directed therapy and significant double-vessel disease not involving the proximal LAD.",
+    "intended_node_ids": [
+      "input_d8790a0001d4de9c3781",
+      "input_1d32d76675af980b3b05",
+      "input_24ec61564b3b700cad44",
+      "input_d12108a6ebc2bb41a04e"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_d8790a0001d4de9c3781",
+        "mention": "angina of effort during light activity",
+        "entity_original": "angina at a low level of exercise",
+        "context": "angina at a low level of exercise",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Exercise-induced angina",
+            "snomed_id": "300995000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_11_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_1d32d76675af980b3b05",
+        "mention": "high cardiovascular event risk",
+        "entity_original": "high event risk",
+        "context": "high event risk",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "At increased risk for cardiovascular event",
+            "snomed_id": "395112001"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_11_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_24ec61564b3b700cad44",
+        "mention": "severe symptoms despite guideline-directed therapy",
+        "entity_original": "severe symptoms refractory to guideline-directed medical therapy",
+        "context": "severe symptoms refractory to guideline-directed medical therapy",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_11_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_d12108a6ebc2bb41a04e",
+        "mention": "significant double-vessel disease not involving the proximal LAD",
+        "entity_original": "significant double-vessel disease not involving the proximal LAD",
+        "context": "significant single- or double-vessel disease not involving the proximal LAD",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_23_manual_1.4.json::table_0::row_12"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_11_manual_1.4.json::table_0::row_2",
+      "table_rec_23_manual_1.4.json::table_0::row_12"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_11_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_11_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_1d32d76675af980b3b05",
+          "input_24ec61564b3b700cad44",
+          "input_d8790a0001d4de9c3781"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_12",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 12,
+        "matched_node_ids": [
+          "input_d12108a6ebc2bb41a04e"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "300995000",
+      "preferred_term": "Exercise-induced angina",
+      "synonym_used": "Angina of effort",
+      "canonical_concept_uri": "http://snomed.info/id/300995000",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=300995000",
+      "verification_url": "https://www.ncbi.nlm.nih.gov/medgen/661193",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_d8790a0001d4de9c3781",
+      "base_mention": "angina during light exercise",
+      "replacement_mention": "angina of effort during light activity"
+    },
+    "derived_from_case_id": "near_002"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_016",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with exertional angina during light activity, high cardiovascular event risk, severe symptoms despite guideline-directed therapy and significant double-vessel disease not involving the proximal LAD.",
+    "intended_node_ids": [
+      "input_d8790a0001d4de9c3781",
+      "input_1d32d76675af980b3b05",
+      "input_24ec61564b3b700cad44",
+      "input_d12108a6ebc2bb41a04e"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_d8790a0001d4de9c3781",
+        "mention": "exertional angina during light activity",
+        "entity_original": "angina at a low level of exercise",
+        "context": "angina at a low level of exercise",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Exercise-induced angina",
+            "snomed_id": "300995000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_11_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_1d32d76675af980b3b05",
+        "mention": "high cardiovascular event risk",
+        "entity_original": "high event risk",
+        "context": "high event risk",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "At increased risk for cardiovascular event",
+            "snomed_id": "395112001"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_11_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_24ec61564b3b700cad44",
+        "mention": "severe symptoms despite guideline-directed therapy",
+        "entity_original": "severe symptoms refractory to guideline-directed medical therapy",
+        "context": "severe symptoms refractory to guideline-directed medical therapy",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_11_manual_1.4.json::table_0::row_2"
+        ]
+      },
+      {
+        "node_id": "input_d12108a6ebc2bb41a04e",
+        "mention": "significant double-vessel disease not involving the proximal LAD",
+        "entity_original": "significant double-vessel disease not involving the proximal LAD",
+        "context": "significant single- or double-vessel disease not involving the proximal LAD",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_23_manual_1.4.json::table_0::row_12"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_11_manual_1.4.json::table_0::row_2",
+      "table_rec_23_manual_1.4.json::table_0::row_12"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_11_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_11_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_1d32d76675af980b3b05",
+          "input_24ec61564b3b700cad44",
+          "input_d8790a0001d4de9c3781"
+        ]
+      },
+      {
+        "row_id": "table_rec_23_manual_1.4.json::table_0::row_12",
+        "file": "table_rec_23_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 12,
+        "matched_node_ids": [
+          "input_d12108a6ebc2bb41a04e"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "300995000",
+      "preferred_term": "Exercise-induced angina",
+      "synonym_used": "Exertional angina",
+      "canonical_concept_uri": "http://snomed.info/id/300995000",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=300995000",
+      "verification_url": "https://www.ncbi.nlm.nih.gov/medgen/661193",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_d8790a0001d4de9c3781",
+      "base_mention": "angina during light exercise",
+      "replacement_mention": "exertional angina during light activity"
+    },
+    "derived_from_case_id": "near_002"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_017",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with chest pain during an episode suggestive of myocardial ischaemia, recurrent myocardial ischaemia with impaired quality of life, suspected INOCA and isolated variant angina.",
+    "intended_node_ids": [
+      "input_1461e26062c41f8d36fe",
+      "input_f6092c0d82c07b1f5dfc",
+      "input_8074cbf01a76d2b3ea55",
+      "input_483b9c3780af0ca2f06f"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_1461e26062c41f8d36fe",
+        "mention": "chest pain during an episode suggestive of myocardial ischaemia",
+        "entity_original": "chest pain",
+        "context": "(unless an obvious non-cardiac cause is identified), particularly during, or immediately after, an episode suggestive of myocardial ischaemia",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Chest pain",
+            "snomed_id": "29857009"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_1_manual_1.4.json::table_0::row_3"
+        ]
+      },
+      {
+        "node_id": "input_f6092c0d82c07b1f5dfc",
+        "mention": "recurrent myocardial ischaemia with impaired quality of life",
+        "entity_original": "recurrent or refractory ischaemia",
+        "context": "recurrent or refractory angina/ischaemia leading to poor quality of life",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_31_manual_1.4.json::table_0::row_0"
+        ]
+      },
+      {
+        "node_id": "input_8074cbf01a76d2b3ea55",
+        "mention": "suspected INOCA",
+        "entity_original": "ANOCA/INOCA",
+        "context": "documented or suspected ANOCA/INOCA",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Angina pectoris with nonobstructive coronary arteries",
+            "snomed_id": "1381430004"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_1"
+        ]
+      },
+      {
+        "node_id": "input_483b9c3780af0ca2f06f",
+        "mention": "isolated variant angina",
+        "entity_original": "vasospastic angina",
+        "context": "isolated vasospastic angina",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Prinzmetal angina",
+            "snomed_id": "87343002"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_8",
+          "table_rec_25_manual_1.4.json::table_0::row_9"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_1_manual_1.4.json::table_0::row_3",
+      "table_rec_25_manual_1.4.json::table_0::row_1",
+      "table_rec_25_manual_1.4.json::table_0::row_8",
+      "table_rec_25_manual_1.4.json::table_0::row_9",
+      "table_rec_31_manual_1.4.json::table_0::row_0"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_1_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_1_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_1461e26062c41f8d36fe"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_8074cbf01a76d2b3ea55"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_8",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 8,
+        "matched_node_ids": [
+          "input_483b9c3780af0ca2f06f"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_9",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 9,
+        "matched_node_ids": [
+          "input_483b9c3780af0ca2f06f"
+        ]
+      },
+      {
+        "row_id": "table_rec_31_manual_1.4.json::table_0::row_0",
+        "file": "table_rec_31_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 0,
+        "matched_node_ids": [
+          "input_f6092c0d82c07b1f5dfc"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "87343002",
+      "preferred_term": "Prinzmetal angina",
+      "synonym_used": "Variant angina",
+      "canonical_concept_uri": "http://snomed.info/id/87343002",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=87343002",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/87343002",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_483b9c3780af0ca2f06f",
+      "base_mention": "vasospastic angina",
+      "replacement_mention": "isolated variant angina"
+    },
+    "derived_from_case_id": "near_039"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_018",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with dizziness on exertion, breathlessness on exertion and heart failure with reduced ejection fraction.",
+    "intended_node_ids": [
+      "input_c47f1f00184db4615079",
+      "input_71e5ae1088f7d1a2954d",
+      "input_5460024a81a4619e9f18"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_c47f1f00184db4615079",
+        "mention": "dizziness on exertion",
+        "entity_original": "dizziness on exertion",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Exertional dizziness",
+            "snomed_id": "103018003"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_1_manual_1.4.json::table_0::row_1"
+        ]
+      },
+      {
+        "node_id": "input_71e5ae1088f7d1a2954d",
+        "mention": "breathlessness on exertion",
+        "entity_original": "dyspnoea on exertion",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Dyspnea on exertion",
+            "snomed_id": "60845006"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_1_manual_1.4.json::table_0::row_1"
+        ]
+      },
+      {
+        "node_id": "input_5460024a81a4619e9f18",
+        "mention": "heart failure with reduced ejection fraction",
+        "entity_original": "HFrEF",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+            "snomed_id": "703272007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_6",
+          "table_rec_24_manual_1.4.json::table_0::row_8",
+          "table_rec_24_manual_1.4.json::table_0::row_9"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_1_manual_1.4.json::table_0::row_1",
+      "table_rec_24_manual_1.4.json::table_0::row_6",
+      "table_rec_24_manual_1.4.json::table_0::row_8",
+      "table_rec_24_manual_1.4.json::table_0::row_9"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_1_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_1_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_71e5ae1088f7d1a2954d",
+          "input_c47f1f00184db4615079"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_5460024a81a4619e9f18"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_8",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 8,
+        "matched_node_ids": [
+          "input_5460024a81a4619e9f18"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_9",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 9,
+        "matched_node_ids": [
+          "input_5460024a81a4619e9f18"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "60845006",
+      "preferred_term": "Dyspnea on exertion",
+      "synonym_used": "Breathlessness on exertion",
+      "canonical_concept_uri": "http://snomed.info/id/60845006",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=60845006",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/60845006",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_71e5ae1088f7d1a2954d",
+      "base_mention": "dyspnoea on exertion",
+      "replacement_mention": "breathlessness on exertion"
+    },
+    "derived_from_case_id": "near_038"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_019",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with ANOCA, current symptoms and heart failure with preserved ejection fraction.",
+    "intended_node_ids": [
+      "input_469da2dd74cc40e6266b",
+      "input_206bbd2673db2c65fadc",
+      "input_bcc91a4863046b079361"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_469da2dd74cc40e6266b",
+        "mention": "ANOCA",
+        "entity_original": "ANOCA/INOCA",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Angina pectoris with nonobstructive coronary arteries",
+            "snomed_id": "1381430004"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_25_manual_1.4.json::table_0::row_5",
+          "table_rec_25_manual_1.4.json::table_0::row_6",
+          "table_rec_25_manual_1.4.json::table_0::row_7"
+        ]
+      },
+      {
+        "node_id": "input_206bbd2673db2c65fadc",
+        "mention": "current symptoms",
+        "entity_original": "symptomatic",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Symptomatic",
+            "snomed_id": "264931009"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_13_manual_1.4.json::table_0::row_1",
+          "table_rec_25_manual_1.4.json::table_0::row_5"
+        ]
+      },
+      {
+        "node_id": "input_bcc91a4863046b079361",
+        "mention": "heart failure with preserved ejection fraction",
+        "entity_original": "HFpEF",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Heart failure with normal ejection fraction",
+            "snomed_id": "446221000"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_24_manual_1.4.json::table_0::row_3"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_13_manual_1.4.json::table_0::row_1",
+      "table_rec_24_manual_1.4.json::table_0::row_3",
+      "table_rec_25_manual_1.4.json::table_0::row_5",
+      "table_rec_25_manual_1.4.json::table_0::row_6",
+      "table_rec_25_manual_1.4.json::table_0::row_7"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_206bbd2673db2c65fadc"
+        ]
+      },
+      {
+        "row_id": "table_rec_24_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_24_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_bcc91a4863046b079361"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_5",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 5,
+        "matched_node_ids": [
+          "input_206bbd2673db2c65fadc",
+          "input_469da2dd74cc40e6266b"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_469da2dd74cc40e6266b"
+        ]
+      },
+      {
+        "row_id": "table_rec_25_manual_1.4.json::table_0::row_7",
+        "file": "table_rec_25_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 7,
+        "matched_node_ids": [
+          "input_469da2dd74cc40e6266b"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "446221000",
+      "preferred_term": "Heart failure with normal ejection fraction",
+      "synonym_used": "Heart failure with preserved ejection fraction",
+      "canonical_concept_uri": "http://snomed.info/id/446221000",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=446221000",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/446221000",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_bcc91a4863046b079361",
+      "base_mention": "heart failure with normal ejection fraction",
+      "replacement_mention": "heart failure with preserved ejection fraction"
+    },
+    "derived_from_case_id": "near_006"
+  },
+  {
+    "schema_version": "trigger-gold-standard-v2",
+    "case_id": "snomed_syn_020",
+    "lexical_tier": "snomed_ct_synonym",
+    "patient_case": "Patient with LBBB, suspected chronic coronary syndrome, a pre-test likelihood of obstructive CAD of 40% and current digitalis treatment.",
+    "intended_node_ids": [
+      "input_9f720232c0ac73e59292",
+      "input_e07a90eaebbe1a5ddb98",
+      "input_8d5a55bb696f49cfbe77",
+      "input_0b845e74f1fc6ffb3879"
+    ],
+    "intended_nodes": [
+      {
+        "node_id": "input_9f720232c0ac73e59292",
+        "mention": "LBBB",
+        "entity_original": "left bundle branch block",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Left bundle branch block",
+            "snomed_id": "63467002"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_5_manual_1.4.json::table_0::row_4"
+        ]
+      },
+      {
+        "node_id": "input_e07a90eaebbe1a5ddb98",
+        "mention": "suspected chronic coronary syndrome",
+        "entity_original": "suspected chronic coronary syndrome",
+        "context": "",
+        "role": "ClinicalCondition",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_13_manual_1.4.json::table_0::row_1",
+          "table_rec_13_manual_1.4.json::table_0::row_2",
+          "table_rec_13_manual_1.4.json::table_0::row_3",
+          "table_rec_13_manual_1.4.json::table_0::row_4",
+          "table_rec_13_manual_1.4.json::table_0::row_6",
+          "table_rec_5_manual_1.4.json::table_0::row_3",
+          "table_rec_5_manual_1.4.json::table_0::row_4",
+          "table_rec_5_manual_1.4.json::table_0::row_5"
+        ]
+      },
+      {
+        "node_id": "input_8d5a55bb696f49cfbe77",
+        "mention": "a pre-test likelihood of obstructive CAD of 40%",
+        "entity_original": "pre-test likelihood of obstructive CAD",
+        "context": "with a low or moderate ( > 5%-50%) pre-test likelihood of obstructive CAD",
+        "role": "ClinicalParameter",
+        "annotation_status": "NEEDS_ANNOTATION",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "",
+            "snomed_id": ""
+          }
+        ],
+        "logic_operators": [
+          ">",
+          "≤"
+        ],
+        "source_row_ids": [
+          "table_rec_5_manual_1.4.json::table_0::row_5"
+        ]
+      },
+      {
+        "node_id": "input_0b845e74f1fc6ffb3879",
+        "mention": "current digitalis treatment",
+        "entity_original": "digitalis",
+        "context": "individuals who are being treated with digitalis",
+        "role": "Medication",
+        "annotation_status": "ANNOTATED_FROM_SOURCE",
+        "entity_standardized_list": [
+          {
+            "entity_standardized_candidate": "Digitalis glycoside",
+            "snomed_id": "406759007"
+          }
+        ],
+        "logic_operators": [
+          "PRESENT"
+        ],
+        "source_row_ids": [
+          "table_rec_5_manual_1.4.json::table_0::row_4"
+        ]
+      }
+    ],
+    "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled.",
+    "expected_triggered_row_ids": [
+      "table_rec_13_manual_1.4.json::table_0::row_1",
+      "table_rec_13_manual_1.4.json::table_0::row_2",
+      "table_rec_13_manual_1.4.json::table_0::row_3",
+      "table_rec_13_manual_1.4.json::table_0::row_4",
+      "table_rec_13_manual_1.4.json::table_0::row_6",
+      "table_rec_5_manual_1.4.json::table_0::row_3",
+      "table_rec_5_manual_1.4.json::table_0::row_4",
+      "table_rec_5_manual_1.4.json::table_0::row_5"
+    ],
+    "triggered_rows": [
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_1",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 1,
+        "matched_node_ids": [
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      },
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_2",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 2,
+        "matched_node_ids": [
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      },
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      },
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      },
+      {
+        "row_id": "table_rec_13_manual_1.4.json::table_0::row_6",
+        "file": "table_rec_13_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 6,
+        "matched_node_ids": [
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      },
+      {
+        "row_id": "table_rec_5_manual_1.4.json::table_0::row_3",
+        "file": "table_rec_5_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 3,
+        "matched_node_ids": [
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      },
+      {
+        "row_id": "table_rec_5_manual_1.4.json::table_0::row_4",
+        "file": "table_rec_5_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 4,
+        "matched_node_ids": [
+          "input_0b845e74f1fc6ffb3879",
+          "input_9f720232c0ac73e59292",
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      },
+      {
+        "row_id": "table_rec_5_manual_1.4.json::table_0::row_5",
+        "file": "table_rec_5_manual_1.4.json",
+        "table_id": 0,
+        "row_index_zero_based": 5,
+        "matched_node_ids": [
+          "input_8d5a55bb696f49cfbe77",
+          "input_e07a90eaebbe1a5ddb98"
+        ]
+      }
+    ],
+    "expected_fully_satisfied_row_ids": null,
+    "lexical_provenance": {
+      "mode": "snomed_ct_synonym",
+      "terminology_source": "SNOMED CT US Edition",
+      "terminology_view": "NCBO BioPortal (or NCBI MedGen where noted)",
+      "concept_id": "63467002",
+      "preferred_term": "Left bundle branch block",
+      "synonym_used": "LBBB",
+      "canonical_concept_uri": "http://snomed.info/id/63467002",
+      "snomed_browser_url": "https://browser.ihtsdotools.org/?perspective=full&conceptId1=63467002",
+      "verification_url": "https://purl.bioontology.org/ontology/SNOMEDCT/63467002",
+      "verified_on": "2026-08-01",
+      "target_node_id": "input_9f720232c0ac73e59292",
+      "base_mention": "left bundle branch block",
+      "replacement_mention": "LBBB"
+    },
+    "derived_from_case_id": "near_008"
+  }
+]

@@ -1,0 +1,252 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_43.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_43.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 15 -Recommendations for cardiovascular risk reduction, lifestyle changes, and exercise interventions in patients with established chronic coronary syndrome (see also Evidence Table 15)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "An informed discussion on CVD risk and treatment benefits tailored to individual patient needs is recommended.16 I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "patients with established chronic coronary syndrome ",
+          "recommendation": "An informed discussion on CVD risk and treatment benefits tailored to individual patient needs is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "An informed discussion on CVD risk and treatment benefits tailored to individual patient needs ",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 15 -Recommendations for cardiovascular risk reduction, lifestyle changes, and exercise interventions in patients with established chronic coronary syndrome (see also Evidence Table 15)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Multidisciplinary behavioural approaches to help patients achieve healthy lifestyles, in addition to appropriate pharmacological management, are recommended.484,498–503 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "patients with established chronic coronary syndrome ",
+          "recommendation": "Multidisciplinary behavioural approaches to help patients achieve healthy lifestyles, in addition to appropriate pharmacological management, are recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Multidisciplinary behavioural approaches to help patients achieve healthy lifestyles",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "appropriate pharmacological management ",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 15 -Recommendations for cardiovascular risk reduction, lifestyle changes, and exercise interventions in patients with established chronic coronary syndrome (see also Evidence Table 15)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "A multidisciplinary exercise-based programme to improve cardiovascular risk profile and reduce cardiovascular mortality is recommended.480–482 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "patients with established chronic coronary syndrome ",
+          "recommendation": "A multidisciplinary exercise-based programme to improve cardiovascular risk profile and reduce cardiovascular mortality is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "A multidisciplinary exercise-based programme",
+              "entity_standardized_list": [],
+              "context": "to improve cardiovascular risk profile and reduce cardiovascular mortality",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 15 -Recommendations for cardiovascular risk reduction, lifestyle changes, and exercise interventions in patients with established chronic coronary syndrome (see also Evidence Table 15)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Aerobic physical activity of at least 150–300 min per week of moderate intensity or 75–150 min per week of vigorous intensity and reduction in sedentary time are recommended.16,473,478,479 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "patients with established chronic coronary syndrome ",
+          "recommendation": "Aerobic physical activity of at least 150–300 min per week of moderate intensity or 75–150 min per week of vigorous intensity and reduction in sedentary time are recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Aerobic physical activity ",
+              "entity_standardized_list": [],
+              "context": "Aerobic physical activity of at least 150–300 min per week of moderate intensity or 75–150 min per week of vigorous intensity is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "reduction in sedentary time",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 15 -Recommendations for cardiovascular risk reduction, lifestyle changes, and exercise interventions in patients with established chronic coronary syndrome (see also Evidence Table 15)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Home-based cardiac rehabilitation and mobile health interventions should be considered to increase patients’ long-term adherence to healthy behaviours, and to reduce hospitalizations or cardiac events.480,493,494 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "patients with established chronic coronary syndrome ",
+          "recommendation": "Home-based cardiac rehabilitation and mobile health interventions should be considered to increase patients’ long-term adherence to healthy behaviours, and to reduce hospitalizations or cardiac events",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Home-based cardiac rehabilitation and mobile health interventions",
+              "entity_standardized_list": [],
+              "context": "Home-based cardiac rehabilitation and mobile health interventions should be considered to increase patients’ long-term adherence to healthy behaviours, and to reduce hospitalizations or cardiac events",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

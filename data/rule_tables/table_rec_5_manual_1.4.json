@@ -1,0 +1,366 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_27.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_27.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendations for exercise ECG in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 5)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Exercise ECG is recommended in selected patients for the assessment of exercise tolerance, symptoms, arrhythmias, BP response, and event risk.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "In selected individuals with suspected chronic coronary syndrome When this information will have an impact on diagnostic strategy or management",
+          "recommendation": "Exercise ECG is recommended for the assessment of exercise tolerance, symptoms, arrhythmias, BP response, and event risk",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "selected individuals with suspected chronic coronary syndrome When this information will have an impact on diagnostic strategy or management",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Exercise ECG",
+              "entity_standardized_list": [],
+              "context": "Exercise ECG is recommended for the assessment of exercise tolerance, symptoms, arrhythmias, BP response, and event risk",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for exercise ECG in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 5)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Exercise ECG may be considered as an alternative test to rule in and rule out CAD when non-invasive imaging tests are unavailable. 148,166,188,190,191",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "In individuals with suspected chronic coronary syndrome when non-invasive imaging tests are unavailable",
+          "recommendation": "Exercise ECG may be considered as an alternative test to rule in and rule out CAD",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "selected individuals with suspected chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "non-invasive imaging tests are unavailable",
+              "entity_standardized_list": [],
+              "context": "when non-invasive imaging tests are unavailable",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Exercise ECG",
+              "entity_standardized_list": [],
+              "context": "Exercise ECG may be considered as an alternative test to rule in and rule out CAD",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for exercise ECG in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 5)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "An exercise ECG may be considered to refine risk stratification and treatment. 188",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "In individuals with suspected chronic coronary syndrome ",
+          "recommendation": "An exercise ECG may be considered to refine risk stratification and treatment",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "individuals with suspected chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Exercise ECG",
+              "entity_standardized_list": [],
+              "context": "exercise ECG may be considered to refine risk stratification and treatment",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for exercise ECG in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 5)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with a low ( > 5%-15%) pre-test likelihood of obstructive CAD, an exercise ECG may be considered to identify patients in whom further testing can be deferred. 144",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "In individuals with suspected chronic coronary syndrome with a low ( > 5%-15%) pre-test likelihood of obstructive CAD",
+          "recommendation": "an exercise ECG may be considered to identify patients in whom further testing can be deferred",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low ( >5%-15%)  pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "5",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low ( >5%-15%)  pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "15",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Exercise ECG",
+              "entity_standardized_list": [],
+              "context": "an exercise ECG may be considered to identify patients in whom further testing can be deferred",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for exercise ECG in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 5)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Exercise ECG is not recommended for diagnostic purposes in patients with ≥ 0.1 mV ST-segment depression on resting ECG, left bundle branch block or who are being treated with digitalis.",
+          "Class a": "III",
+          "Level b": "C",
+          "input": "In individuals with suspected chronic coronary syndrome with ≥ 0.1 mV ST-segment depression on resting ECG, left bundle branch block or who are being treated with digitalis",
+          "recommendation": "Exercise ECG is not recommended for diagnostic purposes",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ST-segment depression on resting ECG",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "ST segment depression",
+                  "snomed_id": "26141007"
+                }
+              ],
+              "context": " ≥ 0.1 mV ST-segment depression on resting ECG",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "0.1",
+                "unit": "mV",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "left bundle branch block",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left bundle branch block",
+                  "snomed_id": "63467002"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "digitalis",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Digitalis glycoside",
+                  "snomed_id": "406759007"
+                }
+              ],
+              "context": "individuals who are being treated with digitalis",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Exercise ECG",
+              "entity_standardized_list": [],
+              "context": "Exercise ECG is not recommended for diagnostic purposes",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "III",
+                "level": "C",
+                "direction": "NEGATIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for exercise ECG in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 5)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with a low or moderate ( > 5%-50%) pre-test likelihood of obstructive CAD, an exercise ECG is not recommended to rule out CAD if CCTA or functional imaging tests are available. 148",
+          "Class a": "III",
+          "Level b": "C",
+          "input": "In individuals with suspected chronic coronary syndrome with a low or moderate ( > 5%-50%) pre-test likelihood of obstructive CAD if CCTA or functional imaging tests are available",
+          "recommendation": "an exercise ECG is not recommended to rule out CAD ",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "with a low or moderate ( > 5%-50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "5",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "with a low or moderate ( > 5%-50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "50",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "CCTA is available",
+              "entity_standardized_list": [],
+              "context": "CCTA or functional imaging tests are available",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "functional imaging tests are available",
+              "entity_standardized_list": [],
+              "context": "CCTA or functional imaging tests are available",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Exercise ECG",
+              "entity_standardized_list": [],
+              "context": "an exercise ECG is not recommended to rule out CAD",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "III",
+                "level": "C",
+                "direction": "NEGATIVE"
+              }
+            }
+          ]
+        }
+      ],
+      "num_rows": 6,
+      "num_cols": 3
+    }
+  ]
+}

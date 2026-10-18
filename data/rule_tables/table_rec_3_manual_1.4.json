@@ -1,0 +1,307 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_24.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_24.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "It is recommended to estimate the pre-test likelihood of obstructive epicardial CAD using the Risk Factor-weighted Clinical Likelihood model.139,140,142,143,161,162 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome",
+          "recommendation": "It is recommended to estimate the pre-test likelihood of obstructive epicardial CAD using the Risk Factor-weighted Clinical Likelihood model",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "estimate the pre-test likelihood of obstructive epicardial CAD using the Risk Factor-weighted Clinical Likelihood model",
+                  "entity_standardized_list": [],
+                  "context": "It is recommended to estimate the pre-test likelihood of obstructive epicardial CAD using the Risk Factor-weighted Clinical Likelihood model",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "It is recommended to use additional clinical data (e.g. examination of peripheral arteries, resting ECG, resting echocardiography, presence of vascular calcifications on previously performed imaging tests) to adjust the estimate yielded by the Risk Factor-weighted Clinical Likelihood model.163 I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "individuals with suspected chronic coronary syndrome",
+          "recommendation": "It is recommended to use additional clinical data (e.g. examination of peripheral arteries, resting ECG, resting echocardiography, presence of vascular calcifications on previously performed imaging tests) to adjust the estimate yielded by the Risk Factor-weighted Clinical Likelihood model",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "use additional clinical data to adjust the estimate yielded by the Risk Factor-weighted Clinical Likelihood model",
+                  "entity_standardized_list": [],
+                  "context": "It is recommended to use additional clinical data (e.g. examination of peripheral arteries, resting ECG, resting echocardiography, presence of vascular calcifications on previously performed imaging tests) to adjust the estimate yielded by the Risk Factor-weighted Clinical Likelihood model",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with a very low (≤5%) pre-test likelihood of obstructive CAD, deferral of further diagnostic tests should be considered.139,164 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome, with a very low (≤5%) pre-test likelihood of obstructive CAD",
+          "recommendation": "deferral of further diagnostic tests should be considered",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "very low (≤5%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "5",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "deferral of further diagnostic tests",
+                  "entity_standardized_list": [],
+                  "context": "deferral of further diagnostic tests should be considered",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with a low (>5%–15%) pre-test likelihood of obstructive CAD, CACS should be considered to reclassify subjects and to identify more individuals with very low (≤5%) CACS-weighted clinical likelihood.139,143,165 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome, with a low (>5%–15%) pre-test likelihood of obstructive CAD",
+          "recommendation": "CACS should be considered to reclassify subjects and to identify more individuals with very low (≤5%) CACS-weighted clinical likelihood",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low (>5%–15%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "5",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low (>5%–15%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "15",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "CACS",
+                  "entity_standardized_list": [],
+                  "context": "CACS should be considered to reclassify subjects and to identify more individuals with very low (≤5%) CACS-weighted clinical likelihood",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with an initially low (>5%–15%) likelihood of obstructive CAD, exercise ECG and detection of atherosclerotic disease in non-coronary arteries may be considered to adjust the pre-test likelihood estimate.144,166 IIb C",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "individuals with suspected chronic coronary syndrome,with an initially low (>5%–15%) likelihood of obstructive CAD",
+          "recommendation": "exercise ECG and detection of atherosclerotic disease in non-coronary arteries may be considered to adjust the pre-test likelihood estimate",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low (>5%–15%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "5",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "low (>5%–15%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "15",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "exercise ECG",
+                  "entity_standardized_list": [],
+                  "context": "exercise ECG may be considered to adjust the pre-test likelihood estimate",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "detection of atherosclerotic disease in non-coronary arteries",
+                  "entity_standardized_list": [],
+                  "context": "detection of atherosclerotic disease in non-coronary arteries may be considered to adjust the pre-test likelihood estimate",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

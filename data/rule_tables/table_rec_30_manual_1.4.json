@@ -1,0 +1,248 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_82.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_82.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 30 -Recommendations for treatment of revascularization failure (see also Evidence Table 30)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "DES is recommended over drug-coated balloons for treatment of in-DES restenosis.1186–1188",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "CCS patients with in-DES drug-eluting stent restenosis",
+          "recommendation": "DES is recommended over drug-coated balloons for treatment of in-DES restenosis",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "in drug-eluting stent restenosis",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Restenosis of coronary artery stent",
+                  "snomed_id": "251030009"
+                }
+              ],
+              "context": "in-DES drug-eluting stent restenosis",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "DES",
+              "entity_standardized_list": [],
+              "context": "DES is recommended over drug-coated balloons for treatment of in-DES restenosis",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 30 -Recommendations for treatment of revascularization failure (see also Evidence Table 30)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "LIMA is indicated as the conduit of choice for redo CABG in patients in whom the LIMA was not used previously.1195 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "CCS patients with CABG failure in whom the LIMA was not used previously",
+          "recommendation": "LIMA is indicated as the conduit of choice for redo CABG",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "CABG failure",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "Patient with CABG in whom the LIMA was not used previously",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "LIMA for redo CABG",
+              "entity_standardized_list": [],
+              "context": "LIMA is indicated as the conduit of choice for redo CABG",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 30 -Recommendations for treatment of revascularization failure (see also Evidence Table 30)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Redo CABG should be considered for patients without a patent LIMA graft to the LAD. 842,1192,1196",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "CCS patients with CABG failure without a patent LIMA graft to the LAD",
+          "recommendation": "Redo CABG should be considered",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "CABG failure",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "Patient with CABG without a patent LIMA graft to the LAD",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "redo CABG",
+              "entity_standardized_list": [],
+              "context": "Redo CABG should be considered",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 30 -Recommendations for treatment of revascularization failure (see also Evidence Table 30)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "PCI of the bypassed native artery should be considered over PCI of the bypass graft.1197",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "CCS patients with CABG failure",
+          "recommendation": "PCI of the bypassed native artery should be considered over PCI of the bypass graft",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "CABG failure",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "PCI of the bypassed native artery should be considered over PCI of the bypass graft",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

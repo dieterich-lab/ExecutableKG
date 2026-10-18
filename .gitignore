@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# local configuration and secrets
+.env
+*.pem
+
+# generated BAML client (baml-cli generate)
+src/cardio_graph_core/query/baml_client/
+
+# outputs of the scripts
+paper_numbers.json
+compare_arms_metrics.json
+results/*_rerun/
+
+# OS
+.DS_Store

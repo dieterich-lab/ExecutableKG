@@ -1,0 +1,530 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_53.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_53.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 18 — Recommendations for lipid-lowering drugs in patients with chronic coronary syndrome (see also Evidence Table 18)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Lipid-lowering treatment with an LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is recommended.64,670,671 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "patients with chronic coronary syndrome",
+          "recommendation": "Lipid-lowering treatment with an LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Lipid-lowering treatment",
+              "entity_standardized_list": [],
+              "context": "Lipid-lowering treatment with an LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 18 — Recommendations for lipid-lowering drugs in patients with chronic coronary syndrome (see also Evidence Table 18)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "A high-intensity statin up to the highest tolerated dose to reach the LDL-C goals is recommended for all patients with CCS.670,671 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "patients with CCS",
+          "recommendation": "high-intensity statin up to the highest tolerated dose to reach the LDL-C goals is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "high-intensity statin",
+              "entity_standardized_list": [],
+              "context": "high-intensity statin up to the highest tolerated dose to reach the LDL-C goals is recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 18 — Recommendations for lipid-lowering drugs in patients with chronic coronary syndrome (see also Evidence Table 18)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "If a patient’s goal is not achieved with the maximum tolerated dose of statin, combination with ezetimibe is recommended.674 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome, If a patient’s goal is not achieved with the maximum tolerated dose of statin",
+          "recommendation": "combination with ezetimibe is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LDL-C",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Low density lipoprotein cholesterol",
+                  "snomed_id": "102739008"
+                }
+              ],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "55",
+                "unit": "mg/dL",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": " ≥50% reduction in LDL-C vs. baseline",
+              "entity_standardized_list": [],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "highest dose statin",
+              "entity_standardized_list": [],
+              "context": "maximum tolerated dose of statin",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ezetimibe",
+              "entity_standardized_list": [],
+              "context": "combination with ezetimibe is recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 18 — Recommendations for lipid-lowering drugs in patients with chronic coronary syndrome (see also Evidence Table 18)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "For patients who are statin intolerant and do not achieve their goal on ezetimibe, combination with bempedoic acid is recommended.680 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "For patients who are statin intolerant and do not achieve their goal on ezetimibe",
+          "recommendation": "combination with bempedoic acid is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LDL-C",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Low density lipoprotein cholesterol",
+                  "snomed_id": "102739008"
+                }
+              ],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "55",
+                "unit": "mg/dL",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": " ≥50% reduction in LDL-C vs. baseline",
+              "entity_standardized_list": [],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "statin intolerant",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ezetimibe",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Ezetimibe",
+                  "snomed_id": "409149001"
+                }
+              ],
+              "context": "",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "bempedoic acid",
+              "entity_standardized_list": [],
+              "context": "combination with bempedoic acid is recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 18 — Recommendations for lipid-lowering drugs in patients with chronic coronary syndrome (see also Evidence Table 18)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "For patients who do not achieve their goal on a maximum tolerated dose of statin and ezetimibe, combination with a PCSK9 inhibitor is recommended.675,676 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "For CCS patients who do not achieve their goal on a maximum tolerated dose of statin and ezetimibe",
+          "recommendation": "combination with a PCSK9 inhibitor is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LDL-C",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Low density lipoprotein cholesterol",
+                  "snomed_id": "102739008"
+                }
+              ],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "55",
+                "unit": "mg/dL",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": " ≥50% reduction in LDL-C vs. baseline",
+              "entity_standardized_list": [],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "highest dose statin",
+              "entity_standardized_list": [],
+              "context": "maximum tolerated dose of statin and ezetimibe",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ezetimibe",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Ezetimibe",
+                  "snomed_id": "409149001"
+                }
+              ],
+              "context": "maximum tolerated dose of statin and ezetimibe",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCSK9 inhibitor",
+              "entity_standardized_list": [],
+              "context": "combination with a PCSK9 inhibitor is recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 18 — Recommendations for lipid-lowering drugs in patients with chronic coronary syndrome (see also Evidence Table 18)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "For patients who do not achieve their goal on a maximum tolerated dose of statin and ezetimibe, combination with bempedoic acid should be considered. IIa C",
+          "Class a": "IIa",
+          "Level b": "C",
+          "input": "For CCS patients who do not achieve their goal on a maximum tolerated dose of statin and ezetimibe",
+          "recommendation": "combination with bempedoic acid should be considered",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "patients with established chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LDL-C",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Low density lipoprotein cholesterol",
+                  "snomed_id": "102739008"
+                }
+              ],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "55",
+                "unit": "mg/dL",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": " ≥50% reduction in LDL-C vs. baseline",
+              "entity_standardized_list": [],
+              "context": "LDL-C goal of <1.4 mmol/L (55 mg/dL) and a ≥50% reduction in LDL-C vs. baseline is not achieved",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "highest dose statin",
+              "entity_standardized_list": [],
+              "context": "maximum tolerated dose of statin and ezetimibe",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ezetimibe",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Ezetimibe",
+                  "snomed_id": "409149001"
+                }
+              ],
+              "context": "maximum tolerated dose of statin and ezetimibe",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "bempedoic acid",
+              "entity_standardized_list": [],
+              "context": "combination with bempedoic acid should be considered",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 18 — Recommendations for lipid-lowering drugs in patients with chronic coronary syndrome (see also Evidence Table 18)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "For patients with a recurrent atherothrombotic event (not necessarily of the same type as the first event) while taking maximally tolerated statin therapy, an LDL-C goal of <1.0 mmol/L (<40 mg/dL) may be considered.675,676 IIb B",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "For CCS patients with a reurrent atherothrombotic event (not necessarily of the same type as the first event) while taking maximally tolerated statin therapy",
+          "recommendation": "an LDL-C goal of <1.0 mmol/L (<40 mg/dL) may be considered",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "reurrent atherothrombotic event",
+              "entity_standardized_list": [],
+              "context": "reurrent atherothrombotic event (not necessarily of the same type as the first event)",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "highest dose statin",
+              "entity_standardized_list": [],
+              "context": "while taking maximally tolerated statin therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "LDL-C",
+              "entity_standardized_list": [],
+              "context": "an LDL-C goal of <1.0 mmol/L (<40 mg/dL) may be considered",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

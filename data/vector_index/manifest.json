@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "index_id": "126eead87c176c41f26e37aa9a49c18a65f58afef93a96018e7bc9576dbcced6",
+  "created_at": "2026-08-01T07:12:32.877701+00:00",
+  "chunking_strategy": "one_json_data_row_with_inherited_headers",
+  "row_id_strategy": "relative_table_file::table_<table_id>::row_<zero_based_index>",
+  "row_count": 196,
+  "embedding_dimensions": 2560,
+  "embedding_provider": "ollama",
+  "embedding_model": "qwen3-embedding:4b",
+  "embeddings_sha256": "58709230169ea711d5738cac432098afeccd54f43e3708199a630366d398f561",
+  "catalog_sha256": "01fd540b71a7647196dee76d04f14f9647a26099f872a0d7d478c135ba981c5b",
+  "document_prefix": "Represent this clinical guideline recommendation row for retrieval:\n",
+  "query_prefix": "Retrieve clinical guideline recommendation rows applicable to this patient case:\n",
+  "source_root": "data/rule_tables",
+  "source_files": [
+    {
+      "path": "data/rule_tables/table_rec_10_manual_1.4.json",
+      "sha256": "07642c6a80bfa7f45aaf0741cb59eb362a4b3c37dea991c3707405ac66913b6a"
+    },
+    {
+      "path": "data/rule_tables/table_rec_11_manual_1.4.json",
+      "sha256": "e6fcb3a8862c16c4a28ee3846ac24a7ac23843605a806cd62b72cd1b8cf530c7"
+    },
+    {
+      "path": "data/rule_tables/table_rec_12_manual_1.4.json",
+      "sha256": "bdff4ed190e0c6f8363a2bac9e4b11ec8f0bb0ee0ca38632e27c36dbf43a5938"
+    },
+    {
+      "path": "data/rule_tables/table_rec_13_manual_1.4.json",
+      "sha256": "293911908166af6c1b9c981b45839d93186960cd25d144d8b383050ee4942b7f"
+    },
+    {
+      "path": "data/rule_tables/table_rec_14_manual_1.4.json",
+      "sha256": "58b90ef7bcf23b71128ee58d9a1735d474332784793611ecb6cbc3d0bd622974"
+    },
+    {
+      "path": "data/rule_tables/table_rec_15_manual_1.4.json",
+      "sha256": "b3945bf288e829640cc8a9eaf96b9da40fa434fcf3494752f5aa59932bef48ca"
+    },
+    {
+      "path": "data/rule_tables/table_rec_16_manual_1.4.json",
+      "sha256": "06c08b80986b59247d81e5df4a9ddd4449b0479f7e807572b9e993613637158e"
+    },
+    {
+      "path": "data/rule_tables/table_rec_17_manual_1.3.json",
+      "sha256": "2dc99908d8b1687b4e4186d6736a72dad0df6dde18b1b48eb05a6d18ff62c936"
+    },
+    {
+      "path": "data/rule_tables/table_rec_18_manual_1.4.json",
+      "sha256": "d6d76f18f9c0ba0b12fc89858fa09e2af3a36d2854fec683d986f51eec27091a"
+    },
+    {
+      "path": "data/rule_tables/table_rec_19_manual_1.4.json",
+      "sha256": "39976e5a560874bcfe8a8edd4bbe08855720726d9cfacd8203fb5d5c9ce6bc6d"
+    },
+    {
+      "path": "data/rule_tables/table_rec_1_manual_1.4.json",
+      "sha256": "0f3c427b81bafd26f1ac046b24e743a344c60602a4b9ea4c3659c6a0a40f25a9"
+    },
+    {
+      "path": "data/rule_tables/table_rec_20_manual_1.4.json",
+      "sha256": "ae2ee6228dfaf397be8adf5ee6172cfbd4256cf36620710f9b412da2e645fefe"
+    },
+    {
+      "path": "data/rule_tables/table_rec_21_manual_1.4.json",
+      "sha256": "10ecb45dc0488d236a7bf5c3ea4f7f2569e5ef9ebe6c0a0aaca0567cc160a46a"
+    },
+    {
+      "path": "data/rule_tables/table_rec_22_manual_1.3.json",
+      "sha256": "005e47f21f988ffa1068845dc4f4b9b755fa3a7c9b6207168c3d94c61005b737"
+    },
+    {
+      "path": "data/rule_tables/table_rec_23_manual_1.4.json",
+      "sha256": "5c153391f45ac89c5cd97ad2179879ff3bb1880ef0773f32fcc4e1da711078f2"
+    },
+    {
+      "path": "data/rule_tables/table_rec_24_manual_1.4.json",
+      "sha256": "fd7030af77eb677eb81d3f521e8e07e454664a64a8de46aea9cd6f95fc1cf8ee"
+    },
+    {
+      "path": "data/rule_tables/table_rec_25_manual_1.4.json",
+      "sha256": "4d620e5b450bfc2f5eec3d97e4922bbf6144b578b5611db4d763cf80c2fc8cd7"
+    },
+    {
+      "path": "data/rule_tables/table_rec_26_manual_1.4.json",
+      "sha256": "bff7e21ac78fae30aa5dc1e7108d38beae7093f685a605bfd3591b6579989ce5"
+    },
+    {
+      "path": "data/rule_tables/table_rec_27_manual_1.4.json",
+      "sha256": "7b65a12566a7a66880525930a624cc0da12939c523d3c0ddbb8e5ee6ccf1d059"
+    },
+    {
+      "path": "data/rule_tables/table_rec_28_manual_1.4.json",
+      "sha256": "ebd336fe68199f1f60c5590ffbea5b7c92f127ad55f083b456a79adf0497a84f"
+    },
+    {
+      "path": "data/rule_tables/table_rec_29_manual_1.4.json",
+      "sha256": "5e3292b20f869143e73784e39fbbd953ae14b6358e785889ed26c1968b9ccedc"
+    },
+    {
+      "path": "data/rule_tables/table_rec_2_manual_1.4.json",
+      "sha256": "f3996112e7d9a036d6e4a001a8480244167b24380df473a99a8a08fe53154ce1"
+    },
+    {
+      "path": "data/rule_tables/table_rec_30_manual_1.4.json",
+      "sha256": "26381b95df3a0c8264bc1a1897a4018c7937c5e662a9c5ad480e7186a096cdfc"
+    },
+    {
+      "path": "data/rule_tables/table_rec_31_manual_1.4.json",
+      "sha256": "f58401c8c834905a0773a1a060bdf360c4b758082a670b066d727bffb39e2135"
+    },
+    {
+      "path": "data/rule_tables/table_rec_3_manual_1.4.json",
+      "sha256": "22ef43e5080eed776091f041392ea7151f8a548a3550033b18148ad498f732f8"
+    },
+    {
+      "path": "data/rule_tables/table_rec_4_manual_1.4.json",
+      "sha256": "cac7abdc115da64d9599ff2d1581d4eb16eae75a6f4ab617ddacce34c5459673"
+    },
+    {
+      "path": "data/rule_tables/table_rec_5_manual_1.4.json",
+      "sha256": "1691dbbe8b7321d667214f3b07b4176689d934560a8dff1be47341f4529f7b18"
+    },
+    {
+      "path": "data/rule_tables/table_rec_6_manual_1.4.json",
+      "sha256": "b45472f10c45b4c86592d4ab1876b5a5a44caece77589b6fff66fd9986dc4446"
+    },
+    {
+      "path": "data/rule_tables/table_rec_7_manual_1.4.json",
+      "sha256": "b13ef508a0ad36d834112a46aeb79250425196595f25d2f2e7c3918157b6c113"
+    },
+    {
+      "path": "data/rule_tables/table_rec_8_manual_1.4.json",
+      "sha256": "69db78991a32247839938c4dc486aff3ddef235278dad6284e3af2e2c1ac0e6b"
+    },
+    {
+      "path": "data/rule_tables/table_rec_9_manual_1.4.json",
+      "sha256": "8309a8f6dc5a0af527fd49ef9d2acbc422496bfe8ae6193a001e3a134f6a9b1b"
+    }
+  ]
+}

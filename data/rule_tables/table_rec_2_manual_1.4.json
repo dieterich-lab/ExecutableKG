@@ -1,0 +1,285 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_23.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_23.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 2 -Recommendations for basic biochemistry in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 2)",
+          "Section Header": "The following blood tests are recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment:",
+          "Subheader": null,
+          "Recommendations": " • lipid profile including LDL-C;64,128",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "individuals with suspected chronic coronary syndrome",
+          "recommendation": "lipid profile including LDL-C is recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "lipid profile including LDL-C",
+                  "entity_standardized_list": [],
+                  "context": "lipid profile including LDL-C is recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 2 -Recommendations for basic biochemistry in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 2)",
+          "Section Header": "The following blood tests are recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment:",
+          "Subheader": null,
+          "Recommendations": "• full blood count (including haemoglobin);129–133",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "",
+          "recommendation": "full blood count (including haemoglobin)is  recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "full blood count (including haemoglobin)",
+                  "entity_standardized_list": [],
+                  "context": "full blood count (including haemoglobin)is  recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 2 -Recommendations for basic biochemistry in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 2)",
+          "Section Header": "The following blood tests are recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment:",
+          "Subheader": null,
+          "Recommendations": "• creatinine with estimation of renal function;134",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome",
+          "recommendation": "creatinine with estimation of renal function is recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "creatinine with estimation of renal function",
+                  "entity_standardized_list": [],
+                  "context": "creatinine with estimation of renal function is recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 2 -Recommendations for basic biochemistry in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 2)",
+          "Section Header": "The following blood tests are recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment:",
+          "Subheader": null,
+          "Recommendations": "• glycaemic status with HbA1c and/or fasting plasma glucose.16,86,135,136",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome",
+          "recommendation": "glycaemic status with HbA1c and/or fasting plasma glucose is recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "glycaemic status with HbA1c and/or fasting plasma glucose",
+                  "entity_standardized_list": [],
+                  "context": "glycaemic status with HbA1c and/or fasting plasma glucose is recommended in all individuals to refine risk stratification, diagnose comorbidities, and guide treatment",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 2 -Recommendations for basic biochemistry in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 2)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In patients with suspected CCS, it is recommended to assess thyroid function at least once.137,138",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome ",
+          "recommendation": "recommended to assess thyroid function at least once",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "assess thyroid function",
+                  "entity_standardized_list": [],
+                  "context": "recommended to assess thyroid function at least once",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 2 -Recommendations for basic biochemistry in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 2)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Additionally, hs-CRP and/or fibrinogen plasma levels should be considered.109–118,121,125",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome",
+          "recommendation": "hs-CRP and/or fibrinogen plasma levels should be considered",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "hs-CRP",
+                  "entity_standardized_list": [],
+                  "context": "hs-CRP and/or fibrinogen plasma levels should be considered",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "fibrinogen plasma levels",
+                  "entity_standardized_list": [],
+                  "context": "hs-CRP and/or fibrinogen plasma levels should be considered",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

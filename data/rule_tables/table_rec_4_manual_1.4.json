@@ -1,0 +1,110 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_26.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_26.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 4 — Recommendations for resting transthoracic ultrasound and cardiac magnetic resonance imaging in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 4)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "A resting transthoracic echocardiogram is recommended: to measure LVEF, volumes and diastolic function; • identify regional wall motion abnormalities; • identify non-coronary cardiac disease (e.g. hypertrophy, cardiomyopathy, valve disease, pericardial effusion); • assess right ventricular function and estimate systolic pulmonary artery pressure; to refine risk stratification and guide treatment.167,183,184 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome",
+          "recommendation": "A resting transthoracic echocardiogram is recommended: to measure LVEF, volumes and diastolic function; • identify regional wall motion abnormalities; • identify non-coronary cardiac disease (e.g. hypertrophy, cardiomyopathy, valve disease, pericardial effusion); • assess right ventricular function and estimate systolic pulmonary artery pressure; to refine risk stratification and guide treatment.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "resting transthoracic echocardiogram",
+                  "entity_standardized_list": [],
+                  "context": " to measure LVEF, volumes and diastolic function; • identify regional wall motion abnormalities; • identify non-coronary cardiac disease (e.g. hypertrophy, cardiomyopathy, valve disease, pericardial effusion); • assess right ventricular function and estimate systolic pulmonary artery pressure; to refine risk stratification and guide treatment",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 4 — Recommendations for resting transthoracic ultrasound and cardiac magnetic resonance imaging in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 4)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "CMR, if available, may be considered as an alternative imaging test in individuals with inconclusive echocardiographic evaluation.185,186 IIb C",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "individuals with suspected chronic coronary syndrome with inconclusive echocardiographic evaluation",
+          "recommendation": "CMR, if available, may be considered as an alternative imaging test",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "inconclusive echocardiographic evaluation",
+                  "entity_standardized_list": [],
+                  "context": "individuals with inconclusive echocardiographic evaluation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "CMR cardiac magnetic resonance",
+                  "entity_standardized_list": [],
+                  "context": "if available, may be considered as an alternative imaging test",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

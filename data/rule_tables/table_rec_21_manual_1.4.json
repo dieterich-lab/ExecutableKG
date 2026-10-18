@@ -1,0 +1,176 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_55.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_55.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 21 -Recommendations for angiotensin-converting enzyme inhibitors in patients with chronic coronary syndrome (see also Evidence Table 21)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In CCS patients, ACE-Is (or ARBs) are recommended in the presence of specific comorbidities, such as hypertension, diabetes, or heart failure.683–685 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients in the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+          "recommendation": "ACE-Is (or ARBs) are recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "hypertension",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Hypertensive disorder, systemic arterial",
+                  "snomed_id": "38341003"
+                }
+              ],
+              "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "diabetes",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus",
+                  "snomed_id": "73211009"
+                }
+              ],
+              "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "heart failure",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure",
+                  "snomed_id": "84114007"
+                }
+              ],
+              "context": "the presence of specific comorbidities, such as hypertension, diabetes, or heart failure",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ACE-I",
+              "entity_standardized_list": [],
+              "context": "ACE-Is (or ARBs) are recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "ARB",
+              "entity_standardized_list": [],
+              "context": "ACE-Is (or ARBs) are recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 21 -Recommendations for angiotensin-converting enzyme inhibitors in patients with chronic coronary syndrome (see also Evidence Table 21)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "ACE-Is should be considered in CCS patients at very high risk of cardiovascular events.686,687,690,691",
+          "Class a": "IIa",
+          "Level b": "A",
+          "input": "CCS patients at very high risk of cardiovascular events",
+          "recommendation": "ACE-Is should be considered",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "very high risk of cardiovascular events",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "At increased risk for cardiovascular event",
+                  "snomed_id": "395112001"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ACE-I",
+              "entity_standardized_list": [],
+              "context": "ACE-Is should be considered",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

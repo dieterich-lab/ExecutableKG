@@ -1,0 +1,1302 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_45.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_45.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "General strategy",
+          "Subheader": null,
+          "Recommendations": "It is recommended to tailor the selection of antianginal drugs to the patient’s characteristics, comorbidities, concomitant medications, treatment tolerability, and underlying pathophysiology of angina, also considering local drug availability and cost.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "patients with chronic coronary syndrome and angina",
+          "recommendation": "recommended to tailor the selection of antianginal drugs to the patient’s characteristics, comorbidities, concomitant medications, treatment tolerability, and underlying pathophysiology of angina, also considering local drug availability and cost",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "careful selection of antianginal drugs",
+              "entity_standardized_list": [],
+              "context": "recommended to tailor the selection of antianginal drugs to the patient’s characteristics, comorbidities, concomitant medications, treatment tolerability, and underlying pathophysiology of angina, also considering local drug availability and cost",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Short-acting nitrates are recommended for immediate relief of angina.536,537",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina",
+          "recommendation": "Short-acting nitrates are recommended for immediate relief of angina",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Short-acting nitrates",
+              "entity_standardized_list": [],
+              "context": "Short-acting nitrates are recommended for immediate relief of angina",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Initial treatment with beta-blockers and/or CCBs to control heart rate and symptoms is recommended for most patients with CCS.c 518,538",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina ",
+          "recommendation": "Initial treatment with beta-blockers and/or CCBs to control heart rate and symptoms is recommended for most patients with CCS",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "beta-blockers",
+              "entity_standardized_list": [],
+              "context": "Initial treatment with beta-blockers and/or CCBs to control heart rate and symptoms is recommended for most patients with CCS",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CCB",
+              "entity_standardized_list": [],
+              "context": "Initial treatment with beta-blockers and/or CCBs to control heart rate and symptoms is recommended for most patients with CCS",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "If anginal symptoms are not successfully controlled by initial treatment with a beta-blocker or a CCB alone, the combination of a beta-blocker and a DHP-CCB should be considered, unless contraindicated.505,538,539",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina If anginal symptoms are not successfully controlled by initial treatment with a beta-blocker or a CCB alone, and no contraindication of bb + DHP-CCB",
+          "recommendation": "the combination of a beta-blocker and a DHP-CCB should be considered",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "If anginal symptoms are not successfully controlled",
+              "entity_standardized_list": [],
+              "context": "If anginal symptoms are not successfully controlled by initial treatment with a beta-blocker or a CCB alone",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "beta-blocker",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Substance with beta adrenergic receptor antagonist mechanism of action",
+                  "snomed_id": "373254001"
+                }
+              ],
+              "context": "initial treatment with a beta-blocker or a CCB alone",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CCB",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Substance with calcium channel blocker mechanism of action",
+                  "snomed_id": "373304005"
+                }
+              ],
+              "context": "initial treatment with a beta-blocker or a CCB alone",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "contraindication of beta-blocker + DHP-CCB",
+              "entity_standardized_list": [],
+              "context": "no contraindication of beta-blocker + DHP-CCB",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "beta-blocker",
+              "entity_standardized_list": [],
+              "context": "the combination of a beta-blocker and a DHP-CCB should be considered",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "DHP-CCB",
+              "entity_standardized_list": [],
+              "context": "the combination of a beta-blocker and a DHP-CCB should be considered",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Long-acting nitrates or ranolazine should be considered as add-on therapy in patients with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs, or as part of initial treatment in properly selected patients.d 513,540",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs, or as part of initial treatment in properly selected patients",
+          "recommendation": "Long-acting nitrates or ranolazine should be considered as add-on therapy",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "If anginal symptoms are not successfully controlled",
+              "entity_standardized_list": [],
+              "context": "inadequate control of symptoms while on treatment with beta-blockers and/or CCBs",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "beta-blocker",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Substance with beta adrenergic receptor antagonist mechanism of action",
+                  "snomed_id": "373254001"
+                }
+              ],
+              "context": "while on treatment with beta-blockers and/or CCBs",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CCB",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Substance with calcium channel blocker mechanism of action",
+                  "snomed_id": "373304005"
+                }
+              ],
+              "context": "while on treatment with beta-blockers and/or CCBs",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Long-acting nitrates",
+              "entity_standardized_list": [],
+              "context": "Long-acting nitrates or ranolazine should be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ranolazine",
+              "entity_standardized_list": [],
+              "context": "tLong-acting nitrates or ranolazine should be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "When long-acting nitrates are prescribed, a nitrate-free or low-nitrate interval should be considered to reduce tolerance.540",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina, When long-acting nitrates are prescribed",
+          "recommendation": " a nitrate-free or low-nitrate interval should be considered to reduce tolerance",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "Long-acting nitrates",
+              "entity_standardized_list": [],
+              "context": "When long-acting nitrates are prescribed",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "nitrate-free interval",
+              "entity_standardized_list": [],
+              "context": "a nitrate-free or low-nitrate interval should be considered to reduce tolerance",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "low-nitrate interval",
+              "entity_standardized_list": [],
+              "context": "a nitrate-free or low-nitrate interval should be considered to reduce tolerance",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Ivabradine should be considered as add-on antianginal therapy in patients with left ventricular systolic dysfunction (LVEF <40%) and inadequate control of symptoms, or as part of initial treatment in properly selected patients.541,542",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina with left ventricular systolic dysfunction (LVEF <40%) and inadequate control of symptoms, or as part of initial treatment in properly selected patients",
+          "recommendation": "Ivabradine should be considered as add-on antianginal therapy",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "left ventricular systolic dysfunction",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular systolic dysfunction",
+                  "snomed_id": "134401001"
+                }
+              ],
+              "context": "left ventricular systolic dysfunction (LVEF <40%)",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "LVEF <40%",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "left ventricular systolic dysfunction (LVEF <40%)",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "<",
+                "threshold": "40",
+                "unit": "%",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "If anginal symptoms are not successfully controlled",
+              "entity_standardized_list": [],
+              "context": "inadequate control of symptoms",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Ivabradine",
+              "entity_standardized_list": [],
+              "context": "Ivabradine should be considered as add-on antianginal therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Nicorandil or trimetazidine may be considered as add-on therapy in patients with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs, or as part of initial treatment in properly selected patients.543–550",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs, or as part of initial treatment in properly selected patients",
+          "recommendation": "Nicorandil or trimetazidine may be considered as add-on therapy",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "If anginal symptoms are not successfully controlled",
+              "entity_standardized_list": [],
+              "context": "inadequate control of symptoms",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "beta-blocker",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Substance with beta adrenergic receptor antagonist mechanism of action",
+                  "snomed_id": "373254001"
+                }
+              ],
+              "context": "with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CCB",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Substance with calcium channel blocker mechanism of action",
+                  "snomed_id": "373304005"
+                }
+              ],
+              "context": "with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Nicorandil",
+              "entity_standardized_list": [],
+              "context": "Nicorandil or trimetazidine may be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "Trimetazidine",
+              "entity_standardized_list": [],
+              "context": "Nicorandil or trimetazidine may be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Ivabradine is not recommended as add-on therapy in patients with CCS, LVEF >40%, and no clinical heart failure.509",
+          "Class a": "III",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina with LVEF >40%, and no clinical heart failure",
+          "recommendation": "Ivabradine is not recommended as add-on therapy ",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LVEF >40%",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "40",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "clinical heart failure",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure",
+                  "snomed_id": "84114007"
+                }
+              ],
+              "context": "no clinical heart failure",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Ivabradine",
+              "entity_standardized_list": [],
+              "context": "Ivabradine is not recommended as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "III",
+                "level": "B",
+                "direction": "NEGATIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Combination of ivabradine with non-DHP-CCB or other strong CYP3A4 inhibitors is not recommended.551",
+          "Class a": "III",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina ",
+          "recommendation": "Combination of ivabradine with non-DHP-CCB or other strong CYP3A4 inhibitors is not recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Combination of ivabradine with non-DHP-CCB",
+              "entity_standardized_list": [],
+              "context": "Combination of ivabradine with non-DHP-CCB or other strong CYP3A4 inhibitors is not recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "III",
+                "level": "B",
+                "direction": "NEGATIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "Combination of ivabradine with strong CYP3A4 inhibitors",
+              "entity_standardized_list": [],
+              "context": "Combination of ivabradine with non-DHP-CCB or other strong CYP3A4 inhibitors is not recommended",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "III",
+                "level": "B",
+                "direction": "NEGATIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Nitrates are not recommended in patients with hypertrophic cardiomyopathy or in co-administration with phosphodiesterase inhibitors.552,553",
+          "Class a": "III",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and angina with hypertrophic cardiomyopathy or in co-administration with phosphodiesterase inhibitors",
+          "recommendation": "Nitrates are not recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "hypertrophic cardiomyopathy",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Hypertrophic cardiomyopathy",
+                  "snomed_id": "233873004"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "phosphodiesterase inhibitors",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Substance with phosphodiesterase 5 inhibitor mechanism of action",
+                  "snomed_id": "407313002"
+                }
+              ],
+              "context": "co-administration with phosphodiesterase inhibitors",
+              "role": "Medication",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Nitrates",
+              "entity_standardized_list": [],
+              "context": "Nitrates are not recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "III",
+                "level": "B",
+                "direction": "NEGATIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Long-acting nitrates or ranolazine should be considered as add-on therapy in patients with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs, or as part of initial treatment in properly selected patients.d 513,540",
+          "Class a": "",
+          "Level b": "",
+          "input": "patients with chronic coronary syndrome and angina as part of initial treatment in for patients with intolerance or contraindications to beta-blockers and/or CCBs",
+          "recommendation": "Long-acting nitrates or ranolazine should be considered as add-on therapy, Ivabradine should be considered as add-on antianginal therapy / Nicorandil may be considered as add-on therapy",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "intolerance or contraindications to beta-blockers",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Beta blocker not indicated",
+                  "snomed_id": "315214003"
+                }
+              ],
+              "context": "as part of initial treatment in for patients with intolerance or contraindications to beta-blockers and/or CCBs",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "intolerance or contraindications to CCBs",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Calcium channel blocker not indicated",
+                  "snomed_id": "135806009"
+                }
+              ],
+              "context": "as part of initial treatment in for patients with intolerance or contraindications to beta-blockers and/or CCBs",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Long-acting nitrates",
+              "entity_standardized_list": [],
+              "context": "Long-acting nitrates or ranolazine should be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "ranolazine",
+              "entity_standardized_list": [],
+              "context": "tLong-acting nitrates or ranolazine should be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "Ivabradine",
+              "entity_standardized_list": [],
+              "context": "Ivabradine should be considered as add-on antianginal therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "Nicorandil",
+              "entity_standardized_list": [],
+              "context": "Nicorandil may be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "Long-acting nitrates or ranolazine should be considered as add-on therapy in patients with inadequate control of symptoms while on treatment with beta-blockers and/or CCBs, or as part of initial treatment in properly selected patients.d 513,540",
+          "Class a": "",
+          "Level b": "",
+          "input": "patients with chronic coronary syndrome as part of initial treatment in for patients with microvascular angina",
+          "recommendation": "ranolazine should be considered as add-on therapy//trimetazidine may be considered as add-on therapy",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "microvascular angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Cardiac syndrome X",
+                  "snomed_id": "233845001"
+                }
+              ],
+              "context": "as part of initial treatment in for patients with microvascular angina",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ranolazine",
+              "entity_standardized_list": [],
+              "context": "ranolazine should be considered as add-on therapy",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "Trimetazidine",
+              "entity_standardized_list": [],
+              "context": "trimetazidine may be considered as add-on therapy",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 16 -Recommendations for antianginal drugs in patients with chronic coronary syndrome (see also Evidence Table 16)",
+          "Section Header": "Selection of antianginal medication",
+          "Subheader": null,
+          "Recommendations": "",
+          "Class a": "",
+          "Level b": "",
+          "input": "patients with chronic coronary syndrome and angina as part of initial treatment in for patients with coronary artery spasm",
+          "recommendation": "nitrates or nicorandil should be considered",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "coronary artery spasm",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Coronary artery spasm",
+                  "snomed_id": "23687008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": " nitrates",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "Nicorandil",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+name: reproduce-paper-numbers
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install "numpy>=2.0,<3" "pydantic>=2.8,<3"
+      - run: bash scripts/reproduce_offline.sh

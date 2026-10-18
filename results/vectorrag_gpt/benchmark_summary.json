@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "gold_source": "data/reference/gold_standard_with_full_rules.jsonl",
+  "canonical_gold": "data/reference/gold_fully_satisfied.jsonl",
+  "case_count": 100,
+  "index_dir": "data/vector_index",
+  "index_id": "126eead87c176c41f26e37aa9a49c18a65f58afef93a96018e7bc9576dbcced6",
+  "embedding_model": "qwen3-embedding:4b",
+  "top_k": 12,
+  "retrieval_snapshot": "results/vectorrag_gpt/retrieval_top12.jsonl",
+  "arms": {
+    "gpt": {
+      "provider": "openai",
+      "model": "gpt-5.6-luna",
+      "generation_return_code": 0,
+      "predictions": "results/vectorrag_gpt/gpt_predictions.jsonl",
+      "metrics_file": "results/vectorrag_gpt/gpt_metrics.json",
+      "metrics": {
+        "case_count": 100,
+        "error_count": 0,
+        "missing_prediction_count": 0,
+        "exact_set_match_rate": 0.16,
+        "macro_precision": 0.3158333333333333,
+        "macro_recall": 0.6002803884711779,
+        "macro_f1": 0.24774702896899697,
+        "micro_precision": 0.24812030075187969,
+        "micro_recall": 0.09401709401709402,
+        "micro_f1": 0.13636363636363635,
+        "macro_retrieval_recall_at_k": 0.6251851442331319,
+        "invalid_citation_count": 0,
+        "unknown_catalog_retrieved_count": 0
+      }
+    }
+  }
+}

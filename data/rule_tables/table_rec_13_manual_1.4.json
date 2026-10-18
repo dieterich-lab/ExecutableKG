@@ -1,0 +1,401 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_39.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_39.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 13 -Recommendations for selection of initial diagnostic tests in individuals with suspected chronic coronary syndrome (see also Evidence Table 13)",
+          "Section Header": "Selection of non-invasive testing",
+          "Subheader": null,
+          "Recommendations": "It is recommended to select the initial non-invasive diagnostic test based on pre-test likelihood of obstructive CAD, other patient characteristics that influence the performance of non-invasive tests,c and local expertise and availability.29,148 I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "individuals with suspected chronic coronary syndrome ",
+          "recommendation": "It is recommended to select the initial non-invasive diagnostic test based on pre-test likelihood of obstructive CAD, other patient characteristics that influence the performance of non-invasive tests,c and local expertise and availability",
+          "rules": [
+            {
+              "entity_original": "individuals with suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "individuals with suspected chronic coronary syndrome",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "initial non-invasive diagnostic test",
+              "entity_standardized_list": [],
+              "context": "It is recommended to select the initial non-invasive diagnostic test based on pre-test likelihood of obstructive CAD, other patient characteristics that influence the performance of non-invasive tests,c and local expertise and availability",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 13 -Recommendations for selection of initial diagnostic tests in individuals with suspected chronic coronary syndrome (see also Evidence Table 13)",
+          "Section Header": "Selection of non-invasive testing",
+          "Subheader": null,
+          "Recommendations": "In symptomatic patients in whom the pre-test likelihood of obstructive CAD by clinical assessment is >5%, CCTA or non-invasive functional imaging for myocardial ischaemia is recommended as the initial diagnostic test.33,148,178,187,189,211,212,219,222,390 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "symptomatic individuals with suspected chronic coronary syndrome, in whom the pre-test likelihood of obstructive CAD by clinical assessment is >5%",
+          "recommendation": "CCTA or non-invasive functional imaging for myocardial ischaemia is recommended as the initial diagnostic test",
+          "rules": [
+            {
+              "entity_original": "symptomatic",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Symptomatic",
+                  "snomed_id": "264931009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "pre-test likelihood of obstructive CAD by clinical assessment is >5%",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "5",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "coronary computed tomography angiography (CCTA)",
+              "entity_standardized_list": [],
+              "context": "CCTA or non-invasive functional imaging for myocardial ischaemia is recommended as the initial diagnostic test",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "non-invasive functional imaging",
+              "entity_standardized_list": [],
+              "context": "CCTA or non-invasive functional imaging for myocardial ischaemia is recommended as the initial diagnostic test",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 13 -Recommendations for selection of initial diagnostic tests in individuals with suspected chronic coronary syndrome (see also Evidence Table 13)",
+          "Section Header": "Selection of non-invasive testing",
+          "Subheader": null,
+          "Recommendations": "To rule out obstructive CAD in individuals with low or moderate (>5%–50%) pre-test likelihood, CCTA is recommended as the preferred diagnostic modality.29,148 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome with low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+          "recommendation": "CCTA is recommended as the preferred diagnostic modality to rule out obstructive CAD",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "5",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "50",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "coronary computed tomography angiography (CCTA)",
+              "entity_standardized_list": [],
+              "context": "CCTA is recommended as the preferred diagnostic modality to rule out obstructive CAD",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 13 -Recommendations for selection of initial diagnostic tests in individuals with suspected chronic coronary syndrome (see also Evidence Table 13)",
+          "Section Header": "Selection of non-invasive testing",
+          "Subheader": null,
+          "Recommendations": "CCTA is recommended in individuals with low or moderate (>5%–50%) pre-test likelihood of obstructive CAD if functional imaging for myocardial ischaemia is not diagnostic.391 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome with low or moderate (>5%–50%) pre-test likelihood of obstructive CAD if functional imaging for myocardial ischaemia is not diagnostic",
+          "recommendation": "CCTA is recommended",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "5",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "50",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "functional imaging for myocardial ischaemia is not diagnostic",
+              "entity_standardized_list": [],
+              "context": "functional imaging for myocardial ischaemia is not diagnostic",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "coronary computed tomography angiography (CCTA)",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 13 -Recommendations for selection of initial diagnostic tests in individuals with suspected chronic coronary syndrome (see also Evidence Table 13)",
+          "Section Header": "Selection of non-invasive testing",
+          "Subheader": null,
+          "Recommendations": "Functional imaging for myocardial ischaemia is recommended if CCTA has shown CAD of uncertain functional significance or is not diagnostic.392–394 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome if CCTA has shown CAD of uncertain functional significance or is not diagnostic ",
+          "recommendation": "Functional imaging for myocardial ischaemia is recommended",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "coronary computed tomography angiography (CCTA)",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Computed tomography angiography of coronary artery with contrast",
+                  "snomed_id": "419545005"
+                }
+              ],
+              "context": "if CCTA has shown CAD of uncertain functional significance or is not diagnostic",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Functional imaging for myocardial ischaemia is recommended",
+              "entity_standardized_list": [],
+              "context": "Functional imaging for myocardial ischaemia is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 13 -Recommendations for selection of initial diagnostic tests in individuals with suspected chronic coronary syndrome (see also Evidence Table 13)",
+          "Section Header": "Selection of non-invasive testing",
+          "Subheader": null,
+          "Recommendations": "In patients with a known intermediate coronary artery stenosisd in a proximal or mid coronary segment on CCTA, CT-based FFR may be considered.395–401 IIb B",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "In patients with a known intermediate coronary artery stenosisd in a proximal or mid coronary segment on CCTA",
+          "recommendation": "CT-based FFR may be considered",
+          "rules": [
+            {
+              "entity_original": "intermediate coronary artery stenosis in a proximal or mid coronary segment",
+              "entity_standardized_list": [],
+              "context": "In patients with a known intermediate coronary artery stenosisd in a proximal or mid coronary segment on CCTA",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "FFR",
+              "entity_standardized_list": [],
+              "context": "CT-based FFR may be considered",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 13 -Recommendations for selection of initial diagnostic tests in individuals with suspected chronic coronary syndrome (see also Evidence Table 13)",
+          "Section Header": "Subsequent invasive testing",
+          "Subheader": null,
+          "Recommendations": "Invasive coronary angiography with the availability of invasive functional assessments is recommended to confirm or exclude the diagnosis of obstructive CAD or ANOCA/INOCA in individuals with an uncertain diagnosis on non-invasive testing.36,49,308,384 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome, with an uncertain diagnosis on non-invasive testing",
+          "recommendation": "Invasive coronary angiography with the availability of invasive functional assessments is recommended to confirm or exclude the diagnosis of obstructive CAD or ANOCA/INOCA",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "uncertain diagnosis on non-invasive testing",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Invasive coronary angiography ",
+              "entity_standardized_list": [],
+              "context": "Invasive coronary angiography with the availability of invasive functional assessments is recommended to confirm or exclude the diagnosis of obstructive CAD or ANOCA/INOCA",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

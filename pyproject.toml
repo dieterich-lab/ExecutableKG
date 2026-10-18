@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "executable-kg"
+version = "1.0.0"
+description = "Executable knowledge graph of the 2024 ESC chronic coronary syndrome recommendation tables (code of the MIE 2027 paper)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Emre Calik" },
+  { name = "Philipp Wiesenbach" },
+  { name = "Christoph Dieterich" },
+]
+dependencies = [
+  "neo4j>=5.14,<6",
+  "click>=8.1",
+  "pyyaml>=6.0",
+  "pydantic>=2.5",
+  "baml-py==0.223.0",
+]
+
+[project.optional-dependencies]
+# sync_snomed_synonyms.py: read synonyms from a local SNOMED CT release in PostgreSQL
+snomed = ["sqlalchemy>=2.0", "psycopg2-binary>=2.9", "pandas>=2.1"]
+
+[project.urls]
+Repository = "https://github.com/dieterich-lab/ExecutableKG"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"cardio_graph_core.query" = ["baml_src/*.baml"]

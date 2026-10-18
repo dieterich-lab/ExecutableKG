@@ -1,0 +1,234 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_54.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_54.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 19 -Recommendations for sodium- glucose cotransporter 2 inhibitors and/or glucagon-like peptide-1 receptor agonists in patients with chronic coronary syndrome (see also Evidence Table 19)",
+          "Section Header": "CCS patients with type 2 diabetes",
+          "Subheader": null,
+          "Recommendations": "SGLT2 inhibitors with proven CV benefitc are recommended in patients with T2DM and CCS to reduce CV events, independent of baseline or target HbA1c and independent of concomitant glucose-lowering medication.86,688,695,697,700 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "CCS patients with type 2 diabetes ",
+          "recommendation": "SGLT2 inhibitors with proven CV benefitc are recommendedto reduce CV events, independent of baseline or target HbA1c and independent of concomitant glucose-lowering medication",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "type 2 diabetes mellitus",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus type 2",
+                  "snomed_id": "44054006"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "SGLT2 inhibitors",
+              "entity_standardized_list": [],
+              "context": "SGLT2 inhibitors with proven CV benefitc are recommended to reduce CV events, independent of baseline or target HbA1c and independent of concomitant glucose-lowering medication",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 19 -Recommendations for sodium- glucose cotransporter 2 inhibitors and/or glucagon-like peptide-1 receptor agonists in patients with chronic coronary syndrome (see also Evidence Table 19)",
+          "Section Header": "CCS patients with type 2 diabetes",
+          "Subheader": null,
+          "Recommendations": "GLP-1 receptor agonists with proven CV benefitd are recommended in patients with T2DM and CCS to reduce CV events, independent of baseline or target HbA1c and independent of concomitant glucose-lowering medication.710,711 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "CCS patients with type 2 diabetes",
+          "recommendation": " GLP-1 receptor agonists with proven CV benefitd are recommended  to reduce CV events, independent of baseline or target HbA1c and independent of concomitant glucose-lowering medication",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "type 2 diabetes mellitus",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus type 2",
+                  "snomed_id": "44054006"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "GLP-1 receptor agonists",
+              "entity_standardized_list": [],
+              "context": "GLP-1 receptor agonists with proven CV benefitd are recommended  to reduce CV events, independent of baseline or target HbA1c and independent of concomitant glucose-lowering medication",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 19 -Recommendations for sodium- glucose cotransporter 2 inhibitors and/or glucagon-like peptide-1 receptor agonists in patients with chronic coronary syndrome (see also Evidence Table 19)",
+          "Section Header": "CCS patients without type 2 diabetes",
+          "Subheader": null,
+          "Recommendations": "The GLP-1 receptor agonist semaglutide should be considered in overweight (BMI ≥27 kg/m2) or obese CCS patients without diabetes to reduce CV mortality, MI, or stroke.465 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "CCS patients with no type 2 diabetes AND overweight (BMI ≥27 kg/m2) or obese CCS patients without diabetes",
+          "recommendation": "The GLP-1 receptor agonist semaglutide should be considered to reduce CV mortality, MI, or stroke",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "type 2 diabetes mellitus",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus type 2",
+                  "snomed_id": "44054006"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "overweight",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Overweight",
+                  "snomed_id": "238131007"
+                }
+              ],
+              "context": "(BMI ≥27 kg/m2)",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "obese",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Obese",
+                  "snomed_id": "414915002"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "BMI",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Body mass index",
+                  "snomed_id": "60621009"
+                }
+              ],
+              "context": "overweight (BMI ≥27 kg/m2) or obese",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "27",
+                "unit": "kg/m2",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "GLP-1 receptor agonists",
+              "entity_standardized_list": [],
+              "context": "The GLP-1 receptor agonist semaglutide should be considered to reduce CV mortality, MI, or stroke",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

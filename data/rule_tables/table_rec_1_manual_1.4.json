@@ -1,0 +1,387 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_22.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_22.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "History taking and risk factor assessment",
+          "Subheader": null,
+          "Recommendations": "In individuals reporting symptoms of suspected myocardial ischaemic origin, a detailed assessment of cardiovascular risk factors, medical history, and symptom characteristics (including onset, duration, type, location, triggers, relieving factors, time of day) is recommended. I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "In individuals reporting symptoms of suspected myocardial ischaemic origin or with suspected chronic coronary syndrome",
+          "recommendation": "a detailed assessment of cardiovascular risk factors, medical history, and symptom characteristics (including onset, duration, type, location, triggers, relieving factors, time of day) is recommended.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "symptoms of suspected myocardial ischaemic origin",
+                  "entity_standardized_list": [],
+                  "context": "In individuals reporting symptoms of suspected myocardial ischaemic origin",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "assessment of cardiovascular risk factors",
+                  "entity_standardized_list": [],
+                  "context": "a detailed assessment of cardiovascular risk factors, medical history, and symptom characteristics (including onset, duration, type, location, triggers, relieving factors, time of day) is recommended",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "History taking and risk factor assessment",
+          "Subheader": null,
+          "Recommendations": "Symptoms like chest pain triggered by emotional stress; dyspnoea or dizziness on exertion; pain in the arms, jaw, neck, or upper back; or fatigue should be considered as potential angina equivalents.18,33,57,59,77 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "in individuals with suspected chronic coronary syndrome Symptoms like chest pain triggered by emotional stress; dyspnoea or dizziness on exertion; pain in the arms, jaw, neck, or upper back; or fatigue",
+          "recommendation": "should be considered as potential angina equivalents",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "chest pain triggered by emotional stress",
+                  "entity_standardized_list": [],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "dizziness on exertion",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Exertional dizziness",
+                      "snomed_id": "103018003"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "dyspnoea on exertion",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Dyspnea on exertion",
+                      "snomed_id": "60845006"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "pain in the arms",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Pain in upper limb",
+                      "snomed_id": "102556003"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "pain in the jaw",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Jaw pain",
+                      "snomed_id": "274667000"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "pain in the neck",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Neck pain",
+                      "snomed_id": "81680005"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "pain in the upper back",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Thoracic back pain",
+                      "snomed_id": "279038004"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "angina equivalent",
+                  "entity_standardized_list": [],
+                  "context": "should be considered as potential angina equivalents",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "Resting ECG",
+          "Subheader": null,
+          "Recommendations": "If clinical or ECG assessment suggests ACS rather than CCS, immediate referral to the emergency department and/or repeated measurement of blood troponin, preferably using high-sensitivity or ultrasensitive assays, to rule out acute myocardial injury, is recommended.78,79 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "in individuals with suspected chronic coronary syndrome If clinical or ECG assessment suggests ACS rather than CCS",
+          "recommendation": "immediate referral to the emergency department and/or repeated measurement of blood troponin, preferably using high-sensitivity or ultrasensitive assays, to rule out acute myocardial injury, is recommended",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "suspected acute coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "clinical or ECG assessment suggests ACS rather than CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "referral to the emergency department",
+                  "entity_standardized_list": [],
+                  "context": "immediate referral to the emergency department to rule out acute myocardial injury",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "repeated measurement of blood troponin",
+                  "entity_standardized_list": [],
+                  "context": "and/or repeated measurement of blood troponin, preferably using high-sensitivity or ultrasensitive assays, to rule out acute myocardial injury",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "Resting ECG",
+          "Subheader": null,
+          "Recommendations": "A resting 12-lead ECG is recommended in all individuals reporting chest pain (unless an obvious non-cardiac cause is identified), particularly during, or immediately after, an episode suggestive of myocardial ischaemia. I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "individuals with suspected chronic coronary syndrome reporting chest pain (unless an obvious non-cardiac cause is identified), particularly during, or immediately after, an episode suggestive of myocardial ischaemia",
+          "recommendation": "A resting 12-lead ECG is recommended ",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "chest pain",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chest pain",
+                      "snomed_id": "29857009"
+                    }
+                  ],
+                  "context": "(unless an obvious non-cardiac cause is identified), particularly during, or immediately after, an episode suggestive of myocardial ischaemia",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "resting 12-lead ECG",
+                  "entity_standardized_list": [],
+                  "context": "",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "Resting ECG",
+          "Subheader": null,
+          "Recommendations": "Using ST-segment deviations during supraventricular tachyarrhythmias, particularly during re-entrant atrioventricular tachycardias, per se, as reliable evidence of obstructive CAD, is not recommended.80–84 III B",
+          "Class a": "III",
+          "Level b": "B",
+          "input": "in individuals with suspected chronic coronary syndrome ",
+          "recommendation": "Using ST-segment deviations during supraventricular tachyarrhythmias, particularly during re-entrant atrioventricular tachycardias, per se, as reliable evidence of obstructive CAD, is not recommended",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Using ST-segment deviations during supraventricular tachyarrhythmias as reliable evidence of obstructive CAD, is not recommended",
+                  "entity_standardized_list": [],
+                  "context": "Using ST-segment deviations during supraventricular tachyarrhythmias, particularly during re-entrant atrioventricular tachycardias, per se, as reliable evidence of obstructive CAD, is not recommended",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "III",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_78.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_78.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 28 -Recommendations for adherence to medical therapy and lifestyle changes (see also Evidence Table 28)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Mobile health interventions (e.g. using text messages, apps, wearable devices) are recommended to improve patient adherence to healthy lifestyles and medical therapy.491,1148,1149,1154,1156,1164 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "CCS patient",
+          "recommendation": "Mobile health interventions (e.g. using text messages, apps, wearable devices) are recommended to improve patient adherence to healthy lifestyles and medical therapy",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Mobile health interventions",
+              "entity_standardized_list": [],
+              "context": "Mobile health interventions (e.g. using text messages, apps, wearable devices) are recommended to improve patient adherence to healthy lifestyles and medical therapy",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 28 -Recommendations for adherence to medical therapy and lifestyle changes (see also Evidence Table 28)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Behavioural interventions are recommended to improve adherence.491,1140,1144",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "CCS patient",
+          "recommendation": "Behavioural interventions are recommended to improve adherence",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Behavioural interventions",
+              "entity_standardized_list": [],
+              "context": "Behavioural interventions are recommended to improve adherence",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 28 -Recommendations for adherence to medical therapy and lifestyle changes (see also Evidence Table 28)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Simplifying medication regimens (e.g. using fixed-dose drug combinations) is recommended to increase patient adherence to medications.1139,1163,1166 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "CCS patient",
+          "recommendation": "Simplifying medication regimens (e.g. using fixed-dose drug combinations) is recommended to increase patient adherence to medications",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Simplifying medication regimens",
+              "entity_standardized_list": [],
+              "context": "Simplifying medication regimens (e.g. using fixed-dose drug combinations) is recommended to increase patient adherence to medications",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 28 -Recommendations for adherence to medical therapy and lifestyle changes (see also Evidence Table 28)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Multiprofessional and family involvement is recommended to promote adherence, in addition to patient education and involvement.1139 I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "CCS patient",
+          "recommendation": "Multiprofessional and family involvement is recommended to promote adherence, in addition to patient education and involvement",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Multiprofessional and family involvement",
+              "entity_standardized_list": [],
+              "context": "Multiprofessional and family involvement is recommended to promote adherence, in addition to patient education and involvement",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "patient education and involvement",
+              "entity_standardized_list": [],
+              "context": "Multiprofessional and family involvement is recommended to promote adherence, in addition to patient education and involvement",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

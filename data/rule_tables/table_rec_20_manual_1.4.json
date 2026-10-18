@@ -1,0 +1,70 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_55.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_55.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 20 -Recommendations for anti-inflammatory drugs in patients with chronic coronary syndrome (see also Evidence Table 20)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In CCS patients with atherosclerotic CAD, low-dose colchicine (0.5 mg daily) should be considered to reduce myocardial infarction, stroke, and need for revascularization.714–716",
+          "Class a": "IIa",
+          "Level b": "A",
+          "input": "In CCS patients with atherosclerotic CAD",
+          "recommendation": "low-dose colchicine (0.5 mg daily) should be considered to reduce myocardial infarction, stroke, and need for revascularization",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "atherosclerotic CAD",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Coronary arteriosclerosis",
+                  "snomed_id": "53741008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "low-dose colchicine",
+              "entity_standardized_list": [],
+              "context": "low-dose colchicine (0.5 mg daily) should be considered to reduce myocardial infarction, stroke, and need for revascularization",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

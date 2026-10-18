@@ -1,0 +1,1384 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_64.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_64.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing CCS in heart failure patients",
+          "Subheader": null,
+          "Recommendations": "In HF patients with LVEF ≤35% in whom obstructive CAD is suspected, ICA is recommended with a view towards improving prognosis by CABG, taking into account the risk-to-benefit ratio of the procedures.54,729,749,908",
+          "Class a": "I",
+          "Level b": "B",
+          "input": " patients with chronic heart failure with LVEF ≤35% in whom obstructive CAD is suspected",
+          "recommendation": "ICA is recommended with a view towards improving prognosis by CABG, taking into account the risk-to-benefit ratio of the procedures",
+          "rules": [
+            {
+              "entity_original": "chronic heart failure",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic heart failure",
+                  "snomed_id": "48447003"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "obstructive CAD is suspected",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "lvef",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "LVEF ≤35%",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "35",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ICA Invasive coronary Angiography",
+              "entity_standardized_list": [],
+              "context": "ICA is recommended with a view towards improving prognosis by CABG, taking into account the risk-to-benefit ratio of the procedures",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing CCS in heart failure patients",
+          "Subheader": null,
+          "Recommendations": "In HF patients with LVEF >35% and suspected CCS with low or moderate (>5%–50%) pre-test likelihood of obstructive CAD, CCTA or functional imaging is recommended.887",
+          "Class a": "I",
+          "Level b": "C",
+          "input": " patients with chronic heart failure with LVEF >35% and suspected CCS with low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+          "recommendation": "CCTA or functional imaging is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "suspected CCS",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "chronic heart failure",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic heart failure",
+                  "snomed_id": "48447003"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "lvef",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "LVEF ≤35%",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "35",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "5",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "low or moderate (>5%–50%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "50",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CCTA",
+              "entity_standardized_list": [],
+              "context": "CCTA or functional imaging is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "functional imaging",
+              "entity_standardized_list": [],
+              "context": "CCTA or functional imaging is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing CCS in heart failure patients",
+          "Subheader": null,
+          "Recommendations": "In HF patients with LVEF >35% and suspected CCS with very high (>85%) pre-test likelihood of obstructive CAD, ICA (with FFR, iFR, or QFR when needed) is recommended.887",
+          "Class a": "I",
+          "Level b": "C",
+          "input": " patients with chronic heart failure with LVEF >35% and suspected CCS with very high (>85%) pre-test likelihood of obstructive CAD",
+          "recommendation": "ICA (with FFR, iFR, or QFR when needed) is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "suspected CCS",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "chronic heart failure",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic heart failure",
+                  "snomed_id": "48447003"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "lvef",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "LVEF ≤35%",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "35",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "pre-test likelihood of obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "very high (>85%) pre-test likelihood of obstructive CAD",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": ">",
+                "threshold": "85",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ICA",
+              "entity_standardized_list": [],
+              "context": "ICA (with FFR, iFR, or QFR when needed) is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing CCS in heart failure patients",
+          "Subheader": null,
+          "Recommendations": "In patients with HFpEF with persistent angina or equivalent symptoms and normal or non-obstructive epicardial coronary arteries, PET or CMR perfusion or invasive coronary functional testing should be considered to detect or rule out coronary microvascular IIa B dysfunction.883–885,887–889",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": " patients with HFpEF with persistent angina or equivalent symptoms and normal or non-obstructive epicardial coronary arteries",
+          "recommendation": "PET or CMR perfusion or invasive coronary functional testing should be considered to detect or rule out coronary microvascular dysfunction",
+          "rules": [
+            {
+              "entity_original": "HFpEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with normal ejection fraction",
+                  "snomed_id": "446221000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "persistent angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Refractory angina",
+                  "snomed_id": "315025001"
+                }
+              ],
+              "context": "persistent angina or equivalent symptoms",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "angina equivalent symptoms",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Anginal equivalent",
+                  "snomed_id": "565394081000119105"
+                }
+              ],
+              "context": "persistent angina or equivalent symptoms",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "normal epicardial coronary arteries",
+              "entity_standardized_list": [],
+              "context": "normal or non-obstructive epicardial coronary arteries",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_2"
+              }
+            },
+            {
+              "entity_original": "non-obstructive epicardial coronary arteries",
+              "entity_standardized_list": [],
+              "context": "normal or non-obstructive epicardial coronary arteries",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_2"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PET perfusion",
+              "entity_standardized_list": [],
+              "context": "PET or CMR perfusion or invasive coronary functional testing should be considered to detect or rule out coronary microvascular dysfunction",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CMR perfusion",
+              "entity_standardized_list": [],
+              "context": "PET or CMR perfusion or invasive coronary functional testing should be considered to detect or rule out coronary microvascular dysfunction",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "invasive coronary functional testing",
+              "entity_standardized_list": [],
+              "context": "PET or CMR perfusion or invasive coronary functional testing should be considered to detect or rule out coronary microvascular dysfunction",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing CCS in heart failure patients",
+          "Subheader": null,
+          "Recommendations": "In selected patients with HFrEF undergoing high-risk PCI for complex CAD, the use of a microaxial flow pump may be considered in experienced centres.905–907",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": " selected patients with HFrEF undergoing high-risk PCI for complex CAD",
+          "recommendation": "the use of a microaxial flow pump may be considered in experienced centres",
+          "rules": [
+            {
+              "entity_original": "HFrEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+                  "snomed_id": "703272007"
+                }
+              ],
+              "context": "selected patients with HFrEF",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "complex CAD",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "high-risk PCI",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Percutaneous transluminal coronary intervention using imaging guidance with contrast",
+                  "snomed_id": "415070008"
+                }
+              ],
+              "context": "undergoing high-risk PCI for complex CAD",
+              "role": "Procedure",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "microaxial flow pump",
+              "entity_standardized_list": [],
+              "context": "the use of a microaxial flow pump may be considered in experienced centres",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "It is recommended that CCS patients with HF be enrolled in a multidisciplinary HF management programme to reduce the risk of HF hospitalization and to improve survival.526,909–911",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "chronic coronary syndrome patients with chronic heart failure",
+          "recommendation": "patients be enrolled in a multidisciplinary HF management programme to reduce the risk of HF hospitalization and to improve survival",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "chronic heart failure",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic heart failure",
+                  "snomed_id": "48447003"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "multidisciplinary HF management programme",
+              "entity_standardized_list": [],
+              "context": "patients be enrolled in a multidisciplinary HF management programme to reduce the risk of HF hospitalization and to improve survival",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "An ACE-I, an MRA, an SGLT2 inhibitor (dapagliflozin or empagliflozin), and, in stable conditions, a beta-blocker are recommended for CCS patients with HFrEF to reduce the risk of HF hospitalization and death.526,704,705,912,913",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "chronic coronary syndrome patients with HFrEF ",
+          "recommendation": "An ACE-I, an MRA, an SGLT2 inhibitor (dapagliflozin or empagliflozin), and, in stable conditions, a beta-blocker are recommended to reduce the risk of HF hospitalization and death",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "HFrEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+                  "snomed_id": "703272007"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ACE-I",
+              "entity_standardized_list": [],
+              "context": "An ACE-I is recommended to reduce the risk of HF hospitalization and death",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "MRA",
+              "entity_standardized_list": [],
+              "context": "MRA is recommended to reduce the risk of HF hospitalization and death",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "SGLT2 inhibitor ",
+              "entity_standardized_list": [],
+              "context": "SGLT2 inhibitor (dapagliflozin or empagliflozin) is recommended to reduce the risk of HF hospitalization and death",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "beta-blocker",
+              "entity_standardized_list": [],
+              "context": "in stable conditions a beta-blocker is recommended to reduce the risk of HF hospitalization and death",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "An SGLT2 inhibitor (dapagliflozin or empagliflozin) is recommended in patients with Heart Failure with mildly reduced Ejection Fraction (HFmrEF) or HFpEF to reduce the risk of HF hospitalization or cardiovascular death.706,707",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "chronic coronary syndrome patients with chronic heart failure with mildly reduced Ejection Fraction (HFmrEF) or HFpEF",
+          "recommendation": "An SGLT2 inhibitor (dapagliflozin or empagliflozin) is recommended to reduce the risk of HF hospitalization or cardiovascular death",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "chronic heart failure",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic heart failure",
+                  "snomed_id": "48447003"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "HFmrEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with mildly reduced ejection fraction",
+                  "snomed_id": "788950000"
+                }
+              ],
+              "context": "mildly reduced Ejection Fraction (HFmrEF) or HFpEF",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "HFpEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with normal ejection fraction",
+                  "snomed_id": "446221000"
+                }
+              ],
+              "context": "mildly reduced Ejection Fraction (HFmrEF) or HFpEF",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "SGLT2 inhibitor",
+              "entity_standardized_list": [],
+              "context": "An SGLT2 inhibitor (dapagliflozin or empagliflozin) is recommended to reduce the risk of HF hospitalization or cardiovascular death",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "An ARB is recommended in symptomatic patients with CCS and HFrEF unable to tolerate an ACE-I or ARNI to reduce the risk of HF hospitalization and cardiovascular death.914",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "symptomatic patients with CCS and HFrEF unable to tolerate an ACE-I or ARNI",
+          "recommendation": "An ARB is recommended to reduce the risk of HF hospitalization and cardiovascular death",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "symptomatic patients with CCS",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "HFrEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+                  "snomed_id": "703272007"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "unable to tolerate an ACE-I",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angiotensin-converting-enzyme inhibitor adverse reaction",
+                  "snomed_id": "293500009"
+                }
+              ],
+              "context": "unable to tolerate an ACE-I or ARNI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "unable to tolerate an ARNI",
+              "entity_standardized_list": [],
+              "context": "unable to tolerate an ACE-I or ARNI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ARB",
+              "entity_standardized_list": [],
+              "context": "An ARB is recommended to reduce the risk of HF hospitalization and cardiovascular death",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "Sacubitril/valsartan is recommended as a replacement for an ACE-I or ARB in CCS patients with HFrEF to reduce the risk of HF hospitalization and of cardiovascular and all-cause death.693",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "in CCS patients with HFrEF",
+          "recommendation": "Sacubitril/valsartan is recommended as a replacement for an ACE-I or ARB to reduce the risk of HF hospitalization and of cardiovascular and all-cause death",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "HFrEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+                  "snomed_id": "703272007"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Sacubitril/valsartan",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Sacubitril valsartan sodium salt complex",
+                  "snomed_id": "230561000087108"
+                }
+              ],
+              "context": "Sacubitril/valsartan is recommended as a replacement for an ACE-I or ARB to reduce the risk of HF hospitalization and of cardiovascular and all-cause death",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "Diuretics are recommended in CCS patients with HF and signs and/or symptoms of congestion to alleviate symptoms, improve exercise capacity, and reduce HF hospitalizations.915",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "CCS patients with HF and signs and/or symptoms of congestion",
+          "recommendation": "Diuretics are recommended to alleviate symptoms, improve exercise capacity, and reduce HF hospitalizations",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "HF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure",
+                  "snomed_id": "84114007"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "signs and/or symptoms of congestion",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Diuretics",
+              "entity_standardized_list": [],
+              "context": "Diuretics are recommended to alleviate symptoms, improve exercise capacity, and reduce HF hospitalizations",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "An ICD is recommended to reduce the risk of sudden death and all-cause mortality in patients with symptomatic HF (NYHA class II–III) of ischaemic aetiology (unless they have had an MI in the prior 40 days), and an LVEF ≤35% despite ≥3 months of optimized medical treatment, provided they are expected to survive substantially longer than 1 year with good functional status.526,916 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "chronic coronary syndrome patients with symptomatic HF (NYHA class II–III) of ischaemic aetiology (unless they have had an MI in the prior 40 days), and an LVEF ≤35% despite ≥3 months of optimized medical treatment, provided they are expected to survive substantially longer than 1 year with good functional status",
+          "recommendation": "An ICD is recommended to reduce the risk of sudden death and all-cause mortality",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "symptomatic HF",
+              "entity_standardized_list": [],
+              "context": "symptomatic HF of ischaemic aetiology",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "NYHA II",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "New York Heart Association Classification",
+                  "snomed_id": "420816009"
+                }
+              ],
+              "context": "NYHA class II–III",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "NYHA III",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "New York Heart Association Classification",
+                  "snomed_id": "420816009"
+                }
+              ],
+              "context": "NYHA class II–III",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "MI in the prior 40 days",
+              "entity_standardized_list": [],
+              "context": "unless they have had an MI in the prior 40 days",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LVEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "LVEF ≤35% despite ≥3 months of optimized medical treatment",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "35",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "expected to survive substantially longer than 1 year",
+              "entity_standardized_list": [],
+              "context": "expected to survive substantially longer than 1 year with good functional status",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ICD",
+              "entity_standardized_list": [],
+              "context": "An ICD is recommended to reduce the risk of sudden death and all-cause mortality",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "An ICD is recommended to reduce the risk of sudden death and all-cause mortality in patients who have recovered from a ventricular arrhythmia causing haemodynamic instability, and who are expected to survive for >1 year with good functional status, in the absence of reversible causes or unless the ventricular arrhythmia has occurred <48 h after an MI. 917–920 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "chronic coronary syndrome patients who have recovered from a ventricular arrhythmia causing haemodynamic instability, and who are expected to survive for >1 year with good functional status, in the absence of reversible causes or unless the ventricular arrhythmia has occurred <48 h after an MI",
+          "recommendation": "An ICD is recommended to reduce the risk of sudden death and all-cause mortality",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ventricular arrhythmia",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Ventricular arrhythmia",
+                  "snomed_id": "44103008"
+                }
+              ],
+              "context": "recovered from a ventricular arrhythmia causing haemodynamic instability ",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "reversible causes of ventricular arrhythmia",
+              "entity_standardized_list": [],
+              "context": "recovered from a ventricular arrhythmia causing haemodynamic instability in the absence of reversible causes or unless the ventricular arrhythmia has occurred <48 h after an MI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "the ventricular arrhythmia has occurred <48 h after an MI",
+              "entity_standardized_list": [],
+              "context": "recovered from a ventricular arrhythmia causing haemodynamic instability in the absence of reversible causes or unless the ventricular arrhythmia has occurred <48 h after an MI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "expected to survive substantially longer than 1 year",
+              "entity_standardized_list": [],
+              "context": "expected to survive for >1 year with good functional status",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ICD",
+              "entity_standardized_list": [],
+              "context": "An ICD is recommended to reduce the risk of sudden death and all-cause mortality",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "CRT is recommended for CCS patients with symptomatic HF, sinus rhythm, LVEF ≤35% despite GDMT, and a QRS duration ≥150 ms with an LBBB QRS morphology to improve symptoms and survival and to reduce morbidity.526,921,922",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "chronic coronary syndrome patients with symptomatic HF, sinus rhythm, LVEF ≤35% despite GDMT, and a QRS duration ≥150 ms with an LBBB QRS morphology",
+          "recommendation": "CRT is recommended to improve symptoms and survival and to reduce morbidity",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "symptomatic HF",
+              "entity_standardized_list": [],
+              "context": "symptomatic HF",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "sinus rhythm",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Sinus rhythm",
+                  "snomed_id": "251150006"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LVEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "LVEF ≤35% despite GDMT",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "35",
+                "unit": "%",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "QRS duration",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "QRS complex duration",
+                  "snomed_id": "251208001"
+                }
+              ],
+              "context": "QRS duration ≥150 ms",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "150",
+                "unit": "ms",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "LBBB QRS morphology",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CRT",
+              "entity_standardized_list": [],
+              "context": "CRT is recommended to improve symptoms and survival and to reduce morbidity",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 24 -Recommendations for management of chronic coronary syndrome patients with chronic heart failure (see also Evidence Table 24)",
+          "Section Header": "Managing heart failure in CCS patients",
+          "Subheader": null,
+          "Recommendations": "CRT rather than right ventricular pacing is recommended for patients with HFrEF regardless of NYHA class or QRS width who have an indication for ventricular pacing for high-degree AV block in order to reduce morbidity. This includes patients with AF. 923–925",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "chronic coronary syndrome patients with HFrEF regardless of NYHA class or QRS width who have an indication for ventricular pacing for high-degree AV block this includes patients with AF",
+          "recommendation": "CRT rather than right ventricular pacing in order to reduce morbidity",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "HFrEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Heart failure with reduced ejection fraction",
+                  "snomed_id": "703272007"
+                }
+              ],
+              "context": "symptomatic HF",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "AF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Atrial fibrillation",
+                  "snomed_id": "49436004"
+                }
+              ],
+              "context": "indication for ventricular pacing for high-degree AV block this includes patients with AF",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "high-degree AV block",
+              "entity_standardized_list": [],
+              "context": "indication for ventricular pacing for high-degree AV block this includes patients with AF",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CRT",
+              "entity_standardized_list": [],
+              "context": "CRT rather than right ventricular pacing in order to reduce morbidity",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

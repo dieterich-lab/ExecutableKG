@@ -1,0 +1,89 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_27.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_27.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 6 — Recommendations for chest X-ray in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 6)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "A chest X-ray should be considered for individuals with: • signs and symptoms suggestive of heart failure; • suspected acute pulmonary disease; • suspected aortic, non-coronary cardiac, or other thoracic causes of chest pain. IIa C",
+          "Class a": "IIa",
+          "Level b": "C",
+          "input": "individuals with suspected chronic coronary syndrome and • signs and symptoms suggestive of heart failure; • suspected acute pulmonary disease; • suspected aortic, non-coronary cardiac, or other thoracic causes of chest pain",
+          "recommendation": "A chest X-ray should be considered",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "signs and symptoms suggestive of heart failure",
+                  "entity_standardized_list": [],
+                  "context": "signs and symptoms suggestive of heart failure",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "suspected acute pulmonary disease",
+                  "entity_standardized_list": [],
+                  "context": "suspected acute pulmonary disease",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "suspected aortic, non-coronary cardiac, or other thoracic causes of chest pain",
+                  "entity_standardized_list": [],
+                  "context": "suspected aortic, non-coronary cardiac, or other thoracic causes of chest pain",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "chest X-ray",
+                  "entity_standardized_list": [],
+                  "context": "chest X-ray should be considered",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_40.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_40.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 14 -Recommendations for definition of high risk of adverse events (see also Evidence Table 14)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "An initial stratification of risk of adverse events is recommended based on basic clinical assessment (e.g. age, ECG, anginal threshold, diabetes, CKD, LVEF).406–408 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "based on basic clinical assessment (e.g. age, ECG, anginal threshold, diabetes, CKD, LVEF) ",
+          "recommendation": "An initial stratification of risk of adverse events is recommended",
+          "rules": [
+            {
+              "entity_original": "basic clinical assessment",
+              "entity_standardized_list": [],
+              "context": "based on basic clinical assessment (e.g. age, ECG, anginal threshold, diabetes, CKD, LVEF)",
+              "role": "Procedure",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "An initial stratification of risk of adverse events is recommended",
+              "entity_standardized_list": [],
+              "context": "based on basic clinical assessment (e.g. age, ECG, anginal threshold, diabetes, CKD, LVEF)",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 14 -Recommendations for definition of high risk of adverse events (see also Evidence Table 14)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "The use of one or more of the following test results is recommended to identify individuals at high risk of adverse events:405 • exercise ECG: ⚬Duke Treadmill Score < −10;191 • stress SPECT or PET perfusion imaging: ⚬area of ischaemia ≥10% of the LV myocardium;287,315,422,423,435 • stress echocardiography: ⚬≥3 of 16 segments with stress-induced hypokinesia or akinesia;435 • stress CMR: ⚬≥2 of 16 segments with stress perfusion defects or ≥3 dobutamine-induced dysfunctional segments;435 • CCTA: ⚬left main disease with ≥50% stenosis, three-vessel disease with ≥70 stenosis, or two-vessel disease with ≥70% stenosis, including the proximal LAD or317one-vessel disease of the proximal LAD with ≥70% stenosis and FFR-CT ≤0.8. I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "if high risk of adverse events is unknown",
+          "recommendation": "to identify individuals at high risk of adverse events • exercise ECG: ⚬Duke Treadmill Score < −10;191 • stress SPECT or PET perfusion imaging: ⚬area of ischaemia ≥10% of the LV myocardium;287,315,422,423,435 • stress echocardiography: ⚬≥3 of 16 segments with stress-induced hypokinesia or akinesia;435 • stress CMR: ⚬≥2 of 16 segments with stress perfusion defects or ≥3 dobutamine-induced dysfunctional segments;435 • CCTA: ⚬left main disease with ≥50% stenosis, three-vessel disease with ≥70 stenosis, or two-vessel disease with ≥70% stenosis, including the proximal LAD or317one-vessel disease of the proximal LAD with ≥70% stenosis and FFR-CT ≤0.8.",
+          "rules": [
+            {
+              "entity_original": "high risk of adverse events is unknown",
+              "entity_standardized_list": [],
+              "context": "if high risk of adverse events is unknown",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "exercise ECG",
+              "entity_standardized_list": [],
+              "context": "to identify individuals at high risk of adverse events if Duke Treadmill Score < −10",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "stress SPECT",
+              "entity_standardized_list": [],
+              "context": "to identify individuals at high risk of adverse events if area of ischaemia ≥10% of the LV myocardium",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "PET perfusion imaging",
+              "entity_standardized_list": [],
+              "context": "to identify individuals at high risk of adverse events if area of ischaemia ≥10% of the LV myocardium",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "stress echocardiography",
+              "entity_standardized_list": [],
+              "context": "to identify individuals at high risk of adverse events if ≥3 of 16 segments with stress-induced hypokinesia or akinesia",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "stress CMR",
+              "entity_standardized_list": [],
+              "context": "to identify individuals at high risk of adverse events if ≥2 of 16 segments with stress perfusion defects or ≥3 dobutamine-induced dysfunctional segments",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CCTA",
+              "entity_standardized_list": [],
+              "context": "to identify individuals at high risk of adverse events if left main disease with ≥50% stenosis, three-vessel disease with ≥70 stenosis, or two-vessel disease with ≥70% stenosis, including the proximal LAD or one-vessel disease of the proximal LAD with ≥70% stenosis and FFR-CT ≤0.8.",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 14 -Recommendations for definition of high risk of adverse events (see also Evidence Table 14)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals at high risk of adverse events (regardless of symptoms), ICA—complemented by invasive coronary pressure (FFR/iFR) when appropriate—is recommended, with the aim of refining risk stratification and improving symptoms and cardiovascular outcomes by revascularization.318,319 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "individuals at high risk of adverse events",
+          "recommendation": "ICA—complemented by invasive coronary pressure (FFR/iFR) when appropriate—is recommended, with the aim of refining risk stratification and improving symptoms and cardiovascular outcomes by revascularization",
+          "rules": [
+            {
+              "entity_original": "high risk of adverse events",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "At increased risk for cardiovascular event",
+                  "snomed_id": "395112001"
+                }
+              ],
+              "context": "individuals at high risk of adverse events",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Invasive coronary angiography",
+              "entity_standardized_list": [],
+              "context": "ICA—complemented by invasive coronary pressure (FFR/iFR) when appropriate—is recommended, with the aim of refining risk stratification and improving symptoms and cardiovascular outcomes by revascularization",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_74.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_74.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 26 — Recommendations for older, female, high bleeding risk, comorbid, and socially/geographically diverse patients (see also Evidence Table 26)",
+          "Section Header": "Older adults",
+          "Subheader": null,
+          "Recommendations": "In older adults (≥75 years), particular attention to drug side effects, intolerance, drug–drug interactions, overdosing, and procedural complications is recommended. I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "In older adults (≥75 years)",
+          "recommendation": "particular attention to drug side effects, intolerance, drug–drug interactions, overdosing, and procedural complications is recommended",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "age",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Age",
+                  "snomed_id": "397669002"
+                }
+              ],
+              "context": "In older adults (≥75 years)",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "75",
+                "unit": "years",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "particular attention to drug side effects, intolerance, drug–drug interactions, overdosing, and procedural complications",
+              "entity_standardized_list": [],
+              "context": "particular attention to drug side effects, intolerance, drug–drug interactions, overdosing, and procedural complications is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 26 — Recommendations for older, female, high bleeding risk, comorbid, and socially/geographically diverse patients (see also Evidence Table 26)",
+          "Section Header": "Older adults",
+          "Subheader": null,
+          "Recommendations": "In older, as in younger, individuals, diagnostic and revascularization decisions based on symptoms, extent of ischaemia, frailty, life expectancy, comorbidities, and patient preferences are recommended. I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "",
+          "recommendation": "diagnostic and revascularization decisions based on symptoms, extent of ischaemia, frailty, life expectancy, comorbidities, and patient preferences are recommended In older, as in younger",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "diagnostic and revascularization decisions based on symptoms, extent of ischaemia, frailty, life expectancy, comorbidities, and patient preferences",
+              "entity_standardized_list": [],
+              "context": "diagnostic and revascularization decisions based on symptoms, extent of ischaemia, frailty, life expectancy, comorbidities, and patient preferences are recommended In older, as in younger",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 26 — Recommendations for older, female, high bleeding risk, comorbid, and socially/geographically diverse patients (see also Evidence Table 26)",
+          "Section Header": "Sex",
+          "Subheader": null,
+          "Recommendations": "Similar guideline-directed cardiovascular preventive therapy is recommended in women and men.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "",
+          "recommendation": "Similar guideline-directed cardiovascular preventive therapy is recommended in women and men",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Similar guideline-directed cardiovascular preventive therapy is recommended in women and men",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 26 — Recommendations for older, female, high bleeding risk, comorbid, and socially/geographically diverse patients (see also Evidence Table 26)",
+          "Section Header": "Sex",
+          "Subheader": null,
+          "Recommendations": "Systemic post-menopausal hormone therapy is not recommended in women with CCS, given the lack of cardiovascular benefit and an increased risk of thrombo-embolic complications.1026,1094,1095 III A",
+          "Class a": "III",
+          "Level b": "A",
+          "input": "women with CCS",
+          "recommendation": "Systemic post-menopausal hormone therapy is not recommended given the lack of cardiovascular benefit and an increased risk of thrombo-embolic complications",
+          "rules": [
+            {
+              "entity_original": "female",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Female",
+                  "snomed_id": "248152002"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Systemic post-menopausal hormone therapy",
+              "entity_standardized_list": [],
+              "context": "Systemic post-menopausal hormone therapy is not recommended given the lack of cardiovascular benefit and an increased risk of thrombo-embolic complications",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "III",
+                "level": "A",
+                "direction": "NEGATIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 26 — Recommendations for older, female, high bleeding risk, comorbid, and socially/geographically diverse patients (see also Evidence Table 26)",
+          "Section Header": "High bleeding risk",
+          "Subheader": null,
+          "Recommendations": "Bleeding risk assessment is recommended using the PRECISE-DAPT score, the qualitative ARC-HBR tool or other, validated methods.589,590 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "CCS patients",
+          "recommendation": "Bleeding risk assessment is recommended using the PRECISE-DAPT score, the qualitative ARC-HBR tool or other, validated methods",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Bleeding risk assessment",
+              "entity_standardized_list": [],
+              "context": "Bleeding risk assessment is recommended using the PRECISE-DAPT score, the qualitative ARC-HBR tool or other, validated methods",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 26 — Recommendations for older, female, high bleeding risk, comorbid, and socially/geographically diverse patients (see also Evidence Table 26)",
+          "Section Header": "HIV",
+          "Subheader": null,
+          "Recommendations": "Attention to interaction between antiretroviral treatment and statins I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "CCS + HIV",
+          "recommendation": "Attention to interaction between antiretroviral treatment and statins",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "HIV",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Human immunodeficiency virus",
+                  "snomed_id": "19030005"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Attention to interaction between antiretroviral treatment and statins",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 26 — Recommendations for older, female, high bleeding risk, comorbid, and socially/geographically diverse patients (see also Evidence Table 26)",
+          "Section Header": "Socioeconomic, geographical, and under-investigated groups",
+          "Subheader": null,
+          "Recommendations": "Continued targeted efforts are recommended: • to increase delivery of safe and effective cardiac care to all CCS patients, especially those of lower socioeconomic classes; and • to enhance inclusion in future clinical trials of geographical, social, or other groups that are currently underrepresented.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "",
+          "recommendation": "Continued targeted efforts are recommended: • to increase delivery of safe and effective cardiac care to all CCS patients, especially those of lower socioeconomic classes; and • to enhance inclusion in future clinical trials of geographical, social, or other groups that are currently underrepresented",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "increase delivery of safe and effective cardiac care to all CCS patients, especially those of lower socioeconomic classes",
+              "entity_standardized_list": [],
+              "context": "Continued targeted efforts are recommended: • to increase delivery of safe and effective cardiac care to all CCS patients, especially those of lower socioeconomic classes; and • to enhance inclusion in future clinical trials of geographical, social, or other groups that are currently underrepresented",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "enhance inclusion in future clinical trials of geographical, social, or other groups that are currently underrepresented",
+              "entity_standardized_list": [],
+              "context": "Continued targeted efforts are recommended: • to increase delivery of safe and effective cardiac care to all CCS patients, especially those of lower socioeconomic classes; and • to enhance inclusion in future clinical trials of geographical, social, or other groups that are currently underrepresented",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

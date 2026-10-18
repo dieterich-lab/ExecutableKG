@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/gold-standard-trigger-case-v2.json",
+  "title": "Trigger-level patient case gold-standard record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "lexical_tier",
+    "patient_case",
+    "intended_node_ids",
+    "intended_nodes",
+    "trigger_semantics",
+    "expected_triggered_row_ids",
+    "triggered_rows",
+    "expected_fully_satisfied_row_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "trigger-gold-standard-v2"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^(near|snomed_syn|free_syn)_[0-9]{3}$"
+    },
+    "lexical_tier": {
+      "enum": [
+        "near_original_or_snomed_preferred",
+        "snomed_ct_synonym",
+        "free_paraphrase"
+      ]
+    },
+    "patient_case": {
+      "type": "string",
+      "minLength": 10,
+      "pattern": "^Patient with [^:;()]+\\.$"
+    },
+    "intended_node_ids": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^input_[0-9a-f]+$"
+      }
+    },
+    "intended_nodes": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 4,
+      "items": {
+        "$ref": "#/$defs/intendedNode"
+      }
+    },
+    "trigger_semantics": {
+      "type": "string",
+      "minLength": 20
+    },
+    "expected_triggered_row_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/rowId"
+      }
+    },
+    "triggered_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/triggeredRow"
+      }
+    },
+    "expected_fully_satisfied_row_ids": {
+      "description": "Reserved for later human adjudication; null in this trigger-only dataset.",
+      "type": ["array", "null"],
+      "items": {
+        "$ref": "#/$defs/rowId"
+      }
+    },
+    "lexical_provenance": {
+      "type": "object"
+    },
+    "derived_from_case_id": {
+      "type": "string",
+      "pattern": "^near_[0-9]{3}$"
+    }
+  },
+  "$defs": {
+    "rowId": {
+      "type": "string",
+      "pattern": "^.+\\.json::table_[0-9]+::row_[0-9]+$"
+    },
+    "standardizedEntity": {
+      "type": "object",
+      "required": ["entity_standardized_candidate", "snomed_id"],
+      "properties": {
+        "entity_standardized_candidate": {
+          "type": "string"
+        },
+        "snomed_id": {
+          "type": "string"
+        }
+      }
+    },
+    "intendedNode": {
+      "type": "object",
+      "required": [
+        "node_id",
+        "mention",
+        "entity_original",
+        "context",
+        "role",
+        "annotation_status",
+        "entity_standardized_list",
+        "logic_operators",
+        "source_row_ids"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "string"
+        },
+        "mention": {
+          "type": "string"
+        },
+        "entity_original": {
+          "type": "string"
+        },
+        "context": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "annotation_status": {
+          "type": "string"
+        },
+        "entity_standardized_list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/standardizedEntity"
+          }
+        },
+        "logic_operators": {
+          "type": "array",
+          "items": {
+            "type": ["string", "null"]
+          }
+        },
+        "source_row_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/rowId"
+          }
+        }
+      }
+    },
+    "triggeredRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "row_id",
+        "file",
+        "table_id",
+        "row_index_zero_based",
+        "matched_node_ids"
+      ],
+      "properties": {
+        "row_id": {
+          "$ref": "#/$defs/rowId"
+        },
+        "file": {
+          "type": "string"
+        },
+        "table_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "row_index_zero_based": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "matched_node_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

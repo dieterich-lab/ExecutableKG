@@ -1,0 +1,1131 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_63.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_63.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Left main disease",
+          "Subheader": "In CCS patients at low surgical riskc with significant left main coronary stenosis, CABG:",
+          "Recommendations": " • is recommended over medical therapy alone to improve survival;719",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients at low surgical risk For example: absence of previous cardiac surgery, or severe morbidities, or frailty, or immobility precluding CABG with significant left main coronary stenosis",
+          "recommendation": "CABG is recommended over medical therapy alone to improve survival",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "CCS patients",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "low surgical risk",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Operable",
+                  "snomed_id": "76234009"
+                }
+              ],
+              "context": "low surgical risk For example: absence of previous cardiac surgery, or severe morbidities, or frailty, or immobility precluding CABG with significant left main coronary stenosis",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG is recommended over medical therapy alone to improve survival",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Left main disease",
+          "Subheader": "In CCS patients at low surgical riskc with significant left main coronary stenosis, CABG:",
+          "Recommendations": "• is recommended as the overall preferred revascularization mode over PCI, given the lower risk of spontaneous myocardial infarction and repeat revascularization.728,730,782",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients at low surgical risk For example: absence of previous cardiac surgery, or severe morbidities, or frailty, or immobility precluding CABG with significant left main coronary stenosis",
+          "recommendation": "CABG is recommended as the overall preferred revascularization mode over PCI, given the lower risk of spontaneous myocardial infarction and repeat revascularization",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "low surgical risk",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Operable",
+                  "snomed_id": "76234009"
+                }
+              ],
+              "context": "low surgical risk For example: absence of previous cardiac surgery, or severe morbidities, or frailty, or immobility precluding CABG with significant left main coronary stenosis",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant left main coronary stenosis",
+              "entity_standardized_list": [],
+              "context": "with significant left main coronary stenosis",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG is recommended as the overall preferred revascularization mode over PCI, given the lower risk of spontaneous myocardial infarction and repeat revascularization",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Left main disease",
+          "Subheader": null,
+          "Recommendations": "In CCS patients with significant left main coronary stenosis of low complexity (SYNTAX score ≤22), in whom PCI can provide equivalent completeness of revascularization to that of CABG, PCI is recommended as an alternative to CABG, given its lower invasiveness and non-inferior survival. 718,728,730,802,813 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with significant left main coronary stenosis of low complexity (SYNTAX score ≤22), in whom PCI can provide equivalent completeness of revascularization to that of CABG",
+          "recommendation": "PCI is recommended as an alternative to CABG, given its lower invasiveness and non-inferior survival",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant left main coronary stenosis",
+              "entity_standardized_list": [],
+              "context": "with significant left main coronary stenosis of low complexity (SYNTAX score ≤22) in whom PCI can provide equivalent completeness of revascularization to that of CABG",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "SYNTAX score",
+              "entity_standardized_list": [],
+              "context": "with significant left main coronary stenosis of low complexity (SYNTAX score ≤22) in whom PCI can provide equivalent completeness of revascularization to that of CABG",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "22",
+                "unit": "",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "PCI is recommended as an alternative to CABG, given its lower invasiveness and non-inferior survival",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Left main disease",
+          "Subheader": null,
+          "Recommendations": "In CCS patients with significant left main coronary stenosis of intermediate complexity (SYNTAX score 23–32), in whom PCI can provide equivalent completeness of revascularization to that of CABG, PCI should be considered, given its lower invasiveness and non-inferior survival.718,728,730,802,805,809,813,820,822 IIa A",
+          "Class a": "IIa",
+          "Level b": "A",
+          "input": "In CCS patients with significant left main coronary stenosis of intermediate complexity (SYNTAX score 23–32), in whom PCI can provide equivalent completeness of revascularization to that of CABG",
+          "recommendation": "PCI should be considered, given its lower invasiveness and non-inferior survival",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant left main coronary stenosis",
+              "entity_standardized_list": [],
+              "context": "significant left main coronary stenosis of intermediate complexity (SYNTAX score 23–32), in whom PCI can provide equivalent completeness of revascularization to that of CABG",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "SYNTAX score",
+              "entity_standardized_list": [],
+              "context": "significant left main coronary stenosis of intermediate complexity (SYNTAX score 23–32), in whom PCI can provide equivalent completeness of revascularization to that of CABG",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≤",
+                "threshold": "32",
+                "unit": "",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "SYNTAX score",
+              "entity_standardized_list": [],
+              "context": "significant left main coronary stenosis of intermediate complexity (SYNTAX score 23–32), in whom PCI can provide equivalent completeness of revascularization to that of CABG",
+              "role": "ClinicalParameter",
+              "logic_structured": {
+                "operator": "≥",
+                "threshold": "23",
+                "unit": "",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "PCI should be considered, given its lower invasiveness and non-inferior survival",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Left main with multivessel diseased",
+          "Subheader": null,
+          "Recommendations": "In CCS patients at low surgical risk with suitable anatomy, CABG is recommended over medical therapy alone to improve survival.718,719,870",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients at low surgical risk with suitable anatomy, Left main with multivessel diseased ",
+          "recommendation": "CABG is recommended over medical therapy alone to improve survival",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "low surgical risk",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Operable",
+                  "snomed_id": "76234009"
+                }
+              ],
+              "context": "low surgical risk",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "left main coronary artery disease",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left main coronary artery disease",
+                  "snomed_id": "371804009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "multivessel coronary artery disease",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Multi vessel coronary artery disease",
+                  "snomed_id": "371803003"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "suitable anatomy",
+              "entity_standardized_list": [],
+              "context": "suitable anatomy for CABG",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG is recommended over medical therapy alone to improve survival",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Left main with multivessel diseased",
+          "Subheader": null,
+          "Recommendations": "In CCS patients at high surgical risk, PCI may be considered over medical therapy alone.728,813",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "In CCS patients at high surgical risk, Left main with multivessel diseased",
+          "recommendation": "PCI may be considered over medical therapy alone",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "high surgical risk",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "left main coronary artery disease",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left main coronary artery disease",
+                  "snomed_id": "371804009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "multivessel coronary artery disease",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Multi vessel coronary artery disease",
+                  "snomed_id": "371803003"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "PCI may be considered over medical therapy alone",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Multivessel diseased and diabetes",
+          "Subheader": null,
+          "Recommendations": "In CCS patients with significant multivessel disease and diabetes, with insufficient response to guideline-directed medical therapy, CABG is recommended over medical therapy alone and over PCI to improve symptoms and outcomes.801,824,871–874",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with significant multivessel disease and diabetes, with insufficient response to guideline-directed medical therapy",
+          "recommendation": "CABG is recommended over medical therapy alone and over PCI to improve symptoms and outcomes",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "insufficient response to guideline-directed medical therapy",
+              "entity_standardized_list": [],
+              "context": "insufficient response to guideline-directed medical therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "diabetes",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus",
+                  "snomed_id": "73211009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant multivessel coronary artery disease",
+              "entity_standardized_list": [],
+              "context": "significant multivessel disease",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG is recommended over medical therapy alone and over PCI to improve symptoms and outcomes",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Multivessel diseased and diabetes",
+          "Subheader": null,
+          "Recommendations": "In CCS patients at very high surgical risk, PCI should be considered over medical therapy alone to reduce symptoms and adverse outcomes.55,874",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "In CCS patients at very high surgical risk with Multivessel diseased and diabetes",
+          "recommendation": "PCI should be considered over medical therapy alone to reduce symptoms and adverse outcomes",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "very high surgical risk",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "diabetes",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus",
+                  "snomed_id": "73211009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "multivessel coronary artery disease",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Multi vessel coronary artery disease",
+                  "snomed_id": "371803003"
+                }
+              ],
+              "context": "multivessel disease",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "PCI should be considered over medical therapy alone to reduce symptoms and adverse outcomes",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Three-vessel disease, without diabetes",
+          "Subheader": null,
+          "Recommendations": "In CCS patients with significant three-vessel disease, preserved LVEF, no diabetes, and insufficient response to guideline-directed medical therapy, CABG is recommended over medical therapy alone to improve symptoms, survival, and other outcomes.719,722,875",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with significant three-vessel disease, preserved LVEF, no diabetes, and insufficient response to guideline-directed medical therapy",
+          "recommendation": "CABG is recommended over medical therapy alone to improve symptoms, survival, and other outcomes",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "insufficient response to guideline-directed medical therapy",
+              "entity_standardized_list": [],
+              "context": "insufficient response to guideline-directed medical therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "diabetes",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus",
+                  "snomed_id": "73211009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant three-vessel disease",
+              "entity_standardized_list": [],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "preserved LVEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction ",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG is recommended over medical therapy alone to improve symptoms, survival, and other outcomes",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Three-vessel disease, without diabetes",
+          "Subheader": null,
+          "Recommendations": "In CCS patients with preserved LVEF, no diabetes, insufficient response to guideline-directed medical therapy, and significant three-vessel disease of low-to-intermediate anatomic complexity in whom PCI can provide similar completeness of revascularization to that of CABG, PCI is recommended, given its lower invasiveness, and generally non-inferior survival.326,728,795,798,876 I A",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with preserved LVEF, no diabetes, insufficient response to guideline-directed medical therapy, and significant three-vessel disease of low-to-intermediate anatomic complexity in whom PCI can provide similar completeness of revascularization to that of CABG",
+          "recommendation": "PCI is recommended, given its lower invasiveness, and generally non-inferior survival",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "insufficient response to guideline-directed medical therapy",
+              "entity_standardized_list": [],
+              "context": "insufficient response to guideline-directed medical therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "diabetes",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Diabetes mellitus",
+                  "snomed_id": "73211009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "ABSENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant three-vessel disease",
+              "entity_standardized_list": [],
+              "context": "significant three-vessel disease of low-to-intermediate anatomic complexity in whom PCI can provide similar completeness of revascularization to that of CABG",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "preserved LVEF",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Left ventricular ejection fraction ",
+                  "snomed_id": "250908004"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "PCI is recommended, given its lower invasiveness, and generally non-inferior survival",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Single- or double-vessel disease involving the proximal LAD",
+          "Subheader": null,
+          "Recommendations": "In CCS patients with significant single- or double-vessel disease involving the proximal LAD and insufficient response to guideline-directed medical therapy, CABG or PCI is recommended over medical therapy alone to improve symptoms and outcomes.52,321,719,791,792",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with significant single- or double-vessel disease involving the proximal LAD and insufficient response to guideline-directed medical therapy",
+          "recommendation": "CABG or PCI is recommended over medical therapy alone to improve symptoms and outcomes",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant single-vessel disease involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "significant single- or double-vessel disease involving the proximal LAD",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "significant double-vessel disease involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "significant single- or double-vessel disease involving the proximal LAD",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "insufficient response to guideline-directed medical therapy",
+              "entity_standardized_list": [],
+              "context": "insufficient response to guideline-directed medical therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG or PCI is recommended over medical therapy alone to improve symptoms and outcomes",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "CABG or PCI is recommended over medical therapy alone to improve symptoms and outcomes",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Single- or double-vessel disease involving the proximal LAD",
+          "Subheader": null,
+          "Recommendations": "In CCS patients with complex significant single- or double-vessel disease involving the proximal LAD, less amenable to PCI, and insufficient response to guideline-directed medical therapy, CABG is recommended to improve symptoms and reduce revascularization rates.877–879",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In CCS patients with complex significant single- or double-vessel disease involving the proximal LAD, less amenable to PCI, and insufficient response to guideline-directed medical therapy",
+          "recommendation": "CABG is recommended to improve symptoms and reduce revascularization rates",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "complex significant single-vessel disease involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "complex significant single- or double-vessel disease involving the proximal LAD, less amenable to PCI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "complex significant double-vessel disease involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "complex significant single- or double-vessel disease involving the proximal LAD, less amenable to PCI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "insufficient response to guideline-directed medical therapy",
+              "entity_standardized_list": [],
+              "context": "insufficient response to guideline-directed medical therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG is recommended to improve symptoms and reduce revascularization rates",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Single- or double-vessel disease not involving the proximal LAD",
+          "Subheader": null,
+          "Recommendations": "In symptomatic CCS patients with significant single- or double-vessel disease not involving the proximal LAD and with insufficient response to guideline-directed medical therapy, PCI is recommended to improve symptoms.50,321,732",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In symptomatic CCS patients with significant single- or double-vessel disease not involving the proximal LAD and with insufficient response to guideline-directed medical therapy",
+          "recommendation": "PCI is recommended to improve symptoms",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "symptomatic CCS patients",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant single-vessel disease not involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "significant single- or double-vessel disease not involving the proximal LAD",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "significant double-vessel disease not involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "significant single- or double-vessel disease not involving the proximal LAD",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "insufficient response to guideline-directed medical therapy",
+              "entity_standardized_list": [],
+              "context": "insufficient response to guideline-directed medical therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "PCI",
+              "entity_standardized_list": [],
+              "context": "PCI is recommended to improve symptoms",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 23 — Recommendations for mode of revascularization in patients with chronic coronary syndrome (see also Evidence Table 23)",
+          "Section Header": "Single- or double-vessel disease not involving the proximal LAD",
+          "Subheader": null,
+          "Recommendations": "In symptomatic CCS patients with significant single- or double-vessel disease not involving the proximal LAD and with insufficient response to guideline-directed medical therapy, not amenable to revascularization by PCI, CABG may be considered to improve symptoms.",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "In symptomatic CCS patients with significant single- or double-vessel disease not involving the proximal LAD and with insufficient response to guideline-directed medical therapy, not amenable to revascularization by PCI",
+          "recommendation": "CABG may be considered to improve symptoms",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "symptomatic CCS patients",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "significant single-vessel disease not involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "significant single- or double-vessel disease not involving the proximal LAD not amenable to revascularization by PCI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "significant double-vessel disease not involving the proximal LAD",
+              "entity_standardized_list": [],
+              "context": "significant single- or double-vessel disease not involving the proximal LAD not amenable to revascularization by PCI",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "insufficient response to guideline-directed medical therapy",
+              "entity_standardized_list": [],
+              "context": "insufficient response to guideline-directed medical therapy",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CABG",
+              "entity_standardized_list": [],
+              "context": "CABG may be considered to improve symptoms",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

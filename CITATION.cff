@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper below."
+title: "ExecutableKG: executable knowledge graph of the 2024 ESC chronic coronary syndrome recommendation tables"
+type: software
+authors:
+  - family-names: Calik
+    given-names: Emre
+    affiliation: "Klaus Tschira Institute for Integrative Computational Cardiology, Heidelberg, Germany"
+  - family-names: Wiesenbach
+    given-names: Philipp
+    affiliation: "Klaus Tschira Institute for Integrative Computational Cardiology, Heidelberg, Germany"
+  - family-names: Dieterich
+    given-names: Christoph
+    affiliation: "Klaus Tschira Institute for Integrative Computational Cardiology, Heidelberg, Germany"
+repository-code: "https://github.com/dieterich-lab/ExecutableKG"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-18
+keywords:
+  - clinical decision support
+  - knowledge graph
+  - clinical practice guidelines
+  - retrieval-augmented generation
+  - large language models
+preferred-citation:
+  type: conference-paper
+  title: "Building an Executable Knowledge Graph for Clinical Decision Support in Cardiology"
+  authors:
+    - family-names: Calik
+      given-names: Emre
+    - family-names: Wiesenbach
+      given-names: Philipp
+    - family-names: Dieterich
+      given-names: Christoph
+  collection-title: "Medical Informatics Europe (MIE) 2027"
+  conference:
+    name: "Medical Informatics Europe 2027"
+    city: Tallinn
+    country: EE
+  status: submitted
+  year: 2027

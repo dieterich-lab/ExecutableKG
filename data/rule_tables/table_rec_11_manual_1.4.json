@@ -1,0 +1,394 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_32.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_32.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 11 -Recommendations for invasive coronary angiography in the diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 11)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "When ICA is indicated, radial artery access is recommended as the preferred access site.327–330",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In individuals with suspected CCS and When ICA is indicated ",
+          "recommendation": "radial artery access for ICA is recommended as the preferred access site",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication of ICA",
+                  "entity_standardized_list": [],
+                  "context": "When ICA is indicated",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "radial artery access for ICA ",
+                  "entity_standardized_list": [],
+                  "context": "radial artery access for ICA is recommended as the preferred access site",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 11 -Recommendations for invasive coronary angiography in the diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 11)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "When ICA is indicated, it is recommended to have coronary pressure assessment available and to use it to evaluate the functional severity of intermediate non-left main stem stenosesc prior to revascularization.49,195,308,313,321,322,325,331–333",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In individuals with suspected CCS and When ICA is indicated ",
+          "recommendation": "it is recommended to have coronary pressure assessment available and to use it to evaluate the functional severity of intermediate non-left main stem stenosesc prior to revascularization",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication of ICA",
+                  "entity_standardized_list": [],
+                  "context": "When ICA is indicated",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "coronary pressure assessment",
+                  "entity_standardized_list": [],
+                  "context": "it is recommended to have coronary pressure assessment available and to use it to evaluate the functional severity of intermediate non-left main stem stenosesc prior to revascularization",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 11 -Recommendations for invasive coronary angiography in the diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 11)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Invasive coronary angiography is recommended to diagnose obstructive CAD in individuals with a very high (>85%) clinical likelihood of disease, severe symptoms refractory to guideline-directed medical therapy, angina at a low level of exercise, and/or high event risk.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "In individuals with suspected CCS and with a very high (>85%) clinical likelihood of disease, severe symptoms refractory to guideline-directed medical therapy, angina at a low level of exercise, and/or high event risk ",
+          "recommendation": "Invasive coronary angiography is recommended",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "clinical likelihood of disease",
+                  "entity_standardized_list": [],
+                  "context": "very high (>85%) clinical likelihood of disease",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "85",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "severe symptoms refractory to guideline-directed medical therapy",
+                  "entity_standardized_list": [],
+                  "context": "severe symptoms refractory to guideline-directed medical therapy",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "angina at a low level of exercise",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Exercise-induced angina",
+                      "snomed_id": "300995000"
+                    }
+                  ],
+                  "context": "angina at a low level of exercise",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high event risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At increased risk for cardiovascular event",
+                      "snomed_id": "395112001"
+                    }
+                  ],
+                  "context": "high event risk",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Invasive coronary angiography",
+                  "entity_standardized_list": [],
+                  "context": "Invasive coronary angiography is recommended",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "C",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 11 -Recommendations for invasive coronary angiography in the diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 11)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with de novo symptoms highly suggestive of obstructive CAD that occur at a low level of exercise, ICA with a view towards revascularization is recommended as first diagnostic test after clinical assessment by a cardiologist.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "In individuals with suspected CCS and with de novo symptoms highly suggestive of obstructive CAD that occur at a low level of exercise ",
+          "recommendation": "ICA with a view towards revascularization is recommended as first diagnostic test after clinical assessment by a cardiologist",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "symptoms highly suggestive of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "de novo symptoms highly suggestive of obstructive CAD that occur at a low level of exercise",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "ICA",
+                  "entity_standardized_list": [],
+                  "context": "ICA with a view towards revascularization is recommended as first diagnostic test after clinical assessment by a cardiologist",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "clinical assessment by a cardiologist",
+                  "entity_standardized_list": [],
+                  "context": "ICA with a view towards revascularization is recommended as first diagnostic test after clinical assessment by a cardiologist",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 11 -Recommendations for invasive coronary angiography in the diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 11)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "When ICA is indicated, measurement of FFR/iFR should be considered to evaluate the functional severity of intermediate left main stem stenosesc prior to revascularization.331,334,335",
+          "Class a": "IIa",
+          "Level b": "A",
+          "input": "In individuals with suspected CCS and When ICA is indicated ",
+          "recommendation": "measurement of FFR/iFR should be considered to evaluate the functional severity of intermediate left main stem stenoses prior to revascularization",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication of ICA",
+                  "entity_standardized_list": [],
+                  "context": "When ICA is indicated",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "measurment of FFR",
+                  "entity_standardized_list": [],
+                  "context": "measurement of FFR/iFR should be considered to evaluate the functional severity of intermediate left main stem stenoses prior to revascularization",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "measurment of iFR",
+                  "entity_standardized_list": [],
+                  "context": "measurement of FFR/iFR should be considered to evaluate the functional severity of intermediate left main stem stenoses prior to revascularization",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 11 -Recommendations for invasive coronary angiography in the diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 11)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "When ICA is indicated, IVUS should be considered to evaluate the severity of intermediate stenoses of left main stemc prior to revascularization.336,337",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "In individuals with suspected CCS and When ICA is indicated ",
+          "recommendation": "IVUS should be considered to evaluate the severity of intermediate stenoses of left main stemc prior to revascularization",
+          "rules": [
+            {
+              "entity_original": "suspected chronic coronary syndrome",
+              "entity_standardized_list": [],
+              "context": "individuals with suspected CCS",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "indication of ICA",
+              "entity_standardized_list": [],
+              "context": "When ICA is indicated",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "IVUS",
+              "entity_standardized_list": [],
+              "context": "IVUS should be considered to evaluate the severity of intermediate stenoses of left main stemc prior to revascularization",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

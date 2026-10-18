@@ -1,0 +1,53 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_22.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_22.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "History taking and risk factor assessment",
+          "Subheader": null,
+          "Recommendations": "In individuals reporting symptoms of suspected myocardial ischaemic origin, a detailed assessment of cardiovascular risk factors, medical history, and symptom characteristics (including onset, duration, type, location, triggers, relieving factors, time of day) is recommended. I C",
+          "Class a": "I",
+          "Level b": "C"
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "History taking and risk factor assessment",
+          "Subheader": null,
+          "Recommendations": "Symptoms like chest pain triggered by emotional stress; dyspnoea or dizziness on exertion; pain in the arms, jaw, neck, or upper back; or fatigue should be considered as potential angina equivalents.18,33,57,59,77 IIa B",
+          "Class a": "IIa",
+          "Level b": "B"
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "Resting ECG",
+          "Subheader": null,
+          "Recommendations": "If clinical or ECG assessment suggests ACS rather than CCS, immediate referral to the emergency department and/or repeated measurement of blood troponin, preferably using high-sensitivity or ultrasensitive assays, to rule out acute myocardial injury, is recommended.78,79 I B",
+          "Class a": "I",
+          "Level b": "B"
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "Resting ECG",
+          "Subheader": null,
+          "Recommendations": "A resting 12-lead ECG is recommended in all individuals reporting chest pain (unless an obvious non-cardiac cause is identified), particularly during, or immediately after, an episode suggestive of myocardial ischaemia. I C",
+          "Class a": "I",
+          "Level b": "C"
+        },
+        {
+          "Table Header": "Recommendation Table 1 -Recommendations for history taking, risk factor assessment, and resting electrocardiogram in individuals with suspected chronic coronary syndrome (see also Evidence Table 1)",
+          "Section Header": "Resting ECG",
+          "Subheader": null,
+          "Recommendations": "Using ST-segment deviations during supraventricular tachyarrhythmias, particularly during re-entrant atrioventricular tachycardias, per se, as reliable evidence of obstructive CAD, is not recommended.80–84 III B",
+          "Class a": "III",
+          "Level b": "B"
+        }
+      ]
+    }
+  ]
+}

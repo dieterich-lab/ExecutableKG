@@ -1,0 +1,707 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_71.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_71.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Diagnosis of ANOCA/INOCA endotypes",
+          "Subheader": null,
+          "Recommendations": "In persistently symptomatic patients despite medical treatment with suspected ANOCA/ INOCA (i.e. anginal symptoms with normal coronary arteries or non-obstructive lesions at non-invasive imaging, or intermediate stenoses with normal FFR/iFR at coronary arteriography) and poor quality of life, invasive coronary functional testing is recommended to identify potentially treatable endotypes and to improve symptoms and quality of life, considering patient choices and preferences.36,37,298,930,939,985 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In persistently symptomatic patients despite medical treatment with suspected ANOCA/ INOCA (i.e. anginal symptoms with normal coronary arteries or non-obstructive lesions at non-invasive imaging, or intermediate stenoses with normal FFR/iFR at coronary arteriography) and poor quality of life",
+          "recommendation": "invasive coronary functional testing is recommended to identify potentially treatable endotypes and to improve symptoms and quality of life, considering patient choices and preferences",
+          "rules": [
+            {
+              "entity_original": "persistently symptomatic",
+              "entity_standardized_list": [],
+              "context": "persistently symptomatic patients despite medical treat",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "suspected ANOCA/INOCA",
+              "entity_standardized_list": [],
+              "context": "suspected ANOCA/ INOCA(i.e. anginal symptoms with normal coronary arteries or non-obstructive lesions at non-invasive imaging, or intermediate stenoses with normal FFR/iFR at coronary arteriography)",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "poor quality of life",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Impaired quality of life",
+                  "snomed_id": "844582002"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "invasive coronary functional testing",
+              "entity_standardized_list": [],
+              "context": "invasive coronary functional testing is recommended to identify potentially treatable endotypes and to improve symptoms and quality of life, considering patient choices and preferences",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Diagnosis of ANOCA/INOCA endotypes",
+          "Subheader": null,
+          "Recommendations": "In persistently symptomatic patients with documented or suspected ANOCA/INOCA, transthoracic Doppler of the LAD, stress echocardiography, CMR, and PET may be considered for the non-invasive assessment of coronary/myocardial flow reserve.44,231,233– 235,300,986,987 IIb B",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "In persistently symptomatic(angina/ischaemia) patients with documented or suspected ANOCA/INOCA",
+          "recommendation": "transthoracic Doppler of the LAD, stress echocardiography, CMR, and PET may be considered for the non-invasive assessment of coronary/myocardial flow reserve",
+          "rules": [
+            {
+              "entity_original": "persistently symptomatic",
+              "entity_standardized_list": [],
+              "context": "persistently symptomatic(angina/ischaemia",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ANOCA/INOCA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina pectoris with nonobstructive coronary arteries",
+                  "snomed_id": "1381430004"
+                }
+              ],
+              "context": "documented or suspected ANOCA/INOCA",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "transthoracic Doppler of the LAD",
+              "entity_standardized_list": [],
+              "context": "transthoracic Doppler of the LAD, stress echocardiography, CMR, and PET may be considered for the non-invasive assessment of coronary/myocardial flow reserve",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "stress echocardiography",
+              "entity_standardized_list": [],
+              "context": "transthoracic Doppler of the LAD, stress echocardiography, CMR, and PET may be considered for the non-invasive assessment of coronary/myocardial flow reserve",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "CMR",
+              "entity_standardized_list": [],
+              "context": "transthoracic Doppler of the LAD, stress echocardiography, CMR, and PET may be considered for the non-invasive assessment of coronary/myocardial flow reserve",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "PET",
+              "entity_standardized_list": [],
+              "context": "transthoracic Doppler of the LAD, stress echocardiography, CMR, and PET may be considered for the non-invasive assessment of coronary/myocardial flow reserve",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Diagnostic tests for vasospastic angina",
+          "Subheader": null,
+          "Recommendations": "In individuals with suspected vasospastic angina, a resting 12-lead ECG recording during angina is recommended. I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "patients with angina/ischaemia In individuals with suspected vasospastic angina",
+          "recommendation": "a resting 12-lead ECG recording during angina is recommended",
+          "rules": [
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "patients with angina/ischaemia",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "suspected vasospastic angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Symptomatic",
+                  "snomed_id": "264931009"
+                }
+              ],
+              "context": "suspected vasospastic angina",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "resting 12-lead ECG",
+              "entity_standardized_list": [],
+              "context": "a resting 12-lead ECG recording during angina is recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Diagnostic tests for vasospastic angina",
+          "Subheader": null,
+          "Recommendations": "In patients with suspected vasospastic angina and repetitive episodes of rest angina associated with ST-segment changes that resolve with nitrates and/or calcium antagonists, invasive coronary functional testing is recommended to confirm the diagnosis and to determine the severity of underlying atherosclerotic disease. I C",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "In patients with suspected vasospastic angina and repetitive episodes of rest angina associated with ST-segment changes that resolve with nitrates and/or calcium antagonists",
+          "recommendation": "invasive coronary functional testing is recommended to confirm the diagnosis and to determine the severity of underlying atherosclerotic disease",
+          "rules": [
+            {
+              "entity_original": "suspected vasospastic angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Symptomatic",
+                  "snomed_id": "264931009"
+                }
+              ],
+              "context": "suspected vasospastic angina",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "rest angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina decubitus",
+                  "snomed_id": "59021001"
+                }
+              ],
+              "context": "repetitive episodes of rest angina",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ST-segment changes",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Finding of electrocardiogram ST segment",
+                  "snomed_id": "365416000"
+                }
+              ],
+              "context": "repetitive episodes of rest angina associated with ST-segment changes that resolve with nitrates and/or calcium antagonists",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "invasive coronary functional testing",
+              "entity_standardized_list": [],
+              "context": "invasive coronary functional testing is recommended to confirm the diagnosis and to determine the severity of underlying atherosclerotic disease",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "C",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Diagnostic tests for vasospastic angina",
+          "Subheader": null,
+          "Recommendations": "In individuals with suspected vasospastic angina and frequent symptoms, ambulatory ST-segment monitoring should be considered to identify ST-segment deviation during angina.192–194 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "In individuals with suspected vasospastic angina and frequent angina symptoms",
+          "recommendation": "ambulatory ST-segment monitoring should be considered to identify ST-segment deviation during angina",
+          "rules": [
+            {
+              "entity_original": "suspected vasospastic angina",
+              "entity_standardized_list": [],
+              "context": "individuals with suspected vasospastic angina",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "frequent angina symptoms",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ST-segment monitoring",
+              "entity_standardized_list": [],
+              "context": "ambulatory ST-segment monitoring should be considered to identify ST-segment deviation during angina",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Management of ANOCA/INOCA",
+          "Subheader": null,
+          "Recommendations": "In symptomatic patients with ANOCA/INOCA, medical therapy based on coronary functional test results should be considered to improve symptoms and quality of life.298,977 IIa A",
+          "Class a": "IIa",
+          "Level b": "A",
+          "input": "In symptomatic patients with ANOCA/INOCA",
+          "recommendation": "medical therapy based on coronary functional test results should be considered to improve symptoms and quality of life",
+          "rules": [
+            {
+              "entity_original": "symptomatic",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Symptomatic",
+                  "snomed_id": "264931009"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "ANOCA/INOCA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina pectoris with nonobstructive coronary arteries",
+                  "snomed_id": "1381430004"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "medical therapy",
+              "entity_standardized_list": [],
+              "context": "medical therapy based on coronary functional test results should be considered to improve symptoms and quality of life",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Management of ANOCA/INOCA",
+          "Subheader": null,
+          "Recommendations": "For the management of endothelial dysfunction, ACE-I should be considered for symptom control.988 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "ANOCA/INOCA patients with endothelial dysfunction",
+          "recommendation": "For the management of endothelial dysfunction, ACE-I should be considered for symptom control",
+          "rules": [
+            {
+              "entity_original": "ANOCA/INOCA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina pectoris with nonobstructive coronary arteries",
+                  "snomed_id": "1381430004"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "endothelial dysfunction",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Cardiac syndrome X ",
+                  "snomed_id": "233845001"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "patients with angina/ischaemia",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "ACE-I",
+              "entity_standardized_list": [],
+              "context": "For the management of endothelial dysfunction, ACE-I should be considered for symptom control",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "Management of ANOCA/INOCA",
+          "Subheader": null,
+          "Recommendations": "For the management of microvascular angina associated with reduced coronary/myocardial blood flow reserve, antianginal medications aiming at preventing demand myocardial ischaemia should be considered for symptom control.989,990 IIa B",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "ANOCA/INOCA patients with microvascular angina associated with reduced coronary/myocardial blood flow reserve",
+          "recommendation": "antianginal medications aiming at preventing demand myocardial ischaemia should be considered for symptom control",
+          "rules": [
+            {
+              "entity_original": "ANOCA/INOCA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina pectoris with nonobstructive coronary arteries",
+                  "snomed_id": "1381430004"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "microvascular angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Cardiac syndrome X",
+                  "snomed_id": "233845001"
+                }
+              ],
+              "context": "microvascular angina associated with reduced coronary/myocardial blood flow reserve",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "antianginal medications",
+              "entity_standardized_list": [],
+              "context": "antianginal medications aiming at preventing demand myocardial ischaemia should be considered for symptom control",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "For the treatment of isolated vasospastic angina",
+          "Subheader": null,
+          "Recommendations": "Calcium channel blockers are recommended to control symptoms and to prevent ischaemia and I A potentially fatal complications.991–996",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "isolated vasospastic angina",
+          "recommendation": "Calcium channel blockers are recommended to control symptoms and to prevent ischaemia and potentially fatal complications",
+          "rules": [
+            {
+              "entity_original": "vasospastic angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Prinzmetal angina",
+                  "snomed_id": "87343002"
+                }
+              ],
+              "context": "isolated vasospastic angina",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Calcium channel blockers",
+              "entity_standardized_list": [],
+              "context": "Calcium channel blockers are recommended to control symptoms and to prevent ischaemia and potentially fatal complications",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "For the treatment of isolated vasospastic angina",
+          "Subheader": null,
+          "Recommendations": "Nitrates should be considered to prevent recurrent episodes.993,997,998",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "isolated vasospastic angina",
+          "recommendation": "Nitrates should be considered to prevent recurrent episodes",
+          "rules": [
+            {
+              "entity_original": "vasospastic angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Prinzmetal angina",
+                  "snomed_id": "87343002"
+                }
+              ],
+              "context": "isolated vasospastic angina",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Nitrates",
+              "entity_standardized_list": [],
+              "context": "Nitrates should be considered to prevent recurrent episodes",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 25 -Recommendations for diagnosis and management of patients with angina/ischaemia with non-obstructive coronary arteries (see also Evidence Table 25)",
+          "Section Header": "For the treatment of overlapping endotypes",
+          "Subheader": null,
+          "Recommendations": "In patients with evidence of overlapping endotypes, combination therapy with nitrates, calcium channel blockers, and other vasodilators may be considered.999,1000",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "patients with evidence of overlapping endotypes",
+          "recommendation": "combination therapy with nitrates, calcium channel blockers, and other vasodilators may be considered",
+          "rules": [
+            {
+              "entity_original": "overlapping endotypes",
+              "entity_standardized_list": [],
+              "context": "patients with evidence of overlapping endotypes",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "patients with angina/ischaemia",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "nitrates",
+              "entity_standardized_list": [],
+              "context": "combination therapy with nitrates, calcium channel blockers, and other vasodilators may be considered",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "calcium channel blockers",
+              "entity_standardized_list": [],
+              "context": "combination therapy with nitrates, calcium channel blockers, and other vasodilators may be considered",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "other vasodilators",
+              "entity_standardized_list": [],
+              "context": "combination therapy with nitrates, calcium channel blockers, and other vasodilators may be considered",
+              "role": "Medication",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

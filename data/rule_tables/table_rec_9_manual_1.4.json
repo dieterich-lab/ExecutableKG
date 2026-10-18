@@ -1,0 +1,79 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_29.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_29.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 9 — Recommendations for non-invasive tests in the initial diagnostic management of individuals with suspected chronic coronary syndrome—stress echocardiography, if available, and supported by local expertise (see also Evidence Table 9)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with suspected CCS and moderate or high (>15%–85%) pre-test likelihood of obstructive CAD, stress echocardiography is recommended to diagnose myocardial ischaemia and to estimate the risk of MACE.33,241–246 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In individuals with suspected CCS and moderate or high (>15%–85%) pre-test likelihood of obstructive CAD ",
+          "recommendation": "stress echocardiography is recommended to diagnose myocardial ischaemia and to estimate the risk of MACE if available, and supported by local expertise",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected CCS",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "moderate or high (>15%–85%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": ">",
+                    "threshold": "15",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "pre-test likelihood of obstructive CAD",
+                  "entity_standardized_list": [],
+                  "context": "moderate or high (>15%–85%) pre-test likelihood of obstructive CAD",
+                  "role": "ClinicalParameter",
+                  "logic_structured": {
+                    "operator": "≤",
+                    "threshold": "85",
+                    "unit": "%",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "stress echocardiography",
+                  "entity_standardized_list": [],
+                  "context": "stress echocardiography is recommended to diagnose myocardial ischaemia and to estimate the risk of MACE if available, and supported by local expertise",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

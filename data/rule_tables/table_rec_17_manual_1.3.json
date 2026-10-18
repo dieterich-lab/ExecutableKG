@@ -1,0 +1,2297 @@
+{
+  "source_file": "_51 + _52",
+  "total_tables": 2,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_51.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Long-term antithrombotic therapy in patients with chronic coronary syndrome and no clear indication for oral anticoagulation",
+          "Recommendations": "In CCS patients with a prior MI or remote PCI, aspirin 75–100 mg daily is recommended lifelong after an initial period of DAPT.558,559 ",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "CCS patients with a prior MI or remote PCI",
+          "recommendation": "aspirin 75–100 mg daily is recommended lifelong after an initial period of DAPT",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "prior MI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Old myocardial infarction",
+                      "snomed_id": "1755008"
+                    }
+                  ],
+                  "context": "prior",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "remote",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": "75–100 mg daily is recommended lifelong after an initial period of DAPT",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "DAPT",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Drug therapy with explicit context",
+                      "snomed_id": "1290126002"
+                    }
+                  ],
+                  "context": "an initial period of dual antiplatelet therapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Long-term antithrombotic therapy in patients with chronic coronary syndrome and no clear indication for oral anticoagulation",
+          "Recommendations": "In CCS patients with a prior MI or remote PCI, clopidogrel 75 mg daily is recommended as a safe and effective alternative to aspirin monotherapy.562,564–566,649 ",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with a prior MI or remote PCI",
+          "recommendation": "clopidogrel 75 mg daily is recommended as a safe and effective alternative to aspirin monotherapy",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "prior MI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Old myocardial infarction",
+                      "snomed_id": "1755008"
+                    }
+                  ],
+                  "context": "prior",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "remote",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "clopidogrel",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Clopidogrel",
+                      "snomed_id": "386952008"
+                    }
+                  ],
+                  "context": "75 mg daily is recommended as a safe and effective alternative to aspirin monotherapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Long-term antithrombotic therapy in patients with chronic coronary syndrome and no clear indication for oral anticoagulation",
+          "Recommendations": "After CABG, aspirin 75–100 mg daily is recommended lifelong.558,559,629 ",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "After CABG, patients with chronic coronary syndrome ",
+          "recommendation": "aspirin 75–100 mg daily is recommended lifelonging",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "CABG",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Coronary artery bypass grafting",
+                      "snomed_id": "232717009"
+                    }
+                  ],
+                  "context": "after CABG",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": "75–100 mg daily is recommended lifelonging",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Long-term antithrombotic therapy in patients with chronic coronary syndrome and no clear indication for oral anticoagulation",
+          "Recommendations": "In patients without prior MI or revascularization but with evidence of significant obstructive CAD, aspirin 75–100 mg daily is recommended lifelong.557–559",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "ccs patients without prior MI or revascularization but with evidence of significant obstructive CAD",
+          "recommendation": "aspirin 75–100 mg daily is recommended lifelong",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "prior MI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Old myocardial infarction",
+                      "snomed_id": "1755008"
+                    }
+                  ],
+                  "context": "prior",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "ABSENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "coronary revascularization",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Repair of coronary artery",
+                      "snomed_id": "713689002"
+                    }
+                  ],
+                  "context": "",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "ABSENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "CAD",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Coronary artery disease",
+                      "snomed_id": "53741008"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": "75–100 mg daily is recommended lifelonging",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Long-term antithrombotic therapy in patients with chronic coronary syndrome and no clear indication for oral anticoagulation",
+          "Recommendations": "Adding a second antithrombotic agent to aspirin for extended long-term secondary prevention should be considered in patients at enhanced ischaemic riskc and without high bleeding riskd (options and definitions in Table 8 and in the Supplementary data online, Tables S2 and S3).592–594",
+          "Class a": "IIa",
+          "Level b": "A",
+          "input": "ccs patients at enhanced ischaemic riskc and without high bleeding riskd (options and definitions in Table 8 and in the Supplementary data online, Tables S2 and S3)",
+          "recommendation": "Adding a second antithrombotic agent to aspirin for extended long-term secondary prevention ",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "enhanced ischaemic risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At increased risk for acute ischemic cardiac event",
+                      "snomed_id": "408863003"
+                    }
+                  ],
+                  "context": "(options and definitions in Table 8 and in the Supplementary data online, Table S3)",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high bleeding risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At high risk for bleeding",
+                      "snomed_id": "711536002"
+                    }
+                  ],
+                  "context": "(options and definitions in Table 8 and in the Supplementary data online, Table S2)",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "ABSENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "antithrombotic agent",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Substance with platelet aggregation inhibitor mechanism of action",
+                      "snomed_id": "771452004"
+                    }
+                  ],
+                  "context": "Adding a second antithrombotic agent to aspirin for extended long-term secondary prevention",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Long-term antithrombotic therapy in patients with chronic coronary syndrome and no clear indication for oral anticoagulation",
+          "Recommendations": "In CCS or stabilized post-ACS patients who underwent PCI and were initially treated with ticagrelor-based DAPT, who remain at high ischaemic risk and are not at high bleeding risk, ticagrelor monotherapy 90 mg b.i.d. may be considered as an alternative to dual or other IIb C single antiplatelet therapy.563,570–573",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "In CCS or stabilized post-ACS patients who underwent PCI and were initially treated with ticagrelor-based DAPT, who remain at high ischaemic risk and are not at high bleeding risk",
+          "recommendation": "ticagrelor monotherapy 90 mg b.i.d. may be considered as an alternative to dual or other IIb C single antiplatelet therapy",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "post ACS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Acute coronary syndrome",
+                      "snomed_id": "394659003"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "underwent",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "ticagrelor-based",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Ticagrelor",
+                      "snomed_id": "698805004"
+                    }
+                  ],
+                  "context": "initially treated with ticagrelor-based DAPT",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high ischaemic risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At increased risk for acute ischemic cardiac event",
+                      "snomed_id": "408863003"
+                    }
+                  ],
+                  "context": "remain at high ischaemic risk",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high bleeding risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At high risk for bleeding",
+                      "snomed_id": "711536002"
+                    }
+                  ],
+                  "context": "(options and definitions in Table 8 and in the Supplementary data online, Table S2)",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "ABSENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "ticagrelor monotherapy",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Ticagrelor",
+                      "snomed_id": "698805004"
+                    }
+                  ],
+                  "context": " 90 mg b.i.d. may be considered as an alternative to dual or other IIb C single antiplatelet therapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "C",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "num_rows": 6,
+      "num_cols": 3
+    },
+    {
+      "table_id": 1,
+      "source_file": "ESC_CCS_2024/pages/_52.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in patients with chronic coronary syndrome and no indication for oral anticoagulation",
+          "Recommendations": "In CCS patients with no indication for oral anticoagulation, DAPT consisting of aspirin 75–100 mg and clopidogrel 75 mg daily for up to 6 months is recommended as the default antithrombotic strategy after PCI-stenting.650–654 ",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with no indication for oral anticoagulation, post-percutaneous coronary intervention",
+          "recommendation": "DAPT consisting of aspirin 75–100 mg and clopidogrel 75 mg daily for up to 6 months is recommended as the default antithrombotic strategy after PCI-stenting.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for oral anticoagulation",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "Absent",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": " aspirin 75–100 mg daily for up to 6 months is recommended as the default antithrombotic strategy after PCI-stenting",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "clopidogrel",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Clopidogrel",
+                      "snomed_id": "386952008"
+                    }
+                  ],
+                  "context": " clopidogrel 75 mg daily for up to 6 months is recommended as the default antithrombotic strategy after PCI-stenting",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in patients with chronic coronary syndrome and no indication for oral anticoagulation",
+          "Recommendations": "In patients at high bleeding riskd but not at high ischaemic risk,c it is recommended to discontinue DAPT 1–3 months after PCI and to continue with single antiplatelet therapy.587,591 ",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with no indication for oral anticoagulation, post-percutaneous coronary intervention, at high bleeding risk but not at high ischaemic risk",
+          "recommendation": "it is recommended to discontinue DAPT 1–3 months after PCI and to continue with single antiplatelet therapy",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for oral anticoagulation",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "Absent",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high ischaemic risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At increased risk for acute ischemic cardiac event",
+                      "snomed_id": "408863003"
+                    }
+                  ],
+                  "context": "remain at high ischaemic risk",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "ABSENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high bleeding risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At high risk for bleeding",
+                      "snomed_id": "711536002"
+                    }
+                  ],
+                  "context": "(options and definitions in Table 8 and in the Supplementary data online, Table S2)",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "discontinue DAPT",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Drug therapy with explicit context",
+                      "snomed_id": "1290126002"
+                    }
+                  ],
+                  "context": "it is recommended to discontinue DAPT 1–3 months after PCI and to continue with single antiplatelet therapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                },
+                {
+                  "entity_original": "continue single antiplatelet therapy",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Platelet aggregation inhibitor therapy",
+                      "snomed_id": "840595002"
+                    }
+                  ],
+                  "context": "it is recommended to discontinue DAPT 1–3 months after PCI and to continue with single antiplatelet therapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in patients with chronic coronary syndrome and no indication for oral anticoagulation",
+          "Recommendations": "Stopping DAPT after 1–3 months from PCI-stenting may be considered in patients who are not at high bleeding risk nor at high risk of ischaemic events.588,655–657,c,d",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "In CCS patients with no indication for oral anticoagulation, post-percutaneous coronary intervention, not at high bleeding risk, not at high risk of ischaemic events",
+          "recommendation": "Stopping DAPT after 1–3 months from PCI-stenting",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for oral anticoagulation",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "Absent",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high ischaemic risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At increased risk for acute ischemic cardiac event",
+                      "snomed_id": "408863003"
+                    }
+                  ],
+                  "context": "remain at high ischaemic risk",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "ABSENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high bleeding risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At high risk for bleeding",
+                      "snomed_id": "711536002"
+                    }
+                  ],
+                  "context": "(options and definitions in Table 8 and in the Supplementary data online, Table S2)",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "ABSENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "stopping DAPT",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Drug therapy with explicit context",
+                      "snomed_id": "1290126002"
+                    }
+                  ],
+                  "context": "Stopping DAPT after 1–3 months from PCI-stenting",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in patients with chronic coronary syndrome and no indication for oral anticoagulation",
+          "Recommendations": "In CCS patients undergoing high-thrombotic risk stenting (e.g. complex left main stem, 2-stent bifurcation, suboptimal stenting result, prior stent thrombosis, previously known CYP2C19 *2/*3 polymorphisms), prasugrel or ticagrelor (in addition to aspirin) may be considered instead of clopidogrel, for the first month, and up to 3–6 months.",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "In CCS patients undergoing high-thrombotic risk stenting and no indication for oral anticoagulation",
+          "recommendation": "prasugrel or ticagrelor (in addition to aspirin) may be considered instead of clopidogrel, for the first month, and up to 3–6 months.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for oral anticoagulation",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "Absent",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high-thrombotic risk stenting",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Finding of increased risk level",
+                      "snomed_id": "1255670000"
+                    },
+                    {
+                      "entity_standardized_candidate": "Placement of stent in coronary artery",
+                      "snomed_id": "36969009"
+                    }
+                  ],
+                  "context": "high-thrombotic risk (e.g. complex left main stem, 2-stent bifurcation, suboptimal stenting result, prior stent thrombosis, previously known CYP2C19 *2/*3 polymorphisms)",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "prasugrel",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Prasugrel",
+                      "snomed_id": "443129001"
+                    }
+                  ],
+                  "context": "prasugrel (in addition to aspirin) may be considered instead of clopidogrel, for the first month, and up to 3–6 months",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "ticagrelor",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Ticagrelor",
+                      "snomed_id": "698805004"
+                    }
+                  ],
+                  "context": "ticagrelor (in addition to aspirin) may be considered instead of clopidogrel, for the first month, and up to 3–6 months",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Long-term antithrombotic therapy in patients with chronic coronary syndrome and an indication for oral anticoagulation",
+          "Recommendations": "In CCS patients with a long-term indication for OAC, an AF therapeutic dose of VKA alone or, preferably, of DOAC alone (unless contraindicated) is recommended lifelong.609,627 ",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "In CCS patients with a long-term indication for OAC",
+          "recommendation": "an AF therapeutic dose of VKA alone or, preferably, of DOAC alone (unless contraindicated) is recommended lifelong",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "long term indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Vitamin K Antagonist",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Indirect acting anticoagulant",
+                      "snomed_id": "419847008"
+                    }
+                  ],
+                  "context": "an AF therapeutic dose of VKA alone is recommended lifelong",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "DOAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Direct acting anticoagulant",
+                      "snomed_id": "372636002"
+                    }
+                  ],
+                  "context": "an AF therapeutic dose of preferably, of DOAC alone (unless contraindicated) is recommended lifelong",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "In patients with an indication for OAC who undergo PCI, initial low-dose aspirin once daily is recommended (loading dose when not on maintenance dose) in addition to OAC and clopidogrel.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "In CCS patients with an indication for OAC who undergo PCI",
+          "recommendation": " initial low-dose aspirin once daily is recommended (loading dose when not on maintenance dose) in addition to OAC and clopidogrel.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "long term indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "low-dose aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": "initial low-dose aspirin once daily is recommended (loading dose when not on maintenance dose) in addition to OAC and clopidogrel",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "c",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "In patients who are eligible for OAC, DOAC (unless contraindicated) is recommended in preference to VKA.619,658 ",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "In CCS patients with an indication for OAC, post PCI",
+          "recommendation": "DOAC (unless contraindicated) is recommended in preference to VKA.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "long term indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "DOAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Direct acting anticoagulant",
+                      "snomed_id": "372636002"
+                    }
+                  ],
+                  "context": "DOAC (unless contraindicated) is recommended in preference to VKA",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "After uncomplicated PCI in CCS patients with concomitant indication for OAC: • early cessation of aspirin (≤1 week); • followed by continuation of OAC and clopidogrel: ⚬ up to 6 months in patients not at high ischaemic risk;c or ⚬ up to 12 months in patients at high ischaemic risk; • followed by OAC alone; is recommended.616–619,622,627,659",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "After uncomplicated PCI in CCS patients with concomitant indication for OAC",
+          "recommendation": "• early cessation of aspirin (≤1 week); • followed by continuation of OAC and clopidogrel: ⚬ up to 6 months in patients not at high ischaemic risk;c or ⚬ up to 12 months in patients at high ischaemic risk; • followed by OAC alone; is recommended",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "long term indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post uncomplicated",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": "early cessation of aspirin (≤1 week)",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Oral",
+                      "snomed_id": "738956005"
+                    }
+                  ],
+                  "context": "• after cessation of aspirin, continuation of OAC and clopidogrel: ⚬ up to 6 months in patients not at high ischaemic risk;c or ⚬ up to 12 months in patients at high ischaemic risk; and also after cessation of OAC and Clopidogrel OAC alone is recommended",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for clopidogrel",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Clopidogrel",
+                      "snomed_id": "386952008"
+                    }
+                  ],
+                  "context": "• after cessation of aspirin, continuation of OAC and clopidogrel: ⚬ up to 6 months in patients not at high ischaemic risk;c or ⚬ up to 12 months in patients at high ischaemic risk; is recommended",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "Continuation of aspirin up to 1 month after PCI, in addition to OAC and clopidogrel, should be considered in patients at high ischaemic riskc or with anatomical/procedural characteristics judged to outweigh the bleeding risk.620–622,e",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "CCS patients at high ischaemic riskc or with anatomical/procedural characteristics judged to outweigh the bleeding risk, post PCI with an indication for oral anticoagulation",
+          "recommendation": "Continuation of aspirin up to 1 month after PCI, in addition to OAC and clopidogrel",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "long term indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "high ischaemic risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At increased risk for acute ischemic cardiac event",
+                      "snomed_id": "408863003"
+                    }
+                  ],
+                  "context": "high ischaemic risk judged to outweigh the bleeding risk",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "high bleeding risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At high risk for bleeding",
+                      "snomed_id": "711536002"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "anatomical/procedural characteristics judged to outweigh the bleeding risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Finding of increased risk level",
+                      "snomed_id": "1255670000"
+                    },
+                    {
+                      "entity_standardized_candidate": "Coronary artery structure",
+                      "snomed_id": "41801008"
+                    }
+                  ],
+                  "context": " patients with anatomical/procedural characteristics judged to outweigh the bleeding risk",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": "Continuation of aspirin up to 1 month after PCI, in addition to OAC and clopidogrel",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "When concerns about high bleeding risk prevail over concerns about stent thrombosis or ischaemic stroke: rivaroxaban 15 mg daily should be considered in preference to rivaroxaban 20 mg daily for the duration of concomitant antiplatelet therapy;616 ",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "ccs patients  post PCI with an indication for oral anticoagulation, where concerns about high bleeding risk prevail over concerns about stent thrombosis or ischaemic stroke",
+          "recommendation": "rivaroxaban 15 mg daily should be considered in preference to rivaroxaban 20 mg daily for the duration of concomitant antiplatelet therapy",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": " indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "risk of Ischemic stroke",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Finding of increased risk level",
+                      "snomed_id": "1255670000"
+                    },
+                    {
+                      "entity_standardized_candidate": "Ischemic stroke",
+                      "snomed_id": "422504002"
+                    }
+                  ],
+                  "context": "concerns about high bleeding risk prevail over concerns about ischaemic stroke",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "high bleeding risk",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "At high risk for bleeding",
+                      "snomed_id": "711536002"
+                    }
+                  ],
+                  "context": "concerns about high bleeding risk prevail over concerns about stent thrombosis or ischaemic stroke",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "risk of stent thrombosis",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Finding of increased risk level",
+                      "snomed_id": "1255670000"
+                    },
+                    {
+                      "entity_standardized_candidate": "Coronary artery stent thrombosis",
+                      "snomed_id": "421327009"
+                    }
+                  ],
+                  "context": " concerns about high bleeding risk prevail over concerns about stent thrombosis or ischaemic stroke",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "rivaroxaban 15mg daily",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Rivaroxaban",
+                      "snomed_id": "442031002"
+                    }
+                  ],
+                  "context": "rivaroxaban 15 mg daily should be considered in preference to rivaroxaban 20 mg daily for the duration of concomitant antiplatelet therapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "dabigatran 110 mg twice daily should be considered in preference to dabigatran 150 mg twice daily for the duration of concomitant antiplatelet therapy.617",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "CCS patient post PCI with an indication for oral anticoagulation",
+          "recommendation": "dabigatran 110 mg twice daily should be considered in preference to dabigatran 150 mg twice daily",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": " indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "dabigatran",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Dabigatran",
+                      "snomed_id": "698871007"
+                    }
+                  ],
+                  "context": "dabigatran 110 mg twice daily should be considered in preference to dabigatran 150 mg twice daily for the duration of concomitant antiplatelet therapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "In patients with an indication for VKA in combination with single or dual antiplatelet therapy, targeting VKA intensity to an INR in the lower part of the recommended range and to a time in therapeutic range >70% should be considered.615, 660–663 ",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "CCS patient post PCI with an indication for oral anticoagulation, with an indication for VKA in combination with single or dual antiplatelet therapy",
+          "recommendation": "targeting VKA intensity to an INR in the lower part of the recommended range and to a time in therapeutic range >70% should be considered.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": " indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication of Vitamin K Antagonist",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Indirect acting anticoagulant",
+                      "snomed_id": "419847008"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": "indication for VKA",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "single or dual antiplatelet therapy",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Platelet aggregation inhibitor therapy ",
+                      "snomed_id": "840595002"
+                    }
+                  ],
+                  "context": "single or dual antiplatelet therapy",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Dosage of Vitamin K Antagonist",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Indirect acting anticoagulant",
+                      "snomed_id": "419847008"
+                    }
+                  ],
+                  "context": "targeting VKA intensity to an INR in the lower part of the recommended range and to a time in therapeutic range >70% should be considered",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-percutaneous coronary intervention in chronic coronary syndrome patients with an indication for oral anticoagulation",
+          "Recommendations": "The use of ticagrelor or prasugrel is generally not recommended as part of triple antithrombotic therapy with aspirin and an OAC. ",
+          "Class a": "III",
+          "Level b": "C",
+          "input": "CCS patient post PCI with an indication for oral anticoagulation",
+          "recommendation": "The use of ticagrelor or prasugrel is generally not recommended as part of triple antithrombotic therapy with aspirin and an OAC.",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "indication for OAC",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Use of anticoagulation",
+                      "snomed_id": "260678004"
+                    },
+                    {
+                      "entity_standardized_candidate": "Indication of",
+                      "snomed_id": "230165009"
+                    }
+                  ],
+                  "context": " indication for oral anticoagulation",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "PCI",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Percutaneous coronary revascularization",
+                      "snomed_id": "415070008"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "prasugrel",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Prasugrel",
+                      "snomed_id": "443129001"
+                    }
+                  ],
+                  "context": "The use of prasugrel is generally not recommended as part of triple antithrombotic therapy with aspirin and an OAC",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "III",
+                    "level": "C",
+                    "direction": "NEGATIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                },
+                {
+                  "entity_original": "ticagrelor",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Ticagrelor",
+                      "snomed_id": "698805004"
+                    }
+                  ],
+                  "context": "The use of ticagrelor is generally not recommended as part of triple antithrombotic therapy with aspirin and an OAC",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "III",
+                    "level": "C",
+                    "direction": "NEGATIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "OR",
+                    "logic_group": "or_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-coronary artery bypass grafting",
+          "Recommendations": "It is recommended to initiate aspirin post-operatively as soon as there is no concern over bleeding.629,630 ",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "CCS Patient post CABG",
+          "recommendation": "initiate aspirin post-operatively as soon as there is no concern over bleeding",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "CABG",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Coronary artery bypass grafting",
+                      "snomed_id": "232717009"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "aspirin",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Aspirin",
+                      "snomed_id": "387458008"
+                    }
+                  ],
+                  "context": "initiate aspirin post-operatively as soon as there is no concern over bleeding",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Antithrombotic therapy post-coronary artery bypass grafting",
+          "Recommendations": "DAPT may be considered after CABG in selected patients at greater risk of graft occlusionf and at low risk of bleeding.635",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "CCS Patient post CABG",
+          "recommendation": "DAPT may be considered after CABG in selected patients at greater risk of graft occlusionf and at low risk of bleeding",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "CABG",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Coronary artery bypass grafting",
+                      "snomed_id": "232717009"
+                    }
+                  ],
+                  "context": "post",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "DAPT",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Drug therapy with explicit context",
+                      "snomed_id": "1290126002"
+                    }
+                  ],
+                  "context": "DAPT may be considered after CABG in selected patients at greater risk of graft occlusionf and at low risk of bleeding",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "IIb",
+                    "level": "B",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Use of proton pump inhibitors",
+          "Recommendations": "A proton pump inhibitor is recommended in patients at increased risk of gastrointestinal bleeding for the duration of combined antithrombotic therapy (antiplatelet therapy and/or OAC).646–648,664 ",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "CCS patients at increased risk of gastrointestinal bleeding",
+          "recommendation": "proton pump inhibitor is recommended for the duration of combined antithrombotic therapy (antiplatelet therapy and/or OAC",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "risk of gastrointestinal bleeding",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Finding of increased risk level",
+                      "snomed_id": "1255670000"
+                    },
+                    {
+                      "entity_standardized_candidate": "Gastrointestinal hemorrhage",
+                      "snomed_id": "74474003"
+                    }
+                  ],
+                  "context": "increased",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "proton pump inhibitor",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Proton pump inhibitor",
+                      "snomed_id": "734582004"
+                    }
+                  ],
+                  "context": "proton pump inhibitor is recommended for the duration of combined antithrombotic therapy (antiplatelet therapy and/or OAC",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendations for antithrombotic therapy in patients with chronic coronary syndrome",
+          "Section Header": "Use of proton pump inhibitors",
+          "Recommendations": "A proton pump inhibitor should be considered when a single antithrombotic (antiplatelet or anticoagulant) drug is used, considering the gastrointestinal bleeding risk of the individual patient.646, 665–668 ",
+          "Class a": "IIa",
+          "Level b": "A",
+          "input": "CCS Patient when a single antithrombotic (antiplatelet or anticoagulant) drug is used",
+          "recommendation": "proton pump inhibitor should be considered considering the gastrointestinal bleeding risk of the individual patient",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "CCS",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chronic ischemic heart disease",
+                      "snomed_id": "413838009"
+                    }
+                  ],
+                  "context": "patient",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "antithrombotic agent",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Substance with platelet aggregation inhibitor mechanism of action",
+                      "snomed_id": "771452004"
+                    }
+                  ],
+                  "context": "(antiplatelet or anticoagulant)drug is used",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "proton pump inhibitor",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Proton pump inhibitor",
+                      "snomed_id": "734582004"
+                    }
+                  ],
+                  "context": "proton pump inhibitor should be considered considering the gastrointestinal bleeding risk of the individual patient",
+                  "role": "Medication",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "A",
+                    "direction": "POSITIVE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "num_rows": 17,
+      "num_cols": 3
+    }
+  ]
+}

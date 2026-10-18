@@ -1,0 +1,2101 @@
+{
+  "schema_version": 1,
+  "source_directory": "data/rule_tables",
+  "semantic_keys": {
+    "input": [
+      "condition",
+      "conditions",
+      "input_nodes",
+      "inputs",
+      "rule",
+      "rules"
+    ],
+    "output": [
+      "action",
+      "actions",
+      "output_nodes",
+      "outputs"
+    ]
+  },
+  "summary": {
+    "json_files_found": 31,
+    "json_files_parsed": 31,
+    "json_files_failed": 0,
+    "input_node_occurrences": 530,
+    "output_node_occurrences": 280,
+    "unique_input_combinations": 277,
+    "unique_output_combinations": 273,
+    "unclassified_entity_nodes": 0,
+    "nodes_missing_key_fields": 209,
+    "unexpected_semantic_container_values": 0,
+    "semantic_container_counts": {
+      "actions": 196,
+      "conditions": 76,
+      "rules": 196
+    }
+  },
+  "interpretation": {
+    "unclassified_entity_nodes": "Objects containing entity_original that were not beneath a recognized input or output key. They were reported but not indexed.",
+    "unexpected_semantic_container_values": "Recognized rule/action keys whose values were not arrays or objects.",
+    "output_nested_under_input": "An output/action container was found inside a rule/input container; its entity nodes were correctly classified as outputs."
+  },
+  "files": [
+    {
+      "file": "table_rec_10_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 8,
+      "output_node_occurrences": 4,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 3,
+        "conditions": 3,
+        "rules": 3
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_11_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 15,
+      "output_node_occurrences": 8,
+      "layout_patterns": [
+        "input_container",
+        "output_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 6,
+        "conditions": 5,
+        "rules": 6
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_12_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 5,
+      "output_node_occurrences": 11,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 5,
+        "rules": 5
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_13_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 16,
+      "output_node_occurrences": 8,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 7,
+        "rules": 7
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_14_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 3,
+      "output_node_occurrences": 8,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 3,
+        "rules": 3
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_15_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 5,
+      "output_node_occurrences": 7,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 5,
+        "rules": 5
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/actions/1",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/actions/1",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_16_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 49,
+      "output_node_occurrences": 25,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 14,
+        "rules": 14
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/0/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/11/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/11/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/12/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/actions/1",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_17_manual_1.3.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 79,
+      "output_node_occurrences": 31,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 23,
+        "conditions": 23,
+        "rules": 23
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/3/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0/conditions/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/1/data/8/rules/0/conditions/4",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_18_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 24,
+      "output_node_occurrences": 7,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 7,
+        "rules": 7
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/4",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_19_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 9,
+      "output_node_occurrences": 3,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 3,
+        "rules": 3
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/0/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_1_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 15,
+      "output_node_occurrences": 6,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 5,
+        "conditions": 5,
+        "rules": 5
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/conditions/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/conditions/4",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/conditions/5",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/conditions/6",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/conditions/7",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_20_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 2,
+      "output_node_occurrences": 1,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 1,
+        "rules": 1
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/0/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_21_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 6,
+      "output_node_occurrences": 3,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 2,
+        "rules": 2
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_22_manual_1.3.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 48,
+      "output_node_occurrences": 49,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 20,
+        "conditions": 20,
+        "rules": 20
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/4/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/0/conditions/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/0/conditions/4",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/11/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/11/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/11/rules/0/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/15/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/15/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/16/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/16/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/17/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/18/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/1/data/0/rules/0/conditions/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/1/data/0/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/1/data/0/rules/0/actions/2",
+          "node_type": "output",
+          "missing_or_empty": [
+            "role"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_23_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 55,
+      "output_node_occurrences": 15,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 14,
+        "rules": 14
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/4",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/4",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/11/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_24_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 59,
+      "output_node_occurrences": 21,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 15,
+        "rules": 15
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/8/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/9/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/10/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/11/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/12/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/13/rules/5",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/14/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_25_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 23,
+      "output_node_occurrences": 16,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 11,
+        "rules": 11
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/6/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/7/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_26_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 6,
+      "output_node_occurrences": 8,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 7,
+        "rules": 7
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/2/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_27_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 7,
+      "output_node_occurrences": 5,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 4,
+        "rules": 4
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_28_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 4,
+      "output_node_occurrences": 5,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 4,
+        "rules": 4
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_29_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 13,
+      "output_node_occurrences": 5,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 5,
+        "rules": 5
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_2_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 6,
+      "output_node_occurrences": 7,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 6,
+        "conditions": 6,
+        "rules": 6
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_30_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 10,
+      "output_node_occurrences": 4,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 4,
+        "rules": 4
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/3/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_31_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 8,
+      "output_node_occurrences": 2,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 2,
+        "rules": 2
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_3_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 10,
+      "output_node_occurrences": 6,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 5,
+        "conditions": 5,
+        "rules": 5
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_4_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 3,
+      "output_node_occurrences": 2,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 2,
+        "conditions": 2,
+        "rules": 2
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_5_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 16,
+      "output_node_occurrences": 6,
+      "layout_patterns": [
+        "input_container",
+        "output_container"
+      ],
+      "semantic_container_counts": {
+        "actions": 6,
+        "rules": 6
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/3/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/4/rules/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/5/rules/0",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_6_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 4,
+      "output_node_occurrences": 1,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 1,
+        "conditions": 1,
+        "rules": 1
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_7_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 5,
+      "output_node_occurrences": 2,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 2,
+        "conditions": 2,
+        "rules": 2
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/0/rules/0/conditions/1",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/0/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/0/rules/0/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/1/rules/0/actions/0",
+          "node_type": "output",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_8_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 14,
+      "output_node_occurrences": 3,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 3,
+        "conditions": 3,
+        "rules": 3
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [
+        {
+          "json_pointer": "/tables/0/data/2/rules/0/conditions/2",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0/conditions/3",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0/conditions/4",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0/conditions/5",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        },
+        {
+          "json_pointer": "/tables/0/data/2/rules/0/conditions/6",
+          "node_type": "input",
+          "missing_or_empty": [
+            "context"
+          ]
+        }
+      ],
+      "unexpected_semantic_container_values": []
+    },
+    {
+      "file": "table_rec_9_manual_1.4.json",
+      "parsed": true,
+      "parse_error": null,
+      "input_node_occurrences": 3,
+      "output_node_occurrences": 1,
+      "layout_patterns": [
+        "input_container",
+        "output_nested_under_input"
+      ],
+      "semantic_container_counts": {
+        "actions": 1,
+        "conditions": 1,
+        "rules": 1
+      },
+      "unclassified_entity_node_paths": [],
+      "nodes_missing_key_fields": [],
+      "unexpected_semantic_container_values": []
+    }
+  ]
+}

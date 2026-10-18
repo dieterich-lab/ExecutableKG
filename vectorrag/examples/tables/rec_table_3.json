@@ -1,0 +1,53 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_24.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_24.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "It is recommended to estimate the pre-test likelihood of obstructive epicardial CAD using the Risk Factor-weighted Clinical Likelihood model.139,140,142,143,161,162 I B",
+          "Class a": "I",
+          "Level b": "B"
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "It is recommended to use additional clinical data (e.g. examination of peripheral arteries, resting ECG, resting echocardiography, presence of vascular calcifications on previously performed imaging tests) to adjust the estimate yielded by the Risk Factor-weighted Clinical Likelihood model.163 I C",
+          "Class a": "I",
+          "Level b": "C"
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with a very low (≤5%) pre-test likelihood of obstructive CAD, deferral of further diagnostic tests should be considered.139,164 IIa B",
+          "Class a": "IIa",
+          "Level b": "B"
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with a low (>5%–15%) pre-test likelihood of obstructive CAD, CACS should be considered to reclassify subjects and to identify more individuals with very low (≤5%) CACS-weighted clinical likelihood.139,143,165 IIa B",
+          "Class a": "IIa",
+          "Level b": "B"
+        },
+        {
+          "Table Header": "Recommendation Table 3 — Recommendations for estimating, adjusting and reclassifying the likelihood of obstructive atherosclerotic coronary artery disease in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 3)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In individuals with an initially low (>5%–15%) likelihood of obstructive CAD, exercise ECG and detection of atherosclerotic disease in non-coronary arteries may be considered to adjust the pre-test likelihood estimate.144,166 IIb C",
+          "Class a": "IIb",
+          "Level b": "C"
+        }
+      ]
+    }
+  ]
+}

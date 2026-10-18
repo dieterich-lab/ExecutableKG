@@ -1,0 +1,137 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_27.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_27.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 7 — Recommendations for ambulatory ECG monitoring in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 7)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Ambulatory ECG monitoring is recommended in subjects with chest pain and suspected arrhythmias.",
+          "Class a": "I",
+          "Level b": "C",
+          "input": "individuals with suspected chronic coronary syndrome with chest pain and suspected arrhythmias",
+          "recommendation": "Ambulatory ECG monitoring",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "chest pain",
+                  "entity_standardized_list": [
+                    {
+                      "entity_standardized_candidate": "Chest pain",
+                      "snomed_id": "29857009"
+                    }
+                  ],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "suspected arrhythmias",
+                  "entity_standardized_list": [],
+                  "context": "",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Ambulatory ECG monitoring",
+                  "entity_standardized_list": [],
+                  "context": "",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "I",
+                    "level": "C",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 7 — Recommendations for ambulatory ECG monitoring in the initial diagnostic management of individuals with suspected chronic coronary syndrome (see also Evidence Table 7)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "Ambulatory ECG monitoring should be considered in subjects with suspected vasospastic angina.192–194",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "individuals with suspected chronic coronary syndrome with suspected vasospastic angina",
+          "recommendation": "Ambulatory ECG monitoring",
+          "rules": [
+            {
+              "conditions": [
+                {
+                  "entity_original": "suspected chronic coronary syndrome",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected chronic coronary syndrome",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                },
+                {
+                  "entity_original": "suspected vasospastic angina",
+                  "entity_standardized_list": [],
+                  "context": "individuals with suspected vasospastic angina",
+                  "role": "ClinicalCondition",
+                  "logic_structured": {
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ],
+              "actions": [
+                {
+                  "entity_original": "Ambulatory ECG monitoring",
+                  "entity_standardized_list": [],
+                  "context": "",
+                  "role": "Procedure",
+                  "logic_structured": {
+                    "strength": "IIa",
+                    "level": "b",
+                    "direction": "POSITIVE",
+                    "operator": "PRESENT",
+                    "logic_type": "AND",
+                    "logic_group": "and_1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

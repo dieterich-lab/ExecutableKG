@@ -1,0 +1,2 @@
+{"schema_version":"1.0","case_id":"case_001","patient_case":"Patient with a b c d e","expected_row_ids":[],"notes":"Replace the placeholder case and add adjudicated row IDs from row_catalog.jsonl."}
+

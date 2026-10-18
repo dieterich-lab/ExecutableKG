@@ -1,0 +1,176 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_82.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_82.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 31 -Recommendations for recurrent or refractory angina/ischaemia (see also Evidence Table 31)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In patients with refractory angina leading to poor quality of life and with documented or suspected ANOCA/INOCA, invasive coronary functional testing is recommended to define ANOCA/INOCA endotypes and appropriate treatment, considering patient choices and preferences.36,37,298,930,939,985 I B",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome and recurrent or refractory angina/ischaemia leading to poor quality of life and with documented or suspected ANOCA/INOCA",
+          "recommendation": "invasive coronary functional testing is recommended to define ANOCA/INOCA endotypes and appropriate treatment, considering patient choices and preferences ",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "recurrent or refractory angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Refractory angina",
+                  "snomed_id": "315025001"
+                }
+              ],
+              "context": "recurrent or refractory angina/ischaemia leading to poor quality of life",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "recurrent or refractory ischaemia",
+              "entity_standardized_list": [],
+              "context": "recurrent or refractory angina/ischaemia leading to poor quality of life",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "ANOCA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina pectoris with nonobstructive coronary arteries",
+                  "snomed_id": "1381430004"
+                }
+              ],
+              "context": "documented or suspected ANOCA/INOCA",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_2"
+              }
+            },
+            {
+              "entity_original": "INOCA",
+              "entity_standardized_list": [],
+              "context": "documented or suspected",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_2"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Invasive coronary angiography ",
+              "entity_standardized_list": [],
+              "context": "invasive coronary functional testing is recommended to define ANOCA/INOCA endotypes and appropriate treatment, considering patient choices and preferences",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 31 -Recommendations for recurrent or refractory angina/ischaemia (see also Evidence Table 31)",
+          "Section Header": null,
+          "Subheader": null,
+          "Recommendations": "In patients with debilitating angina and obstructive CAD refractory to optimal medical and revascularization strategies, a reducer device for coronary sinus constriction may be considered to improve symptoms, in experienced centres.1199– 1201,1204 IIb B",
+          "Class a": "IIb",
+          "Level b": "B",
+          "input": "patients with chronic coronary syndrome with debilitating angina and obstructive CAD refractory to optimal medical and revascularization strategies",
+          "recommendation": "a reducer device for coronary sinus constriction may be considered to improve symptoms, in experienced centres ",
+          "rules": [
+            {
+              "entity_original": "chronic coronary syndrome",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Chronic myocardial ischemia",
+                  "snomed_id": "413844008"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "debilitating angina",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Angina",
+                  "snomed_id": "194828000"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            },
+            {
+              "entity_original": "obstructive CAD",
+              "entity_standardized_list": [],
+              "context": "obstructive CAD refractory to optimal medical and revascularization strategies",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "reducer device for coronary sinus constriction",
+              "entity_standardized_list": [],
+              "context": "a reducer device for coronary sinus constriction may be considered to improve symptoms",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "source_file": "ESC_CCS_2024/pages/_33.pdf",
+  "total_tables": 1,
+  "tables": [
+    {
+      "table_id": 0,
+      "source_file": "ESC_CCS_2024/pages/_33.pdf",
+      "caption": [],
+      "data": [
+        {
+          "Table Header": "Recommendation Table 12 — Recommendations for functional assessment of epicardial artery stenosis severity during invasive coronary angiography to guide revascularization (see also Evidence Table 12)",
+          "Section Header": "During ICA, selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize, using the following techniques:",
+          "Subheader": null,
+          "Recommendations": " • FFR/iFR (significant ≤0.8 or ≤0.89, respectively);49,308,310,311,313,321–323,332,373",
+          "Class a": "I",
+          "Level b": "A",
+          "input": "during ICA ",
+          "recommendation": "FFR/iFR (significant ≤0.8 or ≤0.89, respectively) used for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+          "rules": [
+            {
+              "entity_original": "during ICA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Fluoroscopic angiography of coronary artery with contrast",
+                  "snomed_id": "419416005"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "FFR",
+              "entity_standardized_list": [],
+              "context": "FFR/iFR (significant ≤0.8 or ≤0.89, respectively) used for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "iFR",
+              "entity_standardized_list": [],
+              "context": "FFR/iFR (significant ≤0.8 or ≤0.89, respectively) used for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "A",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 12 — Recommendations for functional assessment of epicardial artery stenosis severity during invasive coronary angiography to guide revascularization (see also Evidence Table 12)",
+          "Section Header": "During ICA, selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize, using the following techniques:",
+          "Subheader": null,
+          "Recommendations": "• QFR (significant ≤0.8).325,355,374,375",
+          "Class a": "I",
+          "Level b": "B",
+          "input": "during ICA ",
+          "recommendation": "QFR (significant ≤0.8) used for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+          "rules": [
+            {
+              "entity_original": "during ICA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Fluoroscopic angiography of coronary artery with contrast",
+                  "snomed_id": "419416005"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "QFR",
+              "entity_standardized_list": [],
+              "context": "QFR (significant ≤0.8) used for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "I",
+                "level": "B",
+                "direction": "POSITIVE"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 12 — Recommendations for functional assessment of epicardial artery stenosis severity during invasive coronary angiography to guide revascularization (see also Evidence Table 12)",
+          "Section Header": "During ICA, selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize, using the following techniques:",
+          "Subheader": "In addition:",
+          "Recommendations": "• CFR/HSR/CFC should be considered as a complementary investigation;359,360,366–368,376",
+          "Class a": "IIa",
+          "Level b": "B",
+          "input": "during ICA ",
+          "recommendation": "CFR/HSR/CFC should be considered as a complementary investigation for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+          "rules": [
+            {
+              "entity_original": "during ICA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Fluoroscopic angiography of coronary artery with contrast",
+                  "snomed_id": "419416005"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "CFR",
+              "entity_standardized_list": [],
+              "context": "CFR/HSR/CFC should be considered as a complementary investigation for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "HSR",
+              "entity_standardized_list": [],
+              "context": "CFR/HSR/CFC should be considered as a complementary investigation for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "CFC",
+              "entity_standardized_list": [],
+              "context": "CFR/HSR/CFC should be considered as a complementary investigation for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIa",
+                "level": "B",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 12 — Recommendations for functional assessment of epicardial artery stenosis severity during invasive coronary angiography to guide revascularization (see also Evidence Table 12)",
+          "Section Header": "During ICA, selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize, using the following techniques:",
+          "Subheader": "In addition:",
+          "Recommendations": "• resting invasive measurement of Pd/Pa, dPR, RFR, or angiography-derived vessel FFR may be considered as alternative parameters.353,377",
+          "Class a": "IIb",
+          "Level b": "C",
+          "input": "during ICA ",
+          "recommendation": "resting invasive measurement of Pd/Pa, dPR, RFR, or angiography-derived vessel FFR may be considered as alternative parameters for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+          "rules": [
+            {
+              "entity_original": "during ICA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Fluoroscopic angiography of coronary artery with contrast",
+                  "snomed_id": "419416005"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "resting invasive measurement of Pd/Pa",
+              "entity_standardized_list": [],
+              "context": "resting invasive measurement of Pd/Pa may be considered as alternative parameters for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "resting invasive measurement of dPR",
+              "entity_standardized_list": [],
+              "context": "resting invasive measurement of dPR may be considered as alternative parameters for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "resting invasive measurement of RFR",
+              "entity_standardized_list": [],
+              "context": "resting invasive measurement of RFR may be considered as alternative parameters for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            },
+            {
+              "entity_original": "angiography-derived vessel FFR",
+              "entity_standardized_list": [],
+              "context": "angiography-derived vessel FFR may be considered as alternative parameters for selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "IIb",
+                "level": "C",
+                "direction": "POSITIVE",
+                "operator": "PRESENT",
+                "logic_type": "OR",
+                "logic_group": "or_1"
+              }
+            }
+          ]
+        },
+        {
+          "Table Header": "Recommendation Table 12 — Recommendations for functional assessment of epicardial artery stenosis severity during invasive coronary angiography to guide revascularization (see also Evidence Table 12)",
+          "Section Header": "During ICA, selective assessment of functional severity of intermediate diameter stenoses is recommended to guide the decision to revascularize, using the following techniques:",
+          "Subheader": "In addition:",
+          "Recommendations": "Systematic and routine wire-based coronary pressure assessment of all coronary vessels is not recommended.346,347",
+          "Class a": "III",
+          "Level b": "A",
+          "input": "during ICA ",
+          "recommendation": "Systematic and routine wire-based coronary pressure assessment of all coronary vessels is not recommended",
+          "rules": [
+            {
+              "entity_original": "during ICA",
+              "entity_standardized_list": [
+                {
+                  "entity_standardized_candidate": "Fluoroscopic angiography of coronary artery with contrast",
+                  "snomed_id": "419416005"
+                }
+              ],
+              "context": "",
+              "role": "ClinicalCondition",
+              "logic_structured": {
+                "operator": "PRESENT",
+                "logic_type": "AND",
+                "logic_group": "and_1"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "entity_original": "Systematic and routine wire-based coronary pressure assessment",
+              "entity_standardized_list": [],
+              "context": "Systematic and routine wire-based coronary pressure assessment of all coronary vessels is not recommended",
+              "role": "Procedure",
+              "logic_structured": {
+                "strength": "III",
+                "level": "A",
+                "direction": "NEGATIVE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

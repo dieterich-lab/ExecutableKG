@@ -1,0 +1,12 @@
+{
+  "schema_version": "trigger-gold-standard-v2",
+  "generated_on": "2026-08-01",
+  "source_input_nodes_sha256": "fa295ab7b308b9656a868968715fe504f3c34e9d07c43959d40c0e0cc080c5d3",
+  "source_schema_version": 1,
+  "source_unique_node_count": 277,
+  "source_occurrence_count": 530,
+  "included_input_node_count": 249,
+  "excluded_input_node_count": 28,
+  "case_count": 100,
+  "trigger_semantics": "A row is expected here when at least one intended input node occurs in that row. This is not a claim that every condition of the row is fulfilled."
+}
