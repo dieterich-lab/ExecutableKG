@@ -7,8 +7,8 @@ description: "Hybrid Ontology for Cardiology Guidelines combining Semantic Medic
 # ==========================================
 nodes:
   # --- A. Semantic Layer (The Vocabulary) ---
-  # Diese Knoten repräsentieren "Wissen" und werden auf SNOMED CT gemappt.
-  # Sie sind die "Anker" für den Patienten-Input.
+  # These nodes represent clinical knowledge and are mapped to SNOMED CT.
+  # They are the anchors for the patient input.
 
   - label: "ClinicalCondition"
     description: "Diseases, syndromes, or symptoms."
@@ -116,7 +116,7 @@ nodes:
         type: "string"
 
   - label: "Qualifier Value"
-    description: "Diagnostic or therapeutic procedures (e.g., PCI, ECG, Echo)."
+    description: "Qualifiers that refine another concept (e.g. severity, laterality)."
     attributes:
       - name: "snomed_id"
         type: "string"
@@ -140,8 +140,8 @@ nodes:
         type: "string"
 
   # --- B. Logic Layer (The Guideline Structure) ---
-  # Diese Knoten bilden den Entscheidungsbaum/DAG ab.
-  # Sie werden NICHT zwingend auf SNOMED gemappt, sondern strukturieren den Ablauf.
+  # These nodes form the decision structure of each rule.
+  # They are not mapped to SNOMED CT; they structure the logic.
 
   - label: "GuidelineSource"
     description: "Metadata about the source document (e.g., ESC 2021 Heart Failure)."
@@ -260,14 +260,12 @@ relationships:
 # ==========================================
 # 3. SNOMED INTEGRATION & TAXONOMY
 # ==========================================
-# Hier definieren wir, wie wir SNOMED-Hierarchien nutzen, 
-# um unseren Knoten automatisch Labels zu geben.
+# How SNOMED CT hierarchies are used to assign node labels automatically.
 
 snomed_mapping:
-  import_hierarchy: true   # JA, wir wollen IS_A Relationen importieren!
+  import_hierarchy: true   # import IS_A relationships (optional loader flag --add-snomed-hierarchy)
   
-  # Wenn ein Begriff unterhalb dieses SNOMED-Concepts liegt, 
-  # bekommt er automatisch das Label "Medication"
+  # A concept below one of these SNOMED CT concepts gets the label "Medication"
   mapping_rules:
     - target_label: "Medication"
       root_concepts: 
@@ -279,7 +277,7 @@ snomed_mapping:
     - target_label: "ClinicalCondition"
       root_concepts:
         #- "49601007"  # Disorder of cardiovascular system  ROOT Clinical finding
-        - "404684003" # Clinical finding (für Symptome) 
+        - "404684003" # Clinical finding (incl. symptoms) 
 
     - target_label: "Procedure"
       root_concepts:
@@ -287,7 +285,7 @@ snomed_mapping:
 
     - target_label: "ClinicalParameter"
       root_concepts:
-        - "363787002" # Observable entity (z.B. Blood Pressure)
+        - "363787002" # Observable entity (e.g. blood pressure)
 
     - target_label: "Qualifier Value"
       root_concepts:
