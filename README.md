@@ -319,7 +319,12 @@ For each entity, negation words and numbers are removed (`grounding_query_text`)
 - **full text**: a Lucene query with the whole phrase (boost 4) OR its single tokens, top 50 DecisionNodes;
 - **vector**: the embedded entity against the DecisionNode embeddings, top 50 with cosine ≥ 0.80.
 
-The two ranked lists are fused by reciprocal rank fusion (RRF, k = 60). The hits are then collapsed into **concept anchors**: all DecisionNodes that test the same SNOMED CT concept form one group (otherwise the same standardized name, otherwise the same wording). The 3 best anchors per entity are kept (`--groups-per-entity 3`). Because an anchor is a concept rather than a single node, one match stands for every rule that tests that concept.
+The two ranked lists are fused by reciprocal rank fusion (RRF, k = 60). The hits are then collapsed into **concept anchors**:
+
+- **one anchor per concept**: all DecisionNodes that test the same SNOMED CT concept are merged into one anchor (otherwise those with the same standardized name, otherwise the same wording), so a concept never appears twice for an entity, and one match stands for every rule that tests that concept;
+- **three anchors per entity**: the anchors are ranked by their best RRF score and the 3 best are kept (`--groups-per-entity 3`). All three go on to steps (iii) and (iv); the first is not always the right one (see the [worked examples](#worked-examples)).
+
+RRF ranks by position, not by score, so a concept found by both channels can outrank a better match found by only one. Keeping three anchors raises recall at the cost of some false positives; a wrong anchor only produces a wrong answer if its evidence completes every condition of a rule.
 
 ### (iii) Expand anchors to rules
 
@@ -378,31 +383,163 @@ One JSON record per case (`--output`); with `--include-debug` it also contains t
 
 ## Worked examples
 
-Both examples come from the paper run (`results/kg/predictions_verified.jsonl.gz`).
+Three vignettes from the paper run, traced step by step. Every value below comes from the stored trace (`results/kg/predictions_verified.jsonl.gz`) and the cached LLM answers (`results/kg/llm_cache.jsonl`).
 
-### A correct contraindication, and a traceable error (`near_003`)
+### End to end: from vignette to recommendation (`near_009`)
 
-*"Patient with decompensated heart failure, fast irregular heart rate, 0.2 mV ST-segment depression on the resting ECG and a clinical likelihood of obstructive CAD of 90%."* Reference: Table 8 row 2 (CCTA is not recommended).
+*"Patient with severe obesity with a BMI of 42 kg/m², severe renal failure, a pre-test likelihood of obstructive CAD of 35% and an eGFR of 24 mL/min/1.73 m²."*
+Reference: Table 8 row 2, *CCTA is not recommended* (the OR rule shown in [the graph schema section](#two-rules-in-the-graph)).
 
-| Entity (i) | Anchors kept (ii) |
-|---|---|
-| decompensated heart failure | Heart failure (84114007); Chronic heart failure (48447003); "signs and symptoms suggestive of heart failure" |
-| fast irregular heart rate | **Tachyarrhythmia (6285003)**; "signs and symptoms suggestive of heart failure"; Glomerular filtration rate (405004009) |
-| ST-segment depression 0.2 mV | *"intermediate coronary artery stenosis in a proximal or mid coronary segment"*; ST segment depression (26141007); "the ventricular arrhythmia has occurred < 48 h after an MI" |
-| clinical likelihood of obstructive CAD 90% | "pre-test likelihood of obstructive CAD" (15 rules); "clinical likelihood of disease"; "symptoms highly suggestive of obstructive CAD" |
+**In numbers:** 5 entities → 15 candidate concepts → 14 evidence items → 36 rules evaluated → 1 rule fires, which is exactly the reference.
 
-The anchors expanded to 28 rules; two fired:
+```mermaid
+flowchart LR
+    subgraph s1["(i) entities"]
+        e1["severe obesity"]
+        e3["severe renal failure"]
+        e5["eGFR of 24 mL/min/1.73 m²"]
+        e2["BMI of 42 kg/m²"]
+        e4["pre-test likelihood of<br/>obstructive CAD of 35%"]
+    end
+    subgraph s2["(ii) + (iv) evidence"]
+        v1["Severe obesity<br/>present"]
+        v3["Renal failure syndrome<br/>present"]
+        v5["Glomerular filtration rate<br/>24 mL/min/1.73 m²"]
+        v24["Body mass index 42 kg/m²<br/>pre-test likelihood 35 %<br/>…"]
+    end
+    subgraph s3["(vi) Table 8 row 2: one OR group"]
+        c1["Severe obesity PRESENT ✔"]
+        c2["Renal failure syndrome PRESENT ✔"]
+        c3["Glomerular filtration rate below 30 ✘<br/>unit written differently"]
+        c4["5 further conditions ✘"]
+    end
+    e1 --> v1 --> c1
+    e3 --> v3 --> c2
+    e5 --> v5 --> c3
+    e2 --> v24
+    e4 --> v24
+    v24 --> o["35 other rules:<br/>none has all its conditions met"]
+    c1 --> r["Rule fires:<br/>CCTA is not recommended<br/>Class III · Level C"]
+    c2 --> r
+```
 
-- **Table 8 row 2, CCTA is not recommended (Class III, Level C).** Of its eight OR conditions, `Tachyarrhythmia PRESENT` is true through "fast irregular heart rate", so the OR group and the rule hold. This is the reference row.
-- **Table 13 row 5, CT-based FFR may be considered (IIb, B).** Its only condition, "intermediate coronary artery stenosis in a proximal or mid coronary segment", was the top anchor for "ST-segment depression 0.2 mV". The trace shows where the error arose: a near-miss grounding in step (ii), not the rule logic.
+**(i) Extraction.** The LLM returns five entities: `severe obesity`, `BMI of 42 kg/m²`, `severe renal failure`, `pre-test likelihood of obstructive CAD of 35%`, `eGFR of 24 mL/min/1.73 m²`.
 
-VectorRAG did not retrieve the reference row for this vignette; both generators instead selected Table 5 row 4 (exercise ECG is not recommended for diagnosis in patients with ≥ 0.1 mV ST-segment depression on the resting ECG), which the reference excludes because the vignette does not state suspected CCS.
+**(ii) Grounding and (iv) evidence.** Each entity gets its three best candidate concepts (one anchor per concept), and each candidate is turned into evidence by the LLM. Wrong candidates are common; the last column shows what became of each:
 
-### The consistency check at work (`near_001`)
+| Entity (i) | Rank | Candidate concept (ii) | Found by | Evidence (iv) | Used for |
+|---|---|---|---|---|---|
+| severe obesity | 1 | Severe obesity (83911000119104) | full text + vector | present | **CCTA rule ✔** |
+| | 2 | ✗ "severe symptoms refractory to guideline-directed medical therapy" | full text + vector | renamed "severe obesity" | same condition again (harmless) |
+| | 3 | Obese (414915002) | vector | present | semaglutide rule (Table 19 row 2) |
+| BMI of 42 kg/m² | 1 | Body mass index (60621009) | full text + vector | 42 kg/m² | semaglutide rule |
+| | 2 | ✗ "indication of ICA" | full text | renamed "BMI of 42 kg/m²" | no condition has this name (harmless) |
+| | 3 | Obese (414915002) | vector | present | semaglutide rule |
+| severe renal failure | 1 | ✗ "severe symptoms refractory to guideline-directed medical therapy" | full text + vector | renamed "severe renal failure" | no condition (harmless) |
+| | 2 | Renal failure syndrome (42399005) | full text | present | **CCTA rule ✔** |
+| | 3 | ✗ Severe obesity (83911000119104) | full text | rejected by the LLM | none |
+| pre-test likelihood … 35% | 1 | "pre-test likelihood of obstructive CAD" | full text + vector | 35 % | 27 threshold conditions in 15 rules |
+| | 2 | ✗ "symptoms highly suggestive of obstructive CAD" | full text + vector | 35 % | **blocked by step (v)** (certainty) |
+| | 3 | "clinical likelihood of disease" | full text + vector | 35 % | ICA rule for > 85% (Table 11 row 2) |
+| eGFR of 24 mL/min/1.73 m² | 1 | Glomerular filtration rate (405004009) | full text + vector | 24 mL/min/1.73 m² | **CCTA rule ✘** (see below) |
+| | 2 | ✗ "indication of ICA" | full text | renamed "eGFR" | no condition (harmless) |
+| | 3 | ✗ "Indication of" (230165009) | full text | renamed "eGFR" | no condition (harmless) |
+
+Seven of the 15 candidates are wrong (✗). None reaches a fired rule: the LLM rejects one, renames five back to the patient's own words (which then match no condition, or by chance the right one), and step (v) blocks one.
+
+**(iii) Rule expansion.** The candidates lead to 36 rules: every rule with a condition on one of these concepts, with all its conditions.
+
+**(v) Consistency check.** One evidence item fails: "symptoms highly suggestive of obstructive CAD" carries the uncertainty cue "suggestive of", the patient's mention does not. No rule outcome changes.
+
+**(vi) Rule evaluation.** All 36 rules are evaluated; one fires. Two of them, side by side:
+
+| Table 8 row 2: *CCTA is not recommended* (one OR group) | | Table 24 row 1: *CCTA or functional imaging is recommended* (one AND group) | |
+|---|---|---|---|
+| Renal failure syndrome PRESENT | ✔ | chronic coronary syndrome PRESENT | ✘ not stated |
+| Glomerular filtration rate < 30 mL/min/1.73 m^2 | ✘ | Chronic heart failure PRESENT | ✘ not stated |
+| Decompensated chronic heart failure PRESENT | ✘ | Left ventricular ejection fraction > 35 % | ✘ no LVEF given |
+| Calcification of coronary artery PRESENT | ✘ | pre-test likelihood of obstructive CAD > 5 % | ✔ 35 % |
+| Tachyarrhythmia PRESENT | ✘ | pre-test likelihood of obstructive CAD ≤ 50 % | ✔ 35 % |
+| Severe obesity PRESENT | ✔ | | |
+| inability to cooperate with breath-hold commands PRESENT | ✘ | | |
+| any other conditions that can make obtaining good imaging quality unlikely PRESENT | ✘ | | |
+| **at least one OR condition holds → fires** | | **not all AND conditions hold → does not fire** | |
+
+The eGFR condition is false although 24 < 30: the evidence writes the unit `mL/min/1.73 m²`, the rule `mL/min/1.73 m^2`, and units must match as written. This is a normalisation error, the kind counted under *normalisation* in the error analysis; here it does no harm because two other OR conditions hold.
+
+**Output** (shortened):
+
+```json
+{
+  "case_id": "near_009",
+  "predicted_row_ids": ["table_rec_8_manual_1.4.json::table_0::row_2"],
+  "recommendations": [{
+    "source_row_id": "table_rec_8_manual_1.4.json::table_0::row_2",
+    "recommendation": {"full_text": "CCTA is not recommended", "strength": "III", "level": "C",
+                       "direction": "NEGATIVE", "source": "ESC_CCS_2024/pages/_28.pdf"},
+    "actions": [{"relation_type": "CONTRAINDICATES",
+                 "action_concept": {"name": "coronary computed tomography angiography"}}]
+  }]
+}
+```
+
+### Why three candidates per entity, and the consistency check (`near_001`)
 
 *"Patient with suspected chronic coronary syndrome, a pre-test likelihood of obstructive CAD of 65% and maximum tolerated statin therapy with ezetimibe."*
 
-The extractor returned "chronic coronary syndrome" without "suspected". Without step (v), 32 rules fired, including 16 written for *established* CCS, such as the lifestyle and risk-counselling recommendations of Table 15 (condition context: "patients with established chronic coronary syndrome"). Step (v) located the mention in the vignette, found "suspected" scoping over it, and blocked these 16 rules for certainty. The remaining 16, among them stress SPECT/PET and stress CMR perfusion imaging for suspected CCS with a pre-test likelihood of > 15–85%, equal the reference exactly.
+**Three candidates.** The extractor returned "chronic coronary syndrome" (without "suspected"). Its three candidates are not three guesses: they are three different encodings of the same finding in the rule tables.
+
+| Rank | Candidate | Rules testing it |
+|---|---|---|
+| 1 | Chronic myocardial ischemia (413844008, the SNOMED CT code used for CCS) | 78 |
+| 2 | "chronic coronary syndrome" (uncoded) | 2 |
+| 3 | "suspected chronic coronary syndrome" (uncoded) | 43 |
+
+All 16 reference rows of this vignette hang on the third candidate. With one or two candidates per entity the KG returns nothing for this vignette. Over the whole run (re-scoring the stored trace with `analysis/kg_posthoc_filters.py --topk K`, i.e. the same ranks and LLM answers, not a fresh run):
+
+| Candidates per entity | TP / FP / FN | Precision | Recall | F1 | Exact matches | Correct abstention |
+|---|---|---|---|---|---|---|
+| 1 | 124 / 102 / 227 | 0.549 | 0.353 | 0.430 | 60 | 46 / 48 |
+| 2 | 237 / 143 / 114 | 0.624 | 0.675 | 0.648 | 61 | 41 / 48 |
+| **3 (paper)** | 309 / 194 / 42 | 0.614 | 0.880 | 0.724 | 50 | 35 / 48 |
+
+One candidate per entity does not make the KG more precise; it loses most applicable rules and gains exact matches mainly by returning nothing more often. The better fix is in the data: one concept per finding (merging the CCS encodings, coding the uncoded duplicates) would let fewer candidates suffice.
+
+```bash
+python3 analysis/kg_posthoc_filters.py --src src results/kg/predictions.jsonl.gz top1.jsonl.gz --topk 1
+python3 analysis/compare_arms.py data/reference/gold_fully_satisfied.jsonl top1=top1.jsonl.gz paper=results/kg/predictions_verified.jsonl.gz
+```
+
+**Consistency check.** Because "suspected" was dropped, steps (i)–(iv) and (vi) alone fired 32 rules, including 16 written for *established* CCS, such as the lifestyle and risk-counselling recommendations of Table 15 (condition context: "patients with established chronic coronary syndrome"). Step (v) located the mention in the vignette, found "suspected" scoping over it, and blocked these 16 rules for certainty. The remaining 16, among them stress SPECT/PET and stress CMR perfusion imaging for suspected CCS with a pre-test likelihood of > 15–85%, equal the reference exactly.
+
+### A traceable error (`near_003`)
+
+*"Patient with decompensated heart failure, fast irregular heart rate, 0.2 mV ST-segment depression on the resting ECG and a clinical likelihood of obstructive CAD of 90%."*
+Reference: Table 8 row 2 (CCTA is not recommended). This is the example of the paper.
+
+| Entity (i) | Rank | Candidate concept (ii) | Found by | Evidence (iv) | Outcome |
+|---|---|---|---|---|---|
+| decompensated heart failure | 1 | Heart failure (84114007) | full text + vector | present | used |
+| | 2 | ✗ Chronic heart failure (48447003) | full text + vector | present | blocked by step (v) (qualifier: "chronic" not stated) |
+| | 3 | ✗ "signs and symptoms suggestive of heart failure" | full text + vector | present | blocked by step (v) (certainty) |
+| fast irregular heart rate | 1 | **Tachyarrhythmia (6285003)** | full text + vector | present | **fires the reference rule** |
+| | 2 | ✗ "signs and symptoms suggestive of heart failure" | full text + vector | present | blocked by step (v) (certainty) |
+| | 3 | ✗ Glomerular filtration rate (405004009) | full text only ("rate") | rejected by the LLM | none |
+| ST-segment depression 0.2 mV | 1 | ✗ **"intermediate coronary artery stenosis in a proximal or mid coronary segment"** | full text + vector | present | **passes and fires a false positive** |
+| | 2 | ST segment depression (26141007) | full text only | 0.2 mV | used |
+| | 3 | ✗ "the ventricular arrhythmia has occurred < 48 h after an MI" | vector only | renamed "ST-segment depression" | no condition (harmless) |
+| clinical likelihood of obstructive CAD 90% | 1 | "pre-test likelihood of obstructive CAD" | full text + vector | 90 % | used |
+| | 2 | "clinical likelihood of disease" | full text + vector | 90 % | used |
+| | 3 | ✗ "symptoms highly suggestive of obstructive CAD" | full text + vector | 90 % | blocked by step (v) (certainty) |
+
+Here one wrong candidate gets through. "intermediate coronary artery stenosis …" was even ranked first: it was found by both searches, while the right concept, ST segment depression, was found only by the full-text search (score 10.95 against 2.66), and RRF ranks by position, not by score. The full-text search also matches single words ("rate" finds Glomerular filtration rate).
+
+The candidates led to 28 rules; two fired:
+
+- **Table 8 row 2, CCTA is not recommended (Class III, Level C).** Of its eight OR conditions, `Tachyarrhythmia PRESENT` is true through "fast irregular heart rate". This is the reference row.
+- **Table 13 row 5, CT-based FFR may be considered (IIb, B).** Its only condition is the wrong rank-1 candidate of "ST-segment depression 0.2 mV". The trace shows where the error arose: a near-miss grounding in step (ii), not the rule logic. Errors of this kind are the 53 *grounding* false positives of the error analysis.
+
+VectorRAG did not retrieve the reference row for this vignette; both generators instead selected Table 5 row 4 (exercise ECG is not recommended for diagnosis in patients with ≥ 0.1 mV ST-segment depression on the resting ECG), which the reference excludes because the vignette does not state suspected CCS.
 
 ---
 
